@@ -50,6 +50,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
+<link rel='stylesheet' id='animate-css' href='http://worldwingsedu.com/wp-content/plugins/treck-addon/assets/vendors/animate/animate.min.css?ver=1704271099' media='all' />
+<link rel='stylesheet' id='custom-animate-css' href='http://worldwingsedu.com/wp-content/plugins/treck-addon/assets/vendors/animate/custom-animate.css?ver=1704271099' media='all' />
 <link rel='stylesheet' id='custom-typekit-css-css' href='https://use.typekit.net/wia6xok.css?ver=1.0.18' media='all' />
 <link rel='stylesheet' id='hello-elementor-css' href='wp-content/themes/hello-elementor/style.min1102.css?ver=2.8.1' media='all' />
 <link rel='stylesheet' id='hello-elementor-theme-style-css' href='wp-content/themes/hello-elementor/theme.min1102.css?ver=2.8.1' media='all' />
@@ -69,6 +71,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wp-includes/wlwmanifest.xml" />
 <meta name="generator" content="WordPress 6.2.4" />
 <link rel='shortlink' href='index.html' />
+<link rel='stylesheet' id='fontawesome-css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' media='all' />
 <link rel="alternate" type="application/json+oembed" href="wp-json/oembed/1.0/embedf142.json?url=https%3A%2F%2Fjefftikitaurealestate.com%2F" />
 <link rel="alternate" type="text/xml+oembed" href="wp-json/oembed/1.0/embedc382?url=https%3A%2F%2Fjefftikitaurealestate.com%2F&amp;format=xml" />
 
@@ -267,6 +270,61 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </style>
 
 <style>
+	.services-two__carousel.owl-theme .owl-nav {
+		position: relative;
+		display: block;
+		margin-top: 28px;
+	}
+	.services-two__carousel.owl-theme .owl-nav::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 14px;
+		width: 530px;
+		height: 1px;
+		background-color: #e1d9d6;
+	}
+	.services-two__carousel.owl-theme .owl-nav .owl-prev {
+		margin-right: 2.50px;
+	}
+	.services-two__carousel.owl-theme .owl-nav .owl-prev {
+		height: 27px;
+		width: 26px;
+		line-height: 26px;
+		border-radius: 0;
+		color: var(--treck-black);
+		background-color: #ffffff;
+		font-size: 15px;
+		margin: 0;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	.elementor *, .elementor :after, .elementor :before {
+		box-sizing: border-box;
+	}
+	.fa-angle-left:before {
+		content: "\f104";
+	}
+	.elementor *, .elementor :after, .elementor :before {
+		box-sizing: border-box;
+	}
+	.fa-angle-left:before {
+		content: "\f104";
+	}
+	.services-two__carousel.owl-theme .owl-nav::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 14px;
+		width: 530px;
+		height: 1px;
+		background-color: #e1d9d6;
+	}
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin-top: 10px;
+	}
+</style>
+<style>
 	.elementor-button-text {
 		font-family: futura-pt, sans-serif !important;
 		font-weight: 400;
@@ -335,6 +393,1099 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		position: fixed;
 		z-index: 100;
 	}
+</style>
+<style>
+	.services-two {
+		position: relative;
+		display: block;
+		padding: 120px 0 0;
+	}
+	
+	.services-two__wrap {
+		position: relative;
+		display: block;
+		max-width: 1370px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 120px 0 120px;
+		background-color: var(--treck-primary);
+		overflow: hidden;
+		z-index: 1;
+	}
+	
+	.services-two__shape-1 {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		right: -100px;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
+	
+	.services-two__inner {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__carousel {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__single {
+		position: relative;
+		display: block;
+		box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+	}
+	
+	.services-two__single-inner {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		background-color: white;
+		z-index: 1;
+	}
+	
+	.services-two__content {
+		position: relative;
+		display: block;
+		padding: 32px 40px 44px;
+	}
+	
+	.services-two__title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		margin-bottom: 2px;
+	}
+	
+	.services-two__title a {
+		color: var(--treck-black);
+	}
+	
+	.services-two__img-box {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__icon {
+		position: absolute;
+		top: -30px;
+		right: 20px;
+		background-color: var(--treck-base);
+		height: 90px;
+		width: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+	
+	.services-two__icon:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -20px;
+		border-bottom: 30px solid #d1062f;
+		border-left: 20px solid transparent;
+	}
+	
+	.services-two__icon span {
+		position: relative;
+		display: inline-block;
+		font-size: 63px;
+		color: var(--treck-white);
+	}
+	
+	.services-two__img {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__img img {
+		width: 100%;
+	}
+	
+	.services-two__hover-content-box {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-position: center top;
+		transition-delay: .1s;
+		transition-timing-function: ease-in-out;
+		transition-duration: .5s;
+		transition-property: all;
+		transform-origin: top;
+		transform-style: preserve-3d;
+		transform: scaleY(0);
+		z-index: 2;
+	}
+	
+	.services-two__single:hover .services-two__hover-content-box {
+		transform: scaleY(1);
+	}
+	
+	.services-two__hover-bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
+	
+	.services-two__hover-bg:before {
+		background-image: -moz-linear-gradient(90deg, #16171a 0%, rgba(22, 23, 26, 0) 100%);
+		background-image: -webkit-linear-gradient(90deg, #16171a 0%, rgba(22, 23, 26, 0) 100%);
+		background-image: -ms-linear-gradient(90deg, #16171a 0%, rgba(22, 23, 26, 0) 100%);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		content: "";
+	}
+	
+	.services-two__hover-content {
+		position: absolute;
+		bottom: 38px;
+		left: 40px;
+		z-index: 2;
+	}
+	
+	.services-two__hover-title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		margin-bottom: 4px;
+	}
+	
+	.services-two__hover-title a {
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.services-two__hover-title a:hover {
+		color: var(--treck-base);
+	}
+	
+	.services-two__hover-text {
+		color: var(--treck-white);
+		line-height: 26px;
+	}
+	
+	.services-two__hover-icon {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background-color: var(--treck-base);
+		height: 90px;
+		width: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+	
+	.services-two__hover-icon span {
+		position: relative;
+		display: inline-block;
+		font-size: 63px;
+		color: var(--treck-white);
+		-webkit-transition: all 500ms linear;
+		transition: all 500ms linear;
+		-webkit-transition-delay: 0.1s;
+		transition-delay: 0.1s;
+	}
+	
+	.services-two__hover-icon:hover span {
+		transform: scale(0.9);
+	}
+	
+	.services-two__carousel.owl-carousel .owl-stage-outer {
+		overflow: visible;
+	}
+	
+	.services-two__carousel.owl-carousel .owl-item {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 500ms ease, visibility 500ms ease;
+	}
+	
+	.services-two__carousel.owl-carousel .owl-item.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav {
+		position: relative;
+		display: block;
+		margin-top: 28px;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 14px;
+		width: 530px;
+		height: 1px;
+		background-color: #e1d9d6;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 14px;
+		width: 530px;
+		height: 1px;
+		background-color: #e1d9d6;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next {
+		height: 27px;
+		width: 26px;
+		line-height: 26px;
+		border-radius: 0;
+		color: var(--treck-black);
+		background-color: #ffffff;
+		font-size: 15px;
+		margin: 0;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-prev {
+		height: 27px;
+		width: 26px;
+		line-height: 26px;
+		border-radius: 0;
+		color: var(--treck-black);
+		background-color: #ffffff;
+		font-size: 15px;
+		margin: 0;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next {
+		margin-left: 2.50px;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-prev {
+		margin-right: 2.50px;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next span,
+	.services-two__carousel.owl-theme .owl-nav .owl-prev span {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next:hover,
+	.services-two__carousel.owl-theme .owl-nav .owl-prev:hover {
+		background-color: var(--treck-base);
+		color: var(--treck-white);
+	}
+</style>
+
+<style>
+	.main-slider {
+		position: relative;
+		background-color: #121315;
+		z-index: 10;
+	}
+	
+	.main-slider .item {
+		background-color: #121315;
+		position: relative;
+		padding-top: 186px;
+		padding-bottom: 150px;
+		z-index: 10;
+	}
+	
+	.main-slider__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 1;
+	}
+	
+	.main-slider__bg:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(18, 19, 21, 0.5);
+		z-index: -1;
+	}
+	
+	.main-slider__content {
+		position: relative;
+		display: block;
+		z-index: 10;
+	}
+	
+	.main-slider__title {
+		position: relative;
+		font-size: 90px;
+		color: var(--treck-white);
+		font-weight: 600;
+		line-height: 90px;
+		letter-spacing: -0.04em;
+		margin-bottom: 41px;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(-120px);
+		transform: translateY(-120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider__btn-box {
+		position: relative;
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(120px);
+		transform: translateY(120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.active .main-slider__title,
+	.active .main-slider__btn-box {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0) translateX(0);
+		transform: translateY(0) translateX(0);
+	}
+	
+	.main-slider .owl-theme .owl-nav {
+		position: absolute;
+		bottom: 27px;
+		right: 0;
+		left: 0;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: flex-end;
+		max-width: 1200px;
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		height: 0;
+		line-height: 0;
+	}
+	
+	.main-slider .owl-theme .owl-nav [class*=owl-] {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 100;
+		width: 55px;
+		height: 55px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 18px;
+		color: rgba(var(--treck-black-rgb), 1);
+		background-color: rgba(var(--treck-white-rgb), 0.2);
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		text-align: center;
+		transition: all 500ms ease;
+		padding: 0px 0px !important;
+	}
+	
+	.main-slider .owl-theme .owl-nav [class*=owl-]:hover {
+		color: rgba(var(--treck-black-rgb), 1);
+		background-color: rgba(var(--treck-white-rgb), 1);
+	}
+	
+	.main-slider .owl-theme .owl-nav [class*=owl-]+[class*=owl-] {
+		margin-left: 10px;
+	}
+	
+	.main-slider .owl-theme .owl-dots {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		max-width: 1200px;
+		width: 100%;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		padding: 0 15px;
+		margin: 0 auto;
+		height: 0;
+		line-height: 0;
+	}
+	
+	.main-slider .owl-theme .owl-dots .owl-dot+.owl-dot {
+		margin-left: 10px;
+	}
+	
+	.main-slider .owl-theme .owl-dots .owl-dot span {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: rgba(var(--treck-white-rgb), 0.3);
+		margin: 0;
+		-webkit-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+	
+	.main-slider .owl-theme .owl-dots .owl-dot:hover span,
+	.main-slider .owl-theme .owl-dots .owl-dot.active span {
+		background-color: rgba(var(--treck-white-rgb), 1);
+	}
+	
+	/*--------------------------------------------------------------
+	# Main Slider Two
+	--------------------------------------------------------------*/
+	.main-slider-two {
+		position: relative;
+		background-color: var(--treck-black);
+		z-index: 10;
+	}
+	
+	.main-slider-two .item {
+		background-color: var(--treck-black);
+		position: relative;
+		padding-top: 292px;
+		padding-bottom: 40px;
+		z-index: 10;
+	}
+	
+	.main-slider-two__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 1;
+	}
+	
+	.main-slider-two__bg:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(18, 19, 21, 0.5);
+		z-index: 1;
+	}
+	
+	.main-slider-two__shadow {
+		position: absolute;
+		top: 41px;
+		left: 0;
+		right: 0;
+		height: 400px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		opacity: .80;
+		z-index: 1;
+	}
+	
+	.main-slider-two__content {
+		position: relative;
+		display: block;
+		z-index: 15;
+	}
+	
+	.main-slider-two__shape-1 {
+		position: absolute;
+		top: 38px;
+		left: 421px;
+		z-index: 5;
+	}
+	
+	.main-slider-two__shape-1 img {
+		width: auto !important;
+	}
+	
+	.main-slider-two__title {
+		position: relative;
+		font-size: 80px;
+		color: var(--treck-white);
+		font-weight: 600;
+		line-height: 90px;
+		letter-spacing: -0.04em;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(-120px);
+		transform: translateY(-120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider-two__points {
+		position: relative;
+		display: flex;
+		align-items: center;
+		margin-top: 29px;
+		margin-bottom: 31px;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(120px);
+		transform: translateY(120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider-two__points li {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	.main-slider-two__points li+li {
+		margin-left: 16px;
+	}
+	
+	.main-slider-two__points li .icon {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	.main-slider-two__points li .icon span {
+		font-size: 19px;
+		color: var(--treck-base);
+	}
+	
+	.main-slider-two__points li .text {
+		margin-left: 5px;
+	}
+	
+	.main-slider-two__points li .text p {
+		color: var(--treck-white);
+		font-weight: 500;
+	}
+	
+	.main-slider-two__btn-box {
+		position: relative;
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(120px);
+		transform: translateY(120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider-two__btn:hover {
+		color: var(--treck-base);
+	}
+	
+	.main-slider-two__btn:before {
+		background-color: var(--treck-white);
+	}
+	
+	.main-slider__feature {
+		position: relative;
+		display: block;
+		margin-top: 70px;
+		z-index: 2;
+	}
+	
+	.main-slider__feature:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: var(--treck-white);
+		mix-blend-mode: soft-light;
+		opacity: .10;
+		z-index: -1;
+	}
+	
+	.main-slider__feature .row {
+		--bs-gutter-x: 0px;
+	}
+	
+	.main-slider__feature-single {
+		position: relative;
+		display: flex;
+		padding: 37px 40px 33px;
+		padding-right: 45px;
+		border-right: 1px solid rgba(236, 240, 244, 0.1);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+		z-index: 3;
+	}
+	
+	.main-slider__feature-single:hover {
+		border-right: 1px solid transparent;
+	}
+	
+	.main-slider__feature-single:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: var(--treck-black);
+		transition: all 900ms ease;
+		-moz-transition: all 900ms ease;
+		-webkit-transition: all 900ms ease;
+		-ms-transition: all 900ms ease;
+		-o-transition: all 900ms ease;
+		transition: -webkit-transform 0.5s ease;
+		transition: transform 0.5s ease;
+		transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+		-webkit-transform: scale(1, 0);
+		-ms-transform: scale(1, 0);
+		transform: scale(1, 0);
+		-webkit-transform-origin: top center;
+		-ms-transform-origin: top center;
+		transform-origin: top center;
+		z-index: -1;
+	}
+	
+	.main-slider__feature-single:hover:before {
+		-webkit-transform: scale(1, 1);
+		-ms-transform: scale(1, 1);
+		transform: scale(1, 1);
+		-webkit-transform-origin: bottom center;
+		-ms-transform-origin: bottom center;
+		transform-origin: bottom center;
+	}
+	
+	.main-slider__feature-single--3 {
+		border-right: 1px solid transparent;
+	}
+	
+	.main-slider__feature-icon {
+		position: relative;
+		display: flex;
+	}
+	
+	.main-slider__feature-icon span {
+		position: relative;
+		display: inline-block;
+		font-size: 64px;
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.main-slider__feature-single:hover .main-slider__feature-icon span {
+		color: var(--treck-base);
+	}
+	
+	.main-slider__feature-content {
+		margin-left: 20px;
+	}
+	
+	.main-slider__feature-title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 20px;
+		margin-bottom: 18px;
+	}
+	
+	.main-slider__feature-title a {
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.main-slider__feature-single:hover .main-slider__feature-title a {
+		color: var(--treck-white);
+	}
+	
+	.main-slider__feature-text {
+		font-size: 14px;
+		line-height: 30px;
+		color: var(--treck-white);
+		opacity: .70;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.main-slider__feature-single:hover .main-slider__feature-text {
+		color: #68696c;
+	}
+	
+	.main-slider__feature-arrow {
+		position: absolute;
+		bottom: 16px;
+		right: 16px;
+	}
+	
+	.main-slider__feature-arrow a {
+		position: relative;
+		display: flex;
+		align-items: center;
+		font-size: 22px;
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.main-slider__feature-single:hover .main-slider__feature-arrow a {
+		color: var(--treck-base);
+	}
+	
+	.active .main-slider-two__title,
+	.active .main-slider-two__points,
+	.active .main-slider-two__btn-box {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0) translateX(0);
+		transform: translateY(0) translateX(0);
+	}
+	
+	.main-slider-two .owl-theme .owl-nav {
+		position: absolute;
+		top: 46%;
+		left: 50%;
+		z-index: 100;
+		transform: translateY(-50%) translateX(-50%);
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		max-width: 100%;
+		width: 100%;
+		padding: 0 60px;
+		margin: 0 auto;
+		height: 0;
+		line-height: 0;
+	}
+	
+	.main-slider-two .owl-theme .owl-nav [class*=owl-] {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 100;
+		width: 55px;
+		height: 55px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 18px;
+		color: rgba(var(--treck-black-rgb), 1);
+		background-color: rgba(var(--treck-white-rgb), 0.2);
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		text-align: center;
+		transition: all 500ms ease;
+		padding: 19px 0 !important;
+	}
+	
+	.main-slider-two .owl-theme .owl-nav [class*=owl-]:hover {
+		color: rgba(var(--treck-black-rgb), 1);
+		background-color: rgba(var(--treck-white-rgb), 1);
+	}
+	
+	.main-slider-two .owl-theme .owl-nav [class*=owl-]+[class*=owl-] {
+		margin-top: 10px;
+	}
+	
+	.main-slider-two .owl-theme .owl-dots {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-direction: column;
+		max-width: 100%;
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 48%;
+		transform: translateX(-50%) translateY(-50%);
+		padding: 0 60px;
+		margin: 0 auto;
+		height: 0;
+		line-height: 0;
+	}
+	
+	.main-slider-two .owl-theme .owl-dots .owl-dot+.owl-dot {
+		margin-top: 10px;
+	}
+	
+	.main-slider-two .owl-theme .owl-dots .owl-dot span {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: rgba(var(--treck-white-rgb), 0.3);
+		margin: 0;
+		-webkit-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+	
+	.main-slider-two .owl-theme .owl-dots .owl-dot:hover span,
+	.main-slider-two .owl-theme .owl-dots .owl-dot.active span {
+		background-color: rgba(var(--treck-white-rgb), 1);
+	}
+	
+	/*--------------------------------------------------------------
+	# Main Slider Three
+	--------------------------------------------------------------*/
+	.main-slider-three {
+		position: relative;
+		background-color: #121315;
+		z-index: 10;
+	}
+	
+	.main-slider-three .item {
+		background-color: #121315;
+		position: relative;
+		padding-top: 185px;
+		padding-bottom: 195px;
+		z-index: 10;
+	}
+	
+	.main-slider-three__bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		z-index: 1;
+	}
+	
+	.main-slider-three__bg:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: rgba(18, 19, 21, 0.5);
+		z-index: -1;
+	}
+	
+	.main-slider-three__content {
+		position: relative;
+		display: block;
+		text-align: center;
+		z-index: 15;
+	}
+	
+	.main-slider-three__sub-title {
+		font-size: 16px;
+		line-height: 30px;
+		color: var(--treck-white);
+		font-weight: 500;
+		position: relative;
+		display: inline-block;
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(-120px);
+		transform: translateY(-120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider-three__title {
+		position: relative;
+		font-size: 90px;
+		color: var(--treck-white);
+		font-weight: 300;
+		line-height: 100px;
+		letter-spacing: -0.04em;
+		margin-top: 3px;
+		margin-bottom: 37px;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(-120px);
+		transform: translateY(-120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider-three__title span {
+		font-weight: 800;
+	}
+	
+	.main-slider-three__btn-box {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		opacity: 0;
+		visibility: hidden;
+		-webkit-transform: translateY(120px);
+		transform: translateY(120px);
+		-webkit-transition-delay: 1000ms;
+		transition-delay: 1000ms;
+		-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease;
+		transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+	}
+	
+	.main-slider-three__btn-two {
+		color: var(--treck-black);
+		background-color: var(--treck-white);
+		margin-left: 10px;
+	}
+	
+	.active .main-slider-three__title,
+	.active .main-slider-three__sub-title,
+	.active .main-slider-three__btn-box {
+		visibility: visible;
+		opacity: 1;
+		-webkit-transform: translateY(0) translateX(0);
+		transform: translateY(0) translateX(0);
+	}
+	
+	.main-slider-three .owl-theme .owl-nav {
+		position: absolute;
+		bottom: 28px;
+		right: 0;
+		left: 0;
+		z-index: 100;
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		justify-content: flex-end;
+		max-width: 1200px;
+		width: 100%;
+		padding: 0 15px;
+		margin: 0 auto;
+		height: 0;
+		line-height: 0;
+	}
+	
+	.main-slider-three .owl-theme .owl-nav [class*=owl-] {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		bottom: auto;
+		z-index: 100;
+		width: 55px;
+		height: 55px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 18px;
+		color: rgba(var(--treck-black-rgb), 1);
+		background-color: rgba(var(--treck-white-rgb), 0.2);
+		border: none;
+		border-radius: 0;
+		margin: 0;
+		text-align: center;
+		transition: all 500ms ease;
+		padding: 0px 0px !important;
+	}
+	
+	.main-slider-three .owl-theme .owl-nav [class*=owl-]:hover {
+		color: rgba(var(--treck-black-rgb), 1);
+		background-color: rgba(var(--treck-white-rgb), 1);
+	}
+	
+	.main-slider-three .owl-theme .owl-nav [class*=owl-]+[class*=owl-] {
+		margin-left: 10px;
+	}
+	
+	.main-slider-three .owl-theme .owl-dots {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		max-width: 1200px;
+		width: 100%;
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		padding: 0 15px;
+		margin: 0 auto;
+		height: 0;
+		line-height: 0;
+	}
+	
+	.main-slider-three .owl-theme .owl-dots .owl-dot+.owl-dot {
+		margin-left: 10px;
+	}
+	
+	.main-slider-three .owl-theme .owl-dots .owl-dot span {
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background-color: rgba(var(--treck-white-rgb), 0.3);
+		margin: 0;
+		-webkit-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+	
+	.main-slider-three .owl-theme .owl-dots .owl-dot:hover span,
+	.main-slider-three .owl-theme .owl-dots .owl-dot.active span {
+		background-color: rgba(var(--treck-white-rgb), 1);
+	}
+	
 </style>
 <link rel="icon" href="Images/logo.png" sizes="32x32" />
 <link rel="icon" href="Images/logo.png" sizes="192x192" />
@@ -541,663 +1692,293 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</div>
 							</div>
 		</section> -->
-		<section class="elementor-section elementor-top-section elementor-element elementor-element-4e957920 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="4e957920" data-element_type="section">
-			<div class="elementor-container elementor-column-gap-no">
-		<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-658d80c5" data-id="658d80c5" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-					<div class="elementor-element elementor-element-6a8ef65f elementor-widget elementor-widget-treck-main-slider" data-id="6a8ef65f" data-element_type="widget" data-widget_type="treck-main-slider.default">
-	<div class="elementor-widget-container">
-	<!-- Main Slider Start -->
-<section class="main-slider-two">
-<div class="main-slider__carousel owl-carousel owl-theme thm-owl__carousel owl-loaded owl-drag" data-owl-options="{&quot;loop&quot;: true,
-&quot;items&quot;: 1,
-&quot;navText&quot;: [&quot;<span class=\&quot;icon-left-arrow\&quot;></span>&quot;,&quot;<span class=\&quot;icon-right-arrow\&quot;></span>&quot;],
-&quot;margin&quot;: 0,
-&quot;dots&quot;: true,
-&quot;nav&quot;: true,
-&quot;animateOut&quot;: &quot;slideOutDown&quot;,
-&quot;animateIn&quot;: &quot;fadeIn&quot;,
-&quot;active&quot;: true,
-&quot;smartSpeed&quot;: 1000,
-&quot;autoplay&quot;: true,
-&quot;autoplayTimeout&quot;: 7000,
-&quot;autoplayHoverPause&quot;: false}">
-				
-				
-				
-		<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2652px, 0px, 0px); transition: all 0s ease 0s; width: 9282px;"><div class="owl-item animated owl-animated-out slideOutDown cloned" style="width: 1326px; left: 400px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>							</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="   " href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
+		<section class="main-slider-two">
+			<div class="main-slider__carousel owl-carousel owl-theme thm-owl__carousel"
+			 data-owl-options='{"loop": true,
+				"items": 1,
+				"navText": ["<span class=\"icon-left-arrow\"></span>","<span class=\"icon-right-arrow\"></span>"],
+				"margin": 0,
+				"dots": true,
+				"nav": true,
+				"animateOut": "slideOutDown",
+				"animateIn": "fadeIn",
+				"active": true,
+				"smartSpeed": 1000,
+				"autoplay": true,
+				"autoplayTimeout": 7000,
+				"autoplayHoverPause": false}'>
+								<div class="item main-slider__slide-1">
+						<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
+						</div><!-- /.slider-one__bg -->
+						<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
+						<div class="container">
+							<div class="main-slider-two__content">
+								<div class="main-slider-two__shape-1 img-bounce">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1" >							</div>
+								<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
+									<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>No Interviews</p>
+		</div>
+	</li>
+	<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>Relocate in 30 Days</p>
+		</div>
+	</li>
+	<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>Afforable Fee</p>
+		</div>
+	</li>							</ul>
+								<div class="main-slider-two__btn-box">
+									<a class="main-slider-two__btn thm-btn" href=""  >Discover More</a>							</div>
 							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="    " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="     " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+							<div class="main-slider__feature">
+								<div class="row">
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class="icon-passport-4"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="" href=""  >Apply for Visa</a>												</h4>
+													<p class="main-slider__feature-text"></p>
 												</div>
-			</div>
-		</div>
-	</div></div><div class="owl-item cloned" style="width: 1326px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-3.jpg);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>							</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="      " href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="       " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="        " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
 												</div>
-			</div>
-		</div>
-	</div></div><div class="owl-item active" style="width: 1326px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-1.jpg);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>							</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="" href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class=" " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="  " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-immigration"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class=" " href=""  >Immigration Programs</a>												</h4>
+													<p class="main-slider__feature-text"></p>
 												</div>
-			</div>
-		</div>
-	</div></div><div class="owl-item" style="width: 1326px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>							</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="   " href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="    " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="     " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
 												</div>
-			</div>
-		</div>
-	</div></div><div class="owl-item" style="width: 1326px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-3.jpg);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>							</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="      " href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="       " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="        " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-licensing"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="  " href=""  >Visa   Documents</a>												</h4>
+													<p class="main-slider__feature-text"></p>
 												</div>
-			</div>
-		</div>
-	</div></div><div class="owl-item cloned" style="width: 1326px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-1.jpg);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>							</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="" href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class=" " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="  " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
 												</div>
-			</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																</div>
+							</div>
+						</div>
+					</div>
+								<div class="item main-slider__slide-1">
+						<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
+						</div><!-- /.slider-one__bg -->
+						<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
+						<div class="container">
+							<div class="main-slider-two__content">
+								<div class="main-slider-two__shape-1 img-bounce">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.p" alt="alt" title="main-slider-two-shape-1" >							</div>
+								<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
+									<li>
+		<div class="icon">
+			<span class="icon-check"></span>
 		</div>
-	</div></div><div class="owl-item animated owl-animated-out slideOutDown cloned" style="width: 1326px; left: 400px;"><div class="item main-slider__slide-1">
-		<div class="main-slider-two__bg" style="background-image: url(./Images/Banner1\ \(1\).png);">
-		</div><!-- /.slider-one__bg -->
-		<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
-		<div class="container">
-			<div class="main-slider-two__content">
-				<div class="main-slider-two__shape-1 img-bounce">
-					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-				<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-					<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>No Interviews</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Relocate in 30 Days</p>
-</div>
-</li>
-<li>
-<div class="icon">
-<span class="icon-check"></span>
-</div>
-<div class="text">
-<p>Afforable Fee</p>
-</div>
-</li>				
-			</ul>
-				<div class="main-slider-two__btn-box">
-					<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-			</div>
-			<div class="main-slider__feature">
-				<div class="row">
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class="icon-passport-4"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="   " href="">Apply for Visa</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
+		<div class="text">
+			<p>No Interviews</p>
+		</div>
+	</li>
+	<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>Relocate in 30 Days</p>
+		</div>
+	</li>
+	<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>Afforable Fee</p>
+		</div>
+	</li>							</ul>
+								<div class="main-slider-two__btn-box">
+									<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href=""  >Discover More</a>							</div>
 							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-immigration"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="    " href="">Immigration Programs</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
-														<!--Main Slider Feature Single Start -->
-						<div class="col-xl-4 col-lg-4">
-							<div class="main-slider__feature-single">
-								<div class="main-slider__feature-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-								<div class="main-slider__feature-content">
-									<h4 class="main-slider__feature-title">
-										<a class="     " href="">Visa   Documents</a>												</h4>
-									<p class="main-slider__feature-text"></p>
-								</div>
-								<div class="main-slider__feature-arrow">
-									<a href=""><span class="icon-down"></span></a>
-								</div>
-							</div>
-						</div>
-						<!--Main Slider Feature Single End -->
+							<div class="main-slider__feature">
+								<div class="row">
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class="icon-passport-4"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="   " href=""  >Apply for Visa</a>												</h4>
+													<p class="main-slider__feature-text"></p>
 												</div>
-			</div>
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
+												</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-immigration"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="    " href=""  >Immigration Programs</a>												</h4>
+													<p class="main-slider__feature-text"></p>
+												</div>
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
+												</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-licensing"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="     " href=""  >Visa   Documents</a>												</h4>
+													<p class="main-slider__feature-text"></p>
+												</div>
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
+												</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																</div>
+							</div>
+						</div>
+					</div>
+								<div class="item main-slider__slide-1">
+						<div class="main-slider-two__bg" style="background-image: url(./Images/Banner2.jpeg);">
+						</div><!-- /.slider-one__bg -->
+						<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
+						<div class="container">
+							<div class="main-slider-two__content">
+								<div class="main-slider-two__shape-1 img-bounce">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1" >							</div>
+								<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
+									<li>
+		<div class="icon">
+			<span class="icon-check"></span>
 		</div>
-	</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><span class="icon-left-arrow"></span></button><button type="button" role="presentation" class="owl-next"><span class="icon-right-arrow"></span></button></div><div class="owl-dots"><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
-</section>
-<!--Main Slider Start -->
-</div>
-	</div>
+		<div class="text">
+			<p>No Interviews</p>
 		</div>
-</div>
-				</div>
-</section>
+	</li>
+	<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>Relocate in 30 Days</p>
+		</div>
+	</li>
+	<li>
+		<div class="icon">
+			<span class="icon-check"></span>
+		</div>
+		<div class="text">
+			<p>Afforable Fee</p>
+		</div>
+	</li>							</ul>
+								<div class="main-slider-two__btn-box">
+									<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href=""  >Discover More</a>							</div>
+							</div>
+							<div class="main-slider__feature">
+								<div class="row">
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class="icon-passport-4"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="      " href=""  >Apply for Visa</a>												</h4>
+													<p class="main-slider__feature-text"></p>
+												</div>
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
+												</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-immigration"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="       " href=""  >Immigration Programs</a>												</h4>
+													<p class="main-slider__feature-text"></p>
+												</div>
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
+												</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																		<!--Main Slider Feature Single Start -->
+										<div class="col-xl-4 col-lg-4">
+											<div class="main-slider__feature-single">
+												<div class="main-slider__feature-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-licensing"></span>											</div>
+												<div class="main-slider__feature-content">
+													<h4 class="main-slider__feature-title">
+														<a class="        " href=""  >Visa   Documents</a>												</h4>
+													<p class="main-slider__feature-text"></p>
+												</div>
+												<div class="main-slider__feature-arrow">
+													<a  href=""><span class="icon-down"></span></a>
+												</div>
+											</div>
+										</div>
+										<!--Main Slider Feature Single End -->
+																</div>
+							</div>
+						</div>
+					</div>
+						</div>
+		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-7a222cf2 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7a222cf2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2e6edb20" data-id="2e6edb20" data-element_type="column">
@@ -1227,27 +2008,155 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 							</div>
 		</section>
 		
-				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-8c82088 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c82088" data-element_type="section">
+	
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-8c82088 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c82088" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-36614a0" data-id="36614a0" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-08d1983 elementor-invisible elementor-widget elementor-widget-heading" data-id="08d1983" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.15.0 - 05-07-2023 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Featured Cook Islands listings</h2>		</div>
+			<style>
+.elementor-heading-title{padding:0;margin:0;line-height:1; text-align: center;}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">
+	Our Services</h2>		
+</div>
 				</div>
 					</div>
 		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7a18f52" data-id="7a18f52" data-element_type="column">
+				<!-- <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-7a18f52" data-id="7a18f52" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-50d4c2c elementor-hidden-mobile elementor-widget elementor-widget-text-editor" data-id="50d4c2c" data-element_type="widget" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
 							<a class="black underline" href="residential-listings/index.html">View all our listings &gt;</a>						</div>
 				</div>
 					</div>
-		</div>
+		</div> -->
 							</div>
-		</section> -->
+		</section>
+		<section class="services-two">
+			<div class="section-title text-center">
+				<div class="section-title__tagline-box">
+					<span class="section-title__tagline">our Visa categories</span>				<div class="section-title__border-box"></div>
+				</div>
+	
+				<h2 class="section-title__title">We Offers Citizenship &amp; <br>Immigration Services</h2>		</div>
+			<div class="services-two__wrap">
+								<div class="services-two__shape-1" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-shape-1.png);"></div>
+							<div class="container">
+					<div class="services-two__inner">
+						<div class="services-two__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='        {
+			&quot;loop&quot;: true,
+			&quot;margin&quot;: 30,
+			&quot;items&quot;: 3        ,&quot;nav&quot;: true                    ,&quot;autoplay&quot;: true            ,&quot;autoplayTimeout&quot;: 5000                            ,&quot;autoplayHoverPause&quot;: true                            ,&quot;navText&quot;: [
+				&quot;&lt;i class=\&quot; fa fa-angle-left\&quot;&gt;&lt;/i&gt;&quot;,
+				&quot;&lt;i class=\&quot; fa fa-angle-right\&quot;&gt;&lt;/i&gt;&quot;
+				]
+					,&quot;dots&quot;: false        ,&quot;smartSpeed&quot;: 700
+						,
+				&quot;responsive&quot;:
+				{
+								&quot;0&quot;: {
+					&quot;margin&quot;: 0,
+					&quot;items&quot;: 1                },                            &quot;768&quot;: {
+					&quot;margin&quot;: 30,
+					&quot;items&quot;: 2                },                            &quot;992&quot;: {
+					&quot;margin&quot;: 30,
+					&quot;items&quot;: 3                },                            &quot;1200&quot;: {
+					&quot;margin&quot;: 30,
+					&quot;items&quot;: 3                }                        }
+					}
+		'>
+														<!--Services Two Single End -->
+								<div class="item">
+									<div class="services-two__single">
+										<div class="services-two__single-inner">
+											<div class="services-two__content">
+												<h3 class="services-two__title">
+													<a class="" href=""  >Tourist Visa</a>											</h3>
+												<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+											<div class="services-two__img-box">
+												<div class="services-two__icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+												<div class="services-two__img">
+													<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-1.jpg" alt="alt" title="services-2-1" >											</div>
+											</div>
+											<div class="services-two__hover-content-box">
+												<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg.jpg);">
+												</div>
+												<div class="services-two__hover-content">
+													<h3 class="services-two__hover-title">
+														<a class=" " href=""  >Tourist Visa</a>												</h3>
+													<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
+														one priority strive to deliver.</p>											</div>
+												<div class="services-two__hover-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Services Two Single End -->
+														<!--Services Two Single End -->
+								<div class="item">
+									<div class="services-two__single">
+										<div class="services-two__single-inner">
+											<div class="services-two__content">
+												<h3 class="services-two__title">
+													<a class="  " href=""  >Business Visa</a>											</h3>
+												<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+											<div class="services-two__img-box">
+												<div class="services-two__icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+												<div class="services-two__img">
+													<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-2.jpg" alt="alt" title="services-2-2" >											</div>
+											</div>
+											<div class="services-two__hover-content-box">
+												<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
+												</div>
+												<div class="services-two__hover-content">
+													<h3 class="services-two__hover-title">
+														<a class="   " href=""  >Business Visa</a>												</h3>
+													<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+														one priority strive to deliver.</p>											</div>
+												<div class="services-two__hover-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Services Two Single End -->
+														<!--Services Two Single End -->
+								<div class="item">
+									<div class="services-two__single">
+										<div class="services-two__single-inner">
+											<div class="services-two__content">
+												<h3 class="services-two__title">
+													<a class="    " href=""  >Student Visa</a>											</h3>
+												<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+											<div class="services-two__img-box">
+												<div class="services-two__icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+												<div class="services-two__img">
+													<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-3.jpg" alt="alt" title="services-2-3" >											</div>
+											</div>
+											<div class="services-two__hover-content-box">
+												<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
+												</div>
+												<div class="services-two__hover-content">
+													<h3 class="services-two__hover-title">
+														<a class="     " href=""  >Student Visa</a>												</h3>
+													<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+														one priority strive to deliver.</p>											</div>
+												<div class="services-two__hover-icon icon-svg-large">
+													<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--Services Two Single End -->
+												</div>
+					</div>
+				</div>
+			</div>
+		</section>
 				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-59db679 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="59db679" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f1ebb08 elementor-invisible" data-id="f1ebb08" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;,&quot;animation_delay&quot;:300}">
@@ -1331,7 +2240,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 		</div>
 							</div>
-		</section> -->
+							<div class="owl-nav disabled">
+								<button type="button" role="presentation" class="owl-prev">
+									<i class=" fa fa-angle-left"></i></button>
+									<button type="button" role="presentation" class="owl-next">
+										<i class=" fa fa-angle-right"></i></button></div>
+										<div class="owl-dots disabled"></div>
+		</section>  -->
 				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-8a1a569 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="8a1a569" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-f9d2e0b" data-id="f9d2e0b" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1387,7 +2302,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 		</div>
 							</div>
-		</section> -->
+		</section>  -->
 				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-ee83552 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="ee83552" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-no">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-e2f6d60" data-id="e2f6d60" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
@@ -1418,7 +2333,7 @@ business opportunities</h4>		</div>
 					</div>
 		</div>
 							</div>
-		</section> -->
+		</section> 
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-7fadea22 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7fadea22" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51967b13" data-id="51967b13" data-element_type="column">
@@ -1553,7 +2468,7 @@ business opportunities</h4>		</div>
 					</div>
 		</div>
 							</div>
-		</section>
+		</section>-->
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-2ba3cba5 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="2ba3cba5" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2d002596" data-id="2d002596" data-element_type="column">
@@ -1585,7 +2500,210 @@ business opportunities</h4>		</div>
 							</div>
 		</section>
 							</div>
-							<div data-elementor-type="footer" data-elementor-id="91" class="elementor elementor-91 elementor-location-footer" data-elementor-post-type="elementor_library">
+							<div class="footer-wrapper"> 
+								<!-- the loop -->
+												<div data-elementor-type="wp-post" data-elementor-id="1024" class="elementor elementor-1024">
+												<section class="elementor-section elementor-top-section elementor-element elementor-element-177f5f7 elementor-section-full_width site-footer elementor-section-height-default elementor-section-height-default" data-id="177f5f7" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-no">
+								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe9db20" data-id="fe9db20" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+											<section class="elementor-section elementor-inner-section elementor-element elementor-element-6252aad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6252aad" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-465e7bf" data-id="465e7bf" data-element_type="column">
+						<div class="elementor-widget-wrap">
+												</div>
+					</div>
+										</div>
+					</section>
+							<section class="elementor-section elementor-inner-section elementor-element elementor-element-f5fb834 site-footer__middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f5fb834" data-element_type="section">
+									<div class="elementor-container elementor-column-gap-default">
+								<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-93fd636" data-id="93fd636" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-b80b9d9 elementor-widget__width-initial elementor-widget elementor-widget-footer-about" data-id="b80b9d9" data-element_type="widget" data-widget_type="footer-about.default">
+							<div class="elementor-widget-container">
+							<div class="footer-widget__column footer-widget__about">
+					<div class="footer-widget__logo logo-retina">
+						<a href="http://worldwingsedu.com/">
+							<img decoding="async" src="" width="134" height="34" alt="WORLD WINGS">
+						</a>
+					</div>
+					<p class="footer-widget__about-text">WORLD WINGS
+			EDUCATION AND
+			IMMIGRATION
+			YOU TELL US WHERE, WHEN AND WHY. WE'LL TELL YOU HOW. FROM INDIVIDUALS AND SMALL LOCAL BUSINESSES TO THE WORLD'S LARGEST COMPANIES.</p>        <div class="site-footer__social">
+										<!-- <a   href="https://www.facebook.com/">
+								<i aria-hidden="true" class="fab fa-facebook-f"></i>                </a>
+										<a   href="https://www.twitter.com/">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fab-twitter" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>                </a>
+										<a   href="https://www.pinterest.com/">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fab-pinterest-p" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M204 6.5C101.4 6.5 0 74.9 0 185.6 0 256 39.6 296 63.6 296c9.9 0 15.6-27.6 15.6-35.4 0-9.3-23.7-29.1-23.7-67.8 0-80.4 61.2-137.4 140.4-137.4 68.1 0 118.5 38.7 118.5 109.8 0 53.1-21.3 152.7-90.3 152.7-24.9 0-46.2-18-46.2-43.8 0-37.8 26.4-74.4 26.4-113.4 0-66.2-93.9-54.2-93.9 25.8 0 16.8 2.1 35.4 9.6 50.7-13.8 59.4-42 147.9-42 209.1 0 18.9 2.7 37.5 4.5 56.4 3.4 3.8 1.7 3.4 6.9 1.5 50.4-69 48.6-82.5 71.4-172.8 12.3 23.4 44.1 36 69.3 36 106.2 0 153.9-103.5 153.9-196.8C384 71.3 298.2 6.5 204 6.5z"></path></svg>                </a>
+										<a   href="https://www.instagram.com/">
+								<svg aria-hidden="true" class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>                </a> -->
+								</div>
+				</div>
+					</div>
+							</div>
+								</div>
+					</div>
+							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c5cfed2" data-id="c5cfed2" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-c05ebf2 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu" data-id="c05ebf2" data-element_type="widget" data-widget_type="footer-nav-menu.default">
+							<div class="elementor-widget-container">
+							<div class="footer-widget__column footer-widget__link">
+					<div class="footer-widget__title-box">
+						<h3 class="footer-widget__title">Explore</h3>        </div>
+								<div class="menu-one-page-home-two-container"><ul id="menu-one-page-home-two" class="footer-widget__link-list list-unstyled ml-0"><li id="menu-item-1145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1145"><a href="#home">Home</a></li>
+			<li id="menu-item-1146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1146"><a href="#about">About</a></li>
+			<li id="menu-item-1147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1147"><a href="#countries">Countries</a></li>
+			<li id="menu-item-1148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1148"><a href="#coacing">Coacing</a></li>
+			<li id="menu-item-1149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1149"><a href="#visa">Visa</a></li>
+			<li id="menu-item-1150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1150"><a href="#blog">Blog</a></li>
+			<li id="menu-item-1151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1151"><a href="#contact">Contact</a></li>
+			</ul></div>            </div>
+					</div>
+							</div>
+								</div>
+					</div>
+							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-959b512" data-id="959b512" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-a3db553 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu" data-id="a3db553" data-element_type="widget" data-widget_type="footer-nav-menu.default">
+							<div class="elementor-widget-container">
+							<div class="footer-widget__column footer-widget__link">
+					<div class="footer-widget__title-box">
+						<h3 class="footer-widget__title">Visa</h3>        </div>
+								<div class="menu-visa-container"><ul id="menu-visa" class="footer-widget__link-list list-unstyled ml-0"><li id="menu-item-1054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054"><a href="http://worldwingsedu.com/visa-details/">Work Visa</a></li>
+			<li id="menu-item-1055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1055"><a href="http://worldwingsedu.com/visa-details/">Students Visa</a></li>
+			<li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056"><a href="http://worldwingsedu.com/visa-details/">Business Visa</a></li>
+			<li id="menu-item-1057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1057"><a href="http://worldwingsedu.com/visa-details/">Family Visa</a></li>
+			<li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a href="http://worldwingsedu.com/visa-details/">Travel Visa</a></li>
+			</ul></div>            </div>
+					</div>
+							</div>
+								</div>
+					</div>
+							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-f127835" data-id="f127835" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-a2562de elementor-widget__width-initial elementor-widget elementor-widget-treck-footer-gallery" data-id="a2562de" data-element_type="widget" data-widget_type="treck-footer-gallery.default">
+							<div class="elementor-widget-container">
+							<div class="footer-widget__column footer-widget__gallery">
+					<div class="footer-widget__title-box">
+						<h3 class="footer-widget__title">Gallery</h3>        </div>
+					<ul class="footer-widget__gallery-list list-unstyled clearfix ml-0">
+										<li>
+								<div class="footer-widget__gallery-img">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/footer-widget-gallery-img-1.jpg" alt="alt" title="footer-widget-gallery-img-1" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-1.jpg">
+										<span class="icon-plus"></span>
+									</a>
+								</div>
+							</li>
+										<li>
+								<div class="footer-widget__gallery-img">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/footer-widget-gallery-img-2.jpg" alt="alt" title="footer-widget-gallery-img-2" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-2.jpg">
+										<span class="icon-plus"></span>
+									</a>
+								</div>
+							</li>
+										<li>
+								<div class="footer-widget__gallery-img">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/footer-widget-gallery-img-3.jpg" alt="alt" title="footer-widget-gallery-img-3" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-3.jpg">
+										<span class="icon-plus"></span>
+									</a>
+								</div>
+							</li>
+										<li>
+								<div class="footer-widget__gallery-img">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/footer-widget-gallery-img-4.jpg" alt="alt" title="footer-widget-gallery-img-4" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-4.jpg">
+										<span class="icon-plus"></span>
+									</a>
+								</div>
+							</li>
+										<li>
+								<div class="footer-widget__gallery-img">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/footer-widget-gallery-img-5.jpg" alt="alt" title="footer-widget-gallery-img-5" >            
+									            <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-5.jpg">
+										<span class="icon-plus"></span>
+									</a>
+								</div>
+							</li>
+										<li>
+								<div class="footer-widget__gallery-img">
+									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/footer-widget-gallery-img-6.jpg" alt="alt" title="footer-widget-gallery-img-6" >                 
+									       <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-6.jpg">
+										<span class="icon-plus"></span>
+									</a>
+								</div>
+							</li>
+								</ul>
+				</div>
+					</div>
+							</div>
+								</div>
+					</div>
+							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fbcf027" data-id="fbcf027" data-element_type="column">
+						<div class="elementor-widget-wrap elementor-element-populated">
+											<div class="elementor-element elementor-element-fff9046 elementor-widget__width-initial elementor-widget elementor-widget-footer-contact" data-id="fff9046" data-element_type="widget" data-widget_type="footer-contact.default">
+							<div class="elementor-widget-container">
+							<div class="footer-widget__column footer-widget__Contact">
+			
+					<div class="footer-widget__title-box">
+						<h3 class="footer-widget__title">Contact</h3>       
+					 </div>
+			
+					<ul class="footer-widget__Contact-list list-unstyled ml-0">
+										<li>
+								<div class="icon icon-svg">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>                    </div>
+								<div class="text">
+									<p><a href="mailto:needhelp@worldwingsedu.com">needhelp@worldwingsedu.com</a></p>
+								</div>
+							</li>
+										<li>
+								<div class="icon icon-svg">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>                    </div>
+								<div class="text">
+									<p>30 Commercial Road <br> Fratton, Australia</p>
+								</div>
+							</li>
+										<li>
+								<div class="icon icon-svg">
+									<svg aria-hidden="true" class="e-font-icon-svg e-fas-clock" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg>                    </div>
+								<div class="text">
+									<p>Mon – Sat: 8:00 am to 6:00 pm <br> Sunday: Closed</p>
+								</div>
+							</li>
+								</ul>
+				</div>
+					</div>
+							</div>
+								</div>
+					</div>
+										</div>
+					</section>
+							<div class="elementor-element elementor-element-ab3ae9b elementor-widget elementor-widget-footer-copyright" data-id="ab3ae9b" data-element_type="widget" data-widget_type="footer-copyright.default">
+							<div class="elementor-widget-container">
+							<div class="site-footer__bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-xl-12">
+								<div class="site-footer__bottom-inner">
+									<p class="site-footer__bottom-text"> © All Copyright 2024 by <a href="#">World Wings Education </a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+					</div>
+							</div>
+								</div>
+					</div>
+										</div>
+					</section>
+										</div>
+											<!-- end of the loop -->
+			
+						
+					</div>
+							<!-- <div data-elementor-type="footer" data-elementor-id="91" class="elementor elementor-91 elementor-location-footer" data-elementor-post-type="elementor_library">
 								<section class="elementor-section elementor-top-section elementor-element elementor-element-1804f784 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1804f784" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-169592b6" data-id="169592b6" data-element_type="column">
@@ -1606,7 +2724,7 @@ business opportunities</h4>		</div>
 			    <div class="elementor-element elementor-element-406234f9 elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="406234f9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
 					<div class="elementor-widget-container">
 				<link rel="stylesheet" href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">	
-					<!-- <div class="elementor-icon-box-wrapper">
+					<div class="elementor-icon-box-wrapper">
 							<div class="elementor-icon-box-icon">
 					<span class="elementor-icon elementor-animation-" >
 					<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>				</span>
@@ -1620,7 +2738,7 @@ business opportunities</h4>		</div>
 							<span style="color: #ffffff">909, Garden Layout, Sector 2, HSR Layout
 								Bengaluru - 560102</span></p>
 								</div>
-			</div> -->
+			</div>
 					</div>
 					</div>		
 				<div class="elementor-element elementor-element-c5a6a82 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="c5a6a82" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
@@ -1724,7 +2842,7 @@ business opportunities</h4>		</div>
 		</div>
 							</div>
 		</section>
-				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-1aa01e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1aa01e1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				 <section class="elementor-section elementor-top-section elementor-element elementor-element-1aa01e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1aa01e1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c248cd1" data-id="c248cd1" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1736,7 +2854,7 @@ business opportunities</h4>		</div>
 		</div>
 							</div>
 		</section> -->
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-37bbfe17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37bbfe17" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-37bbfe17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37bbfe17" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-59e12661" data-id="59e12661" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -1758,7 +2876,7 @@ business opportunities</h4>		</div>
 		</div>
 							</div>
 		</section>
-						</div>
+						</div>  -->
 		
 <link rel='stylesheet' id='e-animations-css' href='wp-content/plugins/elementor/assets/lib/animations/animations.min1756.css?ver=3.15.0-cloud4' media='all' />
 <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
