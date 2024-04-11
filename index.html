@@ -1439,95 +1439,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		display: block;
 		z-index: 10;
 	}
-	.main-slider-two__title {
-	position: relative;
-	font-size: 80px;
-	color: var(--treck-white);
-	font-weight: 600;
-	line-height: 90px;
-	letter-spacing: -0.04em;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: translateY(-120px);
-	transform: translateY(-120px);
-	-webkit-transition-delay: 1000ms;
-	transition-delay: 1000ms;
-	-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-	transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-	transition: transform 2000ms ease, opacity 2000ms ease;
-	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
-}
-
-.main-slider-two__points {
-	position: relative;
-	display: flex;
-	align-items: center;
-	margin-top: 29px;
-	margin-bottom: 31px;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: translateY(120px);
-	transform: translateY(120px);
-	-webkit-transition-delay: 1000ms;
-	transition-delay: 1000ms;
-	-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-	transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-	transition: transform 2000ms ease, opacity 2000ms ease;
-	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
-}
-
-.main-slider-two__points li {
-	position: relative;
-	display: flex;
-	align-items: center;
-}
-
-.main-slider-two__points li+li {
-	margin-left: 16px;
-}
-
-.main-slider-two__points li .icon {
-	position: relative;
-	display: flex;
-	align-items: center;
-}
-
-.main-slider-two__points li .icon span {
-	font-size: 19px;
-	color: var(--treck-base);
-}
-
-.main-slider-two__points li .text {
-	margin-left: 5px;
-}
-
-.main-slider-two__points li .text p {
-	color: var(--treck-white);
-	font-weight: 500;
-}
-
-.main-slider-two__btn-box {
-	position: relative;
-	display: block;
-	opacity: 0;
-	visibility: hidden;
-	-webkit-transform: translateY(120px);
-	transform: translateY(120px);
-	-webkit-transition-delay: 1000ms;
-	transition-delay: 1000ms;
-	-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-	transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
-	transition: transform 2000ms ease, opacity 2000ms ease;
-	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
-}
-
-.main-slider-two__btn:hover {
-	color: var(--treck-base);
-}
-
-.main-slider-two__btn:before {
-	background-color: var(--treck-white);
-}
+	
 	.main-slider__title {
 		position: relative;
 		font-size: 90px;
@@ -1652,7 +1564,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	}
 	
 	.main-slider .owl-theme .owl-dots .owl-dot:hover span,
-	.main-slider   .owl-theme .owl-dots .owl-dot.active span {
+	.main-slider .owl-theme .owl-dots .owl-dot.active span {
 		background-color: rgba(var(--treck-white-rgb), 1);
 	}
 	
@@ -1811,90 +1723,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	.main-slider-two__btn:hover {
 		color: var(--treck-base);
 	}
-	.main-slider-two .owl-theme .owl-nav {
-	position: absolute;
-	top: 46%;
-	left: 50%;
-	z-index: 100;
-	transform: translateY(-50%) translateX(-50%);
-	display: flex;
-	align-items: flex-end;
-	flex-direction: column;
-	max-width: 100%;
-	width: 100%;
-	padding: 0 60px;
-	margin: 0 auto;
-	height: 0;
-	line-height: 0;
-}
-
-.main-slider-two .owl-theme .owl-nav [class*=owl-] {
-	position: relative;
-	top: auto;
-	left: auto;
-	right: auto;
-	bottom: auto;
-	z-index: 100;
-	width: 55px;
-	height: 55px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 18px;
-	color: rgba(var(--treck-black-rgb), 1);
-	background-color: rgba(var(--treck-white-rgb), 0.2);
-	border: none;
-	border-radius: 0;
-	margin: 0;
-	text-align: center;
-	transition: all 500ms ease;
-	padding: 19px 0 !important;
-}
-
-.main-slider-two .owl-theme .owl-nav [class*=owl-]:hover {
-	color: rgba(var(--treck-black-rgb), 1);
-	background-color: rgba(var(--treck-white-rgb), 1);
-}
-
-.main-slider-two .owl-theme .owl-nav [class*=owl-]+[class*=owl-] {
-	margin-top: 10px;
-}
-
-.main-slider-two .owl-theme .owl-dots {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-	flex-direction: column;
-	max-width: 100%;
-	width: 100%;
-	position: absolute;
-	left: 50%;
-	top: 48%;
-	transform: translateX(-50%) translateY(-50%);
-	padding: 0 60px;
-	margin: 0 auto;
-	height: 0;
-	line-height: 0;
-}
-
-.main-slider-two .owl-theme .owl-dots .owl-dot+.owl-dot {
-	margin-top: 10px;
-}
-
-.main-slider-two .owl-theme .owl-dots .owl-dot span {
-	width: 10px;
-	height: 10px;
-	border-radius: 50%;
-	background-color: rgba(var(--treck-white-rgb), 0.3);
-	margin: 0;
-	-webkit-transition: all 300ms ease;
-	transition: all 300ms ease;
-}
-
-.main-slider-two .owl-theme .owl-dots .owl-dot:hover span,
-.main-slider-two .owl-theme .owl-dots .owl-dot.active span {
-	background-color: rgba(var(--treck-white-rgb), 1);
-}
+	
 	.main-slider-two__btn:before {
 		background-color: var(--treck-white);
 	}
@@ -2351,7 +2180,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	.main-slider-three .owl-theme .owl-dots .owl-dot.active span {
 		background-color: rgba(var(--treck-white-rgb), 1);
 	}
-	
 </style>
 	
 <style>
@@ -2547,14 +2375,17 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			&quot;autoplay&quot;: true,
 			&quot;autoplayTimeout&quot;: 7000,
 			&quot;autoplayHoverPause&quot;: false}">				
-					<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-5064px, 0px, 0px); transition: all 0s ease 0s; width: 8862px;"><div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
+					<div class="owl-stage-outer">
+						<div class="owl-stage" style="transform: translate3d(-5064px, 0px, 0px); transition: all 0s ease 0s; width: 8862px;">
+				<div class="owl-item cloned" style="width: 1266px;">
+					<div class="item main-slider__slide-1">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner2.jpeg);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -2638,13 +2469,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-3.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -2728,13 +2559,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-1.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -2818,13 +2649,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner2.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -2908,13 +2739,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item active" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-3.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -2998,13 +2829,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-1.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images//main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3088,13 +2919,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3178,13 +3009,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div></div></div>
 				<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3798px, 0px, 0px); transition: all 0s ease 0s; width: 8862px;"><div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3268,13 +3099,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-3.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner2.jpeg);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3358,13 +3189,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-1.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner2.jpeg);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3448,13 +3279,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item active" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3538,13 +3369,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-3.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3628,13 +3459,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-1.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
@@ -3718,13 +3549,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 				</div></div>
 				<div class="owl-item cloned" style="width: 1266px;"><div class="item main-slider__slide-1">
-					<div class="main-slider-two__bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/slider-2-2.jpg);">
+					<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
 					</div><!-- /.slider-one__bg -->
-					<div class="main-slider-two__shadow" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/main-slider-two-shadow.png);"></div>
+					<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 					<div class="container">
 						<div class="main-slider-two__content">
 							<div class="main-slider-two__shape-1 img-bounce">
-								<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
+								<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
 							<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
 								<li>
     <div class="icon">
