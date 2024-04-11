@@ -50,6 +50,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
+<link rel="stylesheet" href="animation.css">
+<link rel="stylesheet" href="animation1.css">
 <link rel='stylesheet' id='animate-css' href='http://worldwingsedu.com/wp-content/plugins/treck-addon/assets/vendors/animate/animate.min.css?ver=1704271099' media='all' />
 <link rel='stylesheet' id='custom-animate-css' href='http://worldwingsedu.com/wp-content/plugins/treck-addon/assets/vendors/animate/custom-animate.css?ver=1704271099' media='all' />
 <link rel='stylesheet' id='treck-fonts-css' href='//fonts.googleapis.com/css?family=Plus+Jakarta+Sans%3A200%2C200i%2C300%2C300i400%2C400i%2C500%2C500i%2C600%2C600i%2C700%2C700i%2C800%2C800i%26subset%3Dlatin%2Clatin-ext' media='all' />
@@ -428,7 +430,19 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		position: fixed;
 		z-index: 100;
 	}
+	.services-two__shape-1 {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		right: -100px;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
 </style>
+
 <style>
 	.main-slider {
 		position: relative;
@@ -472,7 +486,95 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		display: block;
 		z-index: 10;
 	}
-	
+	.main-slider-two__title {
+	position: relative;
+	font-size: 80px;
+	color: var(--treck-white);
+	font-weight: 600;
+	line-height: 90px;
+	letter-spacing: -0.04em;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(-120px);
+	transform: translateY(-120px);
+	-webkit-transition-delay: 1000ms;
+	transition-delay: 1000ms;
+	-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+	transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+	transition: transform 2000ms ease, opacity 2000ms ease;
+	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+}
+
+.main-slider-two__points {
+	position: relative;
+	display: flex;
+	align-items: center;
+	margin-top: 29px;
+	margin-bottom: 31px;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(120px);
+	transform: translateY(120px);
+	-webkit-transition-delay: 1000ms;
+	transition-delay: 1000ms;
+	-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+	transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+	transition: transform 2000ms ease, opacity 2000ms ease;
+	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+}
+
+.main-slider-two__points li {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.main-slider-two__points li+li {
+	margin-left: 16px;
+}
+
+.main-slider-two__points li .icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.main-slider-two__points li .icon span {
+	font-size: 19px;
+	color: var(--treck-base);
+}
+
+.main-slider-two__points li .text {
+	margin-left: 5px;
+}
+
+.main-slider-two__points li .text p {
+	color: var(--treck-white);
+	font-weight: 500;
+}
+
+.main-slider-two__btn-box {
+	position: relative;
+	display: block;
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transform: translateY(120px);
+	transform: translateY(120px);
+	-webkit-transition-delay: 1000ms;
+	transition-delay: 1000ms;
+	-webkit-transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+	transition: opacity 2000ms ease, -webkit-transform 2000ms ease;
+	transition: transform 2000ms ease, opacity 2000ms ease;
+	transition: transform 2000ms ease, opacity 2000ms ease, -webkit-transform 2000ms ease;
+}
+
+.main-slider-two__btn:hover {
+	color: var(--treck-base);
+}
+
+.main-slider-two__btn:before {
+	background-color: var(--treck-white);
+}
 	.main-slider__title {
 		position: relative;
 		font-size: 90px;
@@ -756,7 +858,90 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	.main-slider-two__btn:hover {
 		color: var(--treck-base);
 	}
-	
+	.main-slider-two .owl-theme .owl-nav {
+	position: absolute;
+	top: 46%;
+	left: 50%;
+	z-index: 100;
+	transform: translateY(-50%) translateX(-50%);
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
+	max-width: 100%;
+	width: 100%;
+	padding: 0 60px;
+	margin: 0 auto;
+	height: 0;
+	line-height: 0;
+}
+
+.main-slider-two .owl-theme .owl-nav [class*=owl-] {
+	position: relative;
+	top: auto;
+	left: auto;
+	right: auto;
+	bottom: auto;
+	z-index: 100;
+	width: 55px;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 18px;
+	color: rgba(var(--treck-black-rgb), 1);
+	background-color: rgba(var(--treck-white-rgb), 0.2);
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	text-align: center;
+	transition: all 500ms ease;
+	padding: 19px 0 !important;
+}
+
+.main-slider-two .owl-theme .owl-nav [class*=owl-]:hover {
+	color: rgba(var(--treck-black-rgb), 1);
+	background-color: rgba(var(--treck-white-rgb), 1);
+}
+
+.main-slider-two .owl-theme .owl-nav [class*=owl-]+[class*=owl-] {
+	margin-top: 10px;
+}
+
+.main-slider-two .owl-theme .owl-dots {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	flex-direction: column;
+	max-width: 100%;
+	width: 100%;
+	position: absolute;
+	left: 50%;
+	top: 48%;
+	transform: translateX(-50%) translateY(-50%);
+	padding: 0 60px;
+	margin: 0 auto;
+	height: 0;
+	line-height: 0;
+}
+
+.main-slider-two .owl-theme .owl-dots .owl-dot+.owl-dot {
+	margin-top: 10px;
+}
+
+.main-slider-two .owl-theme .owl-dots .owl-dot span {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: rgba(var(--treck-white-rgb), 0.3);
+	margin: 0;
+	-webkit-transition: all 300ms ease;
+	transition: all 300ms ease;
+}
+
+.main-slider-two .owl-theme .owl-dots .owl-dot:hover span,
+.main-slider-two .owl-theme .owl-dots .owl-dot.active span {
+	background-color: rgba(var(--treck-white-rgb), 1);
+}
 	.main-slider-two__btn:before {
 		background-color: var(--treck-white);
 	}
@@ -1217,6 +1402,313 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 </style>
 
 <style>
+	.services-two {
+		position: relative;
+		display: block;
+		padding: 120px 0 0;
+	}
+	
+	.services-two__wrap {
+		position: relative;
+		display: block;
+		max-width: 1370px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 120px 0 120px;
+		background-color: var(--treck-primary);
+		overflow: hidden;
+		z-index: 1;
+	}
+	
+	.services-two__shape-1 {
+		position: absolute;
+		bottom: -50px;
+		left: 0;
+		right: -100px;
+		height: 200px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
+	
+	.services-two__inner {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__carousel {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__single {
+		position: relative;
+		display: block;
+		box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.05);
+	}
+	
+	.services-two__single-inner {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		background-color: white;
+		z-index: 1;
+	}
+	
+	.services-two__content {
+		position: relative;
+		display: block;
+		padding: 32px 40px 44px;
+	}
+	
+	.services-two__title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		margin-bottom: 2px;
+	}
+	
+	.services-two__title a {
+		color: var(--treck-black);
+	}
+	
+	.services-two__img-box {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__icon {
+		position: absolute;
+		top: -30px;
+		right: 20px;
+		background-color: var(--treck-base);
+		height: 90px;
+		width: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+	
+	.services-two__icon:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -20px;
+		border-bottom: 30px solid #d1062f;
+		border-left: 20px solid transparent;
+	}
+	
+	.services-two__icon span {
+		position: relative;
+		display: inline-block;
+		font-size: 63px;
+		color: var(--treck-white);
+	}
+	
+	.services-two__img {
+		position: relative;
+		display: block;
+	}
+	
+	.services-two__img img {
+		width: 100%;
+	}
+	
+	.services-two__hover-content-box {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-position: center top;
+		transition-delay: .1s;
+		transition-timing-function: ease-in-out;
+		transition-duration: .5s;
+		transition-property: all;
+		transform-origin: top;
+		transform-style: preserve-3d;
+		transform: scaleY(0);
+		z-index: 2;
+	}
+	
+	.services-two__single:hover .services-two__hover-content-box {
+		transform: scaleY(1);
+	}
+	
+	.services-two__hover-bg {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+	}
+	
+	.services-two__hover-bg:before {
+		background-image: -moz-linear-gradient(90deg, #16171a 0%, rgba(22, 23, 26, 0) 100%);
+		background-image: -webkit-linear-gradient(90deg, #16171a 0%, rgba(22, 23, 26, 0) 100%);
+		background-image: -ms-linear-gradient(90deg, #16171a 0%, rgba(22, 23, 26, 0) 100%);
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		content: "";
+	}
+	
+	.services-two__hover-content {
+		position: absolute;
+		bottom: 38px;
+		left: 40px;
+		z-index: 2;
+	}
+	
+	.services-two__hover-title {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 30px;
+		margin-bottom: 4px;
+	}
+	
+	.services-two__hover-title a {
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.services-two__hover-title a:hover {
+		color: var(--treck-base);
+	}
+	
+	.services-two__hover-text {
+		color: var(--treck-white);
+		line-height: 26px;
+	}
+	
+	.services-two__hover-icon {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		background-color: var(--treck-base);
+		height: 90px;
+		width: 90px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		z-index: 1;
+	}
+	
+	.services-two__hover-icon span {
+		position: relative;
+		display: inline-block;
+		font-size: 63px;
+		color: var(--treck-white);
+		-webkit-transition: all 500ms linear;
+		transition: all 500ms linear;
+		-webkit-transition-delay: 0.1s;
+		transition-delay: 0.1s;
+	}
+	
+	.services-two__hover-icon:hover span {
+		transform: scale(0.9);
+	}
+	
+	.services-two__carousel.owl-carousel .owl-stage-outer {
+		overflow: visible;
+	}
+	
+	.services-two__carousel.owl-carousel .owl-item {
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity 500ms ease, visibility 500ms ease;
+	}
+	
+	.services-two__carousel.owl-carousel .owl-item.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav {
+		position: relative;
+		display: block;
+		margin-top: 28px;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav::before {
+		content: "";
+		position: absolute;
+		left: 0;
+		bottom: 14px;
+		width: 530px;
+		height: 1px;
+		background-color: #e1d9d6;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav::after {
+		content: "";
+		position: absolute;
+		right: 0;
+		bottom: 14px;
+		width: 530px;
+		height: 1px;
+		background-color: #e1d9d6;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next {
+		height: 27px;
+		width: 26px;
+		line-height: 26px;
+		border-radius: 0;
+		color: var(--treck-black);
+		background-color: #ffffff;
+		font-size: 15px;
+		margin: 0;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-prev {
+		height: 27px;
+		width: 26px;
+		line-height: 26px;
+		border-radius: 0;
+		color: var(--treck-black);
+		background-color: #ffffff;
+		font-size: 15px;
+		margin: 0;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next {
+		margin-left: 2.50px;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-prev {
+		margin-right: 2.50px;
+		margin-left: 500px;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next span,
+	.services-two__carousel.owl-theme .owl-nav .owl-prev span {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.services-two__carousel.owl-theme .owl-nav .owl-next:hover,
+	.services-two__carousel.owl-theme .owl-nav .owl-prev:hover {
+		background-color: var(--treck-base);
+		color: var(--treck-white);
+	}
+</style>
+<style>
 	.footer-way{
 		background-color: #15a3f5;
 	}
@@ -1624,7 +2116,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
     </div>
 </li>							</ul>
 							<div class="main-slider-two__btn-box">
-								<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href=""  >Discover More</a>							</div>
+								<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href=""  >Discover More</a></div>
 						</div>
 						<div class="main-slider__feature">
 							<div class="row">
@@ -1677,7 +2169,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 									</div>
 									<!--Main Slider Feature Single End -->
 															</div>
-						</div>
+															<div class="owl-nav">
+								<button type="button" role="presentation" class="owl-prev"><span class="icon-left-arrow"></span></button><button type="button" role="presentation" class="owl-next">
+												<span class="icon-right-arrow"></span></button></div>
+																
 					</div>
 				</div>
 					</div>
@@ -1716,8 +2211,6 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</div>
 							</div>
 		</section>
-		
-	
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-8c82088 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8c82088" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-36614a0" data-id="36614a0" data-element_type="column">
@@ -1725,7 +2218,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 								<div class="elementor-element elementor-element-08d1983 elementor-invisible elementor-widget elementor-widget-heading" data-id="08d1983" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
 			<style>
-.elementor-heading-title{padding:0;margin:0;line-height:1; text-align: center;}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>		
+.elementor-heading-title{padding:0;margin:0;line-height:1; text-align: center;}
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}
+.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}
+.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}
+.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}
+.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style>		
 </div>
 				</div>
 					</div>
@@ -1743,8 +2241,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <section class="services-two">
 <div class="section-title text-center">
 <div class="section-title__tagline-box">
-	<span class="section-title__tagline"></span>		
-			<div class="section-title__border-box"></div>
+	<span class="section-title__tagline"></span>				<div class="section-title__border-box"></div>
 </div>
 
 <h2 class="section-title__title">Our Services</h2>		</div>
@@ -1752,12 +2249,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="services-two__shape-1" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-shape-1.png);"></div>
 			<div class="container">
 	<div class="services-two__inner">
-		<div class="services-two__carousel owl-carousel owl-theme thm-owl__carousel owl-loaded owl-drag" data-owl-options="        {
+		<div class="services-two__carousel owl-carousel owl-theme thm-owl__carousel" data-owl-options='        {
 &quot;loop&quot;: true,
 &quot;margin&quot;: 30,
 &quot;items&quot;: 3        ,&quot;nav&quot;: true                    ,&quot;autoplay&quot;: true            ,&quot;autoplayTimeout&quot;: 5000                            ,&quot;autoplayHoverPause&quot;: true                            ,&quot;navText&quot;: [
-&quot;<i class=\&quot; fa fa-angle-left\&quot;></i>&quot;,
-&quot;<i class=\&quot; fa fa-angle-right\&quot;></i>&quot;
+&quot;&lt;i class=\&quot; fa fa-angle-left\&quot;&gt;&lt;/i&gt;&quot;,
+&quot;&lt;i class=\&quot; fa fa-angle-right\&quot;&gt;&lt;/i&gt;&quot;
 ]
 	,&quot;dots&quot;: false        ,&quot;smartSpeed&quot;: 700
 		,
@@ -1773,257 +2270,251 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	&quot;margin&quot;: 30,
 	&quot;items&quot;: 3                }                        }
 	}
-">
-										<!--Services Two Single End -->
-				
-				<!--Services Two Single End -->
-										<!--Services Two Single End -->
-				
-				<!--Services Two Single End -->
-										<!--Services Two Single End -->
-				
-				<!--Services Two Single End -->
-								<div class="owl-stage-outer">
-									<div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0.7s ease 0s; width: 3600px;">
-										<div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="" href="">Tourist Visa</a>											</h3>
-								<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-tourist"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-1.jpg" alt="alt" title="services-2-1">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class=" " href="">Tourist Visa</a>												</h3>
-									<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-tourist"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="  " href="">Business Visa</a>											</h3>
-								<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-consulting"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-2.jpg" alt="alt" title="services-2-2">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class="   " href="">Business Visa</a>												</h3>
-									<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-consulting"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="    " href="">Student Visa</a>											</h3>
-								<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-3.jpg" alt="alt" title="services-2-3">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class="     " href="">Student Visa</a>												</h3>
-									<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="" href="">Tourist Visa</a>											</h3>
-								<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-tourist"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-1.jpg" alt="alt" title="services-2-1">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class=" " href="">Tourist Visa</a>												</h3>
-									<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-tourist"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="  " href="">Business Visa</a>											</h3>
-								<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-consulting"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-2.jpg" alt="alt" title="services-2-2">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class="   " href="">Business Visa</a>												</h3>
-									<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-consulting"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="    " href="">Student Visa</a>											</h3>
-								<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-3.jpg" alt="alt" title="services-2-3">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class="     " href="">Student Visa</a>												</h3>
-									<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="" href="">Tourist Visa</a>											</h3>
-								<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-tourist"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="./Images/services-2-1.jpg" alt="alt" title="services-2-1">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(./Images/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class=" " href="">Tourist Visa</a>												</h3>
-									<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-tourist"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="  " href="">Business Visa</a>											</h3>
-								<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-consulting"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="./Images/services-2-2.jpg" alt="alt" title="services-2-2">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(./Images/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class="   " href="">Business Visa</a>												</h3>
-									<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-consulting"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
-					<div class="services-two__single">
-						<div class="services-two__single-inner">
-							<div class="services-two__content">
-								<h3 class="services-two__title">
-									<a class="    " href="">Student Visa</a>											</h3>
-								<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
-							<div class="services-two__img-box">
-								<div class="services-two__icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
-								<div class="services-two__img">
-									<img decoding="async" src="./Images/services-2-3.jpg" alt="alt" title="services-2-3">											</div>
-							</div>
-							<div class="services-two__hover-content-box">
-								<div class="services-two__hover-bg" style="background-image: url(./Images/services-two-hover-bg-1.jpg);">
-								</div>
-								<div class="services-two__hover-content">
-									<h3 class="services-two__hover-title">
-										<a class="     " href="">Student Visa</a>												</h3>
-									<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
-										one priority strive to deliver.</p>											</div>
-								<div class="services-two__hover-icon icon-svg-large">
-									<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
-							</div>
-						</div>
-					</div>
-				</div></div></div></div>
-				<div class="owl-nav disabled">
-					<button type="button" role="presentation" class="owl-prev">
-						<i class=" fa fa-angle-left"></i></button><button type="button" role="presentation" class="owl-next"><i class=" fa fa-angle-right"></i></button></div><div class="owl-dots disabled"></div></div>
+'>
+
+<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1200px, 0px, 0px); transition: all 0.7s ease 0s; width: 3600px;"><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="" href="">Tourist Visa</a>											</h3>
+				<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-1.jpg" alt="alt" title="services-2-1">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class=" " href="">Tourist Visa</a>												</h3>
+					<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+			</div>
+		</div>
 	</div>
+</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="  " href="">Business Visa</a>											</h3>
+				<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-2.jpg" alt="alt" title="services-2-2">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class="   " href="">Business Visa</a>												</h3>
+					<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="    " href="">Student Visa</a>											</h3>
+				<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-3.jpg" alt="alt" title="services-2-3">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class="     " href="">Student Visa</a>												</h3>
+					<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="" href="">Tourist Visa</a>											</h3>
+				<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-1.jpg" alt="alt" title="services-2-1">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class=" " href="">Tourist Visa</a>												</h3>
+					<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="  " href="">Business Visa</a>											</h3>
+				<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-2.jpg" alt="alt" title="services-2-2">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class="   " href="">Business Visa</a>												</h3>
+					<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item active" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="    " href="">Student Visa</a>											</h3>
+				<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="http://worldwingsedu.com/wp-content/uploads/2023/04/services-2-3.jpg" alt="alt" title="services-2-3">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(http://bracketweb.com/treckwp/wp-content/uploads/2023/04/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class="     " href="">Student Visa</a>												</h3>
+					<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="" href="">Tourist Visa</a>											</h3>
+				<p class="services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="./Images/services-2-1.jpg" alt="alt" title="services-2-1">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(./Images/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class=" " href="">Tourist Visa</a>												</h3>
+					<p class="services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-tourist"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="  " href="">Business Visa</a>											</h3>
+				<p class="services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="./Images/services-2-2.jpg" alt="alt" title="services-2-2">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(./Images/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class="   " href="">Business Visa</a>												</h3>
+					<p class="services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-consulting"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div><div class="owl-item cloned" style="width: 370px; margin-right: 30px;"><div class="item">
+	<div class="services-two__single">
+		<div class="services-two__single-inner">
+			<div class="services-two__content">
+				<h3 class="services-two__title">
+					<a class="    " href="">Student Visa</a>											</h3>
+				<p class="services-two__text-1 services-two__text-1 services-two__text-1">Fusce pretium sem eget mattis.</p>										</div>
+			<div class="services-two__img-box">
+				<div class="services-two__icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+				<div class="services-two__img">
+					<img decoding="async" src="./Images/services-2-3.jpg" alt="alt" title="services-2-3">											</div>
+			</div>
+			<div class="services-two__hover-content-box">
+				<div class="services-two__hover-bg" style="background-image: url(./Images/services-two-hover-bg-1.jpg);">
+				</div>
+				<div class="services-two__hover-content">
+					<h3 class="services-two__hover-title">
+						<a class="     " href="">Student Visa</a>												</h3>
+					<p class="services-two__hover-text services-two__hover-text services-two__hover-text">Fusce pretium sem eget mattis <br>
+						one priority strive to deliver.</p>											</div>
+				<div class="services-two__hover-icon icon-svg-large">
+					<span aria-hidden="true" class=" icon-graduating-student"></span>											</div>
+			</div>
+		</div>
+	</div>
+</div></div></div></div>
+				
+				<div class="owl-nav disabled">
+					<button type="button" role="presentation" class="owl-prev"><i class=" fa fa-angle-left"></i></button>
+					<button type="button" role="presentation" class="owl-next"><i class=" fa fa-angle-right"></i></button></div>
+								</div>
+								<div class="owl-dots disabled"></div>
+	</div>
+
 </div>
 </div>
 </section>
@@ -2230,9 +2721,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 							<img decoding="async" src="./Images/logo.png" width="134" height="34" alt="WORLD WINGS">
 						</a>
 					</div>
-					<p class="footer-widget__about-text">WORLD WINGS
-			EDUCATION AND
-			IMMIGRATION
+					<p class="footer-widget__about-text">WORLD WINGS EDUCATION AND IMMIGRATION
 			YOU TELL US WHERE, WHEN AND WHY. WE'LL TELL YOU HOW. FROM INDIVIDUALS AND SMALL LOCAL BUSINESSES TO THE WORLD'S LARGEST COMPANIES.</p>        <div class="site-footer__social">
 									
 								</div>
