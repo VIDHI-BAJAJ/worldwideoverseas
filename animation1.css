@@ -1687,12 +1687,7 @@
     animation-timing-function: linear;
   }
   
-  
-  /*** 
-  =============================================
-      Float Bob Y Animation Css
-  =============================================
-  ***/
+
   @-webkit-keyframes float-bob-y-2 {
     0% {
       transform: translateY(-20px) translateX(-50%) rotate(0deg);
