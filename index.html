@@ -216,7 +216,147 @@ img.emoji {
 	}
 	
 </style>
+<style>	
+footer{
+	background-color: #000000ff;
+	position: relative;
+	width: 100%;
+	min-height: 50px;
+	padding: 3rem 1rem;
+	margin-top: 50px;
+}
+.container {
+   max-width: 1140px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 
+}
+.row{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.col{
+   min-width: 250px;
+   color:#f2f2f2f2;
+   font-family: poppins;
+   padding:0 2rem;
+}
+.col .logo{
+   width: 150px;
+   margin-bottom:25px;
+}
+.main p{
+   font-size: 12px;
+   text-align: justify;
+}
+
+.col h3{
+   color:rgb(252, 222, 222);
+   margin-bottom: 20px;
+   position: relative;
+   cursor: pointer;
+}
+.col h3::after{
+   content: '';
+   height:3px;
+   width:0px;
+   background-color: rgb(97, 95, 95);
+   position: absolute;
+   bottom: 0;
+   left:0;
+   transition: 0.3s ease;
+
+}
+.col h3:hover::after{
+   width:30px
+}
+.col .social a i{
+   color:rgb(95, 94, 94);
+   margin-top:2rem;
+   margin-right: 5px;
+   transition: 0.3s ease;
+}
+.col .social a i:hover{
+   transform: scale(1.5);
+   filter:grayscale(25);
+}
+.col .links a{
+   display: block;
+   text-decoration: none;
+   color:#f2f2f2;
+   margin-bottom: 5px;
+   position: relative;
+   transition: 0.3s ease;
+}
+.col .links a::before{
+   content:'';
+   height: 16px;
+   width:3px;
+   position: absolute;
+   top:5px;
+   left:-10px;
+   background-color: rgb(219, 213, 213);
+   transition: 0.5s ease;
+   opacity: 0;
+}
+.col .links a:hover::before{
+   opacity: 1;
+}
+.col .links a:hover{
+   transform: translateX(-8px);
+   color:rgb(161, 159, 160);
+}
+.col .contact-details{
+   display: inline-flex;
+   justify-content: space-between;
+}
+.col .contact-details i{
+   margin-right:15px;
+}
+.row .form{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:2rem 0;
+}
+.row .form input{
+   background-color: #1a1c20ff;
+   border:0;
+   outline:none;
+   padding:14px 20px;
+   border-radius: 6px;
+   border-top-right-radius: 0;
+   border-bottom-right-radius: 0;
+}
+
+@media(max-width:900px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 25px;
+ }
+}
+@media(max-width:768px)
+{
+ .row{
+   flex-direction: column;
+ }
+ .col{
+   width: 100%;
+   text-align: left;
+   margin-bottom: 20px;
+ }
+}
+</style>
 <style>
 	.element.elementor-element-14772e4f:not(.elementor-motion-effects-element-type-background), .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-motion-effects-container>.elementor-motion-effects-layer {
 		background-image: url('./Images/banner1.png');
@@ -256,7 +396,7 @@ img.emoji {
 	}
 	
 	.elementor-sticky--effects{
-		background-color: #0693e3 !important;
+		background-color: #fff !important;
 		opacity: 0.96 !important;
 		transition: background-color 0.5s ease !important
 	}
@@ -1177,7 +1317,7 @@ img.emoji {
 		letter-spacing: 3px !important;
 	}
 	#preloader{
-		background: rgb(135, 146, 212) url(Images/logo.png) no-repeat center center;
+		background: black url(Images/logo.png) no-repeat center center;
 		background-size: 10%;
 		height: 100vh;
 		width: 100%;
@@ -2115,15 +2255,11 @@ img.emoji {
 .main-slider-two .owl-theme .owl-dots .owl-dot.active span img {
 	background-color: rgba(var(--treck-white-rgb), 1);
 }
-
-	.footer-way{
-		background-color: #15a3f5;
-	}
 </style>
-<link rel="icon" href="Images/logo.png" sizes="32x32" />
-<link rel="icon" href="Images/logo.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="Images/logo.png" />
-<meta name="msapplication-TileImage" content="Images/logo.png" />
+<link rel="icon" href="./Images/logo.png" sizes="32x32" />
+<link rel="icon" href="./Images/logo.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="./Images/logo.png" />
+<meta name="msapplication-TileImage" content="./Images/logo.png" />
 </head>
 <div id="preloader"></div>
 <body class="home page-template page-template-elementor_header_footer page page-id-75 wp-custom-logo elementor-default elementor-template-full-width elementor-kit-7 elementor-page elementor-page-75">
@@ -2219,32 +2355,15 @@ img.emoji {
 				<div class="elementor-widget-container">
 			<link rel="stylesheet" href="wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css">			<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
 				<ul id="menu-1-4abdbb18" class="elementor-nav-menu">
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-75 current_page_item menu-item-329"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-75 current_page_item menu-item-329">
+	<a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Home</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
-	<a href="#" class="elementor-item elementor-item-anchor">About Us</a>
-<!-- <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a href="residential-listings/index.html" class="elementor-sub-item">Sale</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="sections-listings/index.html" class="elementor-sub-item">Sections &#038; Land</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="residential-rentals/index.html" class="elementor-sub-item">Rentals</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item">Business Listings</a></li>
-</ul> -->
+	<a href="./discover-jeff-tikitau-real-estate-cook-islands/index.html" class="elementor-item elementor-item-anchor">About Us</a>
 </li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341">
-	<a href="#" class="elementor-item elementor-item-anchor">Our Vision</a>
-<!-- <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3343"><a href="buy-with-us/index.html" class="elementor-sub-item">Buy With Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3342"><a href="sell-with-us/index.html" class="elementor-sub-item">Sell With Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="services/index.html" class="elementor-sub-item">Property Management</a></li>
-</ul> -->
-</li>
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3462">
 	<a href="#" class="elementor-item elementor-item-anchor">Services</a>
-<!-- <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3463"><a href="how-it-works/index.html" class="elementor-sub-item">How it Works</a></li>
-</ul> -->
 </li>
-<!-- <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="discover-jeff-tikitau-real-estate-cook-islands/index.html" class="elementor-item">About</a></li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="#" class="elementor-item">Contact</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="./contact-us/index.html" class="elementor-item">Contact</a></li>
 </ul>			
 </nav>
 					<div class="elementor-menu-toggle" role="button" tabindex="0" aria-label="Menu Toggle" aria-expanded="false">
@@ -2257,26 +2376,10 @@ img.emoji {
 		<a href="index.html" aria-current="page" class="elementor-item elementor-item-active" tabindex="-1">Home</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
 	<a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">About Us</a>
-<!-- <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-404"><a href="residential-listings/index.html" class="elementor-sub-item" tabindex="-1">Sales</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-442"><a href="sections-listings/index.html" class="elementor-sub-item" tabindex="-1">Sections &#038; Land</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1031"><a href="residential-rentals/index.html" class="elementor-sub-item" tabindex="-1">Rentals</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2920"><a href="business-listings/index.html" class="elementor-sub-item" tabindex="-1">Business Listings</a></li>
-</ul> -->
 </li> 
-<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Our Vision</a>
-<!-- <ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3343"><a href="buy-with-us/index.html" class="elementor-sub-item" tabindex="-1">Buy With Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3342"><a href="sell-with-us/index.html" class="elementor-sub-item" tabindex="-1">Sell With Us</a></li>
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-475"><a href="services/index.html" class="elementor-sub-item" tabindex="-1">Property Management</a></li>
-</ul> -->
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341">
+	<a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Services</a>
 </li>
-<!-- <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3462"><a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Resources</a>
-<ul class="sub-menu elementor-nav-menu--dropdown">
-	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3463"><a href="how-it-works/index.html" class="elementor-sub-item" tabindex="-1">How it Works</a></li>
-</ul>
-</li> -->
-<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-330"><a href="#" class="elementor-item" tabindex="-1">Services</a></li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-346"><a href="#" class="elementor-item" tabindex="-1">Contact</a></li>
 </ul>			</nav>
 				</div>
@@ -2309,672 +2412,13 @@ img.emoji {
 			&quot;autoplayTimeout&quot;: 7000,
 			&quot;autoplayHoverPause&quot;: false}">				
 			<section class="main-slider-two">
-				<div class="main-slider__carousel owl-carousel owl-theme thm-owl__carousel owl-loaded owl-drag" data-owl-options="{&quot;loop&quot;: true,
-					&quot;items&quot;: 1,
-					&quot;navText&quot;: [&quot;<span class=\&quot;icon-left-arrow\&quot;></span>&quot;,&quot;<span class=\&quot;icon-right-arrow\&quot;></span>&quot;],
-					&quot;margin&quot;: 0,
-					&quot;dots&quot;: true,
-					&quot;nav&quot;: true,
-					&quot;animateOut&quot;: &quot;slideOutDown&quot;,
-					&quot;animateIn&quot;: &quot;fadeIn&quot;,
-					&quot;active&quot;: true,
-					&quot;smartSpeed&quot;: 1000,
-					&quot;autoplay&quot;: true,
-					&quot;autoplayTimeout&quot;: 7000,
-					&quot;autoplayHoverPause&quot;: false}">
-									
-									
-									
-							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-3843px, 0px, 0px); transition: all 0s ease 0s; width: 8967px;"><div class="owl-item cloned" style="width: 1281px;"><div class="item main-slider__slide-1">
-							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
-							</div><!-- /.slider-one__bg -->
-							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
-							<div class="container">
-								<div class="main-slider-two__content">
-									<div class="main-slider-two__shape-1 img-bounce">
-										<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-									<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-										<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>No Interviews</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Relocate in 30 Days</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Afforable Fee</p>
-			</div>
-		</li>							</ul>
-									<div class="main-slider-two__btn-box">
-										<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="   " href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="    " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing">
-															<img src="./Images/icons8-licensing-68.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="     " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
-							</div>
-						</div></div>
-						<div class="owl-item cloned" style="width: 1281px;"><div class="item main-slider__slide-1">
-							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
-							</div><!-- /.slider-one__bg -->
-							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
-							<div class="container">
-								<div class="main-slider-two__content">
-									<div class="main-slider-two__shape-1 img-bounce">
-										<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-									<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-										<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>No Interviews</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Relocate in 30 Days</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Afforable Fee</p>
-			</div>
-		</li>							</ul>
-									<div class="main-slider-two__btn-box">
-										<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="      " href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="       " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing">
-															<img src="./Images/icons8-licensing-68.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="        " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
-							</div>
-						</div></div>
-						<div class="owl-item" style="width: 1281px;"><div class="item main-slider__slide-1">
-							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
-							</div><!-- /.slider-one__bg -->
-							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
-							<div class="container">
-								<div class="main-slider-two__content">
-									<div class="main-slider-two__shape-1 img-bounce">
-										<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-									<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-										<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>No Interviews</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Relocate in 30 Days</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Afforable Fee</p>
-			</div>
-		</li>							</ul>
-									<div class="main-slider-two__btn-box">
-										<a class="main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="" href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class=" " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing">
-															<img src="./Images/icons8-licensing-68.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="  " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
-							</div>
-						</div></div>
-						<div class="owl-item active" style="width: 1281px;"><div class="item main-slider__slide-1">
-							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
-							</div><!-- /.slider-one__bg -->
-							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
-							<div class="container">
-								<div class="main-slider-two__content">
-									<div class="main-slider-two__shape-1 img-bounce">
-										<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-									<h2 class="main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-										<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>No Interviews</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Relocate in 30 Days</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Afforable Fee</p>
-			</div>
-		</li>							</ul>
-									<div class="main-slider-two__btn-box">
-										<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="   " href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="    " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing"></span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="     " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
-							</div>
-						</div></div>
-						<div class="owl-item" style="width: 1281px;"><div class="item main-slider__slide-1">
+				<div class="main-slider__carousel owl-carousel owl-theme thm-owl__carousel owl-loaded owl-drag" >		
+							<div class="owl-stage-outer">
+								<div class="owl-stage" style="transform: translate3d(-3843px, 0px, 0px); transition: all 0s ease 0s; width: 8967px;">
+									<div class="owl-item cloned" style="width: 1281px;">
+										<div class="item main-slider__slide-1">
 							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner2.jpeg);">
 							</div><!-- /.slider-one__bg -->
-							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png
-							<div class="container">
-								<div class="main-slider-two__content">
-									<div class="main-slider-two__shape-1 img-bounce">
-										<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-									<h2 class="main-slider-two__title main-slider-two__title main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-										<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>No Interviews</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Relocate in 30 Days</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Afforable Fee</p>
-			</div>
-		</li>							</ul>
-									<div class="main-slider-two__btn-box">
-										<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
-								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="      " href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="       " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing">
-															<img src="./Images/icons8-licensing-68.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="        " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
-							</div>
-						</div></div>
-						<div class="owl-item cloned" style="width: 1281px;"><div class="item main-slider__slide-1">
-							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner3.png);">
-							</div><!-- /.slider-one__bg -->
-							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
-							<div class="container">
-								<div class="main-slider-two__content">
-									<div class="main-slider-two__shape-1 img-bounce">
-										<img decoding="async" src="./Images/main-slider-two-shape-1.png" alt="alt" title="main-slider-two-shape-1">							</div>
-									<h2 class="main-slider-two__title">Planning to <br> Studying Abroad</h2>							<ul class="list-unstyled main-slider-two__points ml-0">
-										<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>No Interviews</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Relocate in 30 Days</p>
-			</div>
-		</li>
-		<li>
-			<div class="icon">
-				<span class="icon-check">
-					<img src="./Images/icons8-check-50.png"/>
-				</span>
-			</div>
-			<div class="text">
-				<p>Afforable Fee</p>
-			</div>
-		</li>							</ul>
-									<div class="main-slider-two__btn-box">
-										<a class="main-slider-two__btn thm-btn" href="">Discover More</a>							
-									</div>
-								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="" href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class=" " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing">
-															<img src="./Images/icons8-licensing-68.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="  " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
-							</div>
-						</div></div>
-						<div class="owl-item cloned" style="width: 1281px;"><div class="item main-slider__slide-1">
-							<div class="main-slider-two__bg" style="background-image: url(./Images/Banner4.png);">
-							</div><!-- /.slider-one__bg -->
 							<div class="main-slider-two__shadow" style="background-image: url(./Images/main-slider-two-shadow.png);"></div>
 							<div class="container">
 								<div class="main-slider-two__content">
@@ -3014,80 +2458,8 @@ img.emoji {
 									<div class="main-slider-two__btn-box">
 										<a class="main-slider-two__btn thm-btn main-slider-two__btn thm-btn" href="">Discover More</a>							</div>
 								</div>
-								<div class="main-slider__feature">
-									<div class="row">
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class="icon-passport-4">
-															<img src="./Images/icons8-passport-50.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="   " href="">Apply for Visa</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-immigration">
-															<img src="./Images/icons8-immigration-16.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="    " href="">Immigration Programs</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																			<!--Main Slider Feature Single Start -->
-											<div class="col-xl-4 col-lg-4">
-												<div class="main-slider__feature-single">
-													<div class="main-slider__feature-icon icon-svg-large">
-														<span aria-hidden="true" class=" icon-licensing">
-															<img src="./Images/icons8-licensing-68.png"/>
-														</span>											</div>
-													<div class="main-slider__feature-content">
-														<h4 class="main-slider__feature-title">
-															<a class="     " href="">Visa   Documents</a>												</h4>
-														<p class="main-slider__feature-text"></p>
-													</div>
-													<div class="main-slider__feature-arrow">
-														<a href=""><span class="icon-down">
-															<img src="./Images/icons8-down-50.png"/>
-														</span></a>
-													</div>
-												</div>
-											</div>
-											<!--Main Slider Feature Single End -->
-																	</div>
-								</div>
 							</div>
-						</div></div></div></div>
-						<div class="owl-nav"><button type="button" role="presentation" class="owl-prev">
-							<span class="icon-left-arrow">
-								<img src="./Images/icons8-left-arrow-50.png"/>
-							</span></button>
-							<button type="button" role="presentation" class="owl-next">
-								<span class="icon-right-arrow">
-									<img src="./Images/icons8-right-arrow-50.png"/>
-								</span></button></div><div class="owl-dots"><button role="button" class="owl-dot"><span></span></button><button role="button" class="owl-dot active"><span></span></button><button role="button" class="owl-dot"><span></span></button></div></div>
+						</div></div>		
 			</section>
     </div>
 	</section>
@@ -3112,15 +2484,7 @@ img.emoji {
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-50965fbc elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="50965fbc" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p class="black">Our vision at World Wings is to serve as your ultimate guide and facilitator, empowering individuals worldwide in navigating the complexities of visa processes seamlessly. Whether you're a student pursuing academic dreams, a traveler seeking new adventures, or an entrepreneur exploring business opportunities, we aim to be your trusted partner every step of the way.</p>
-
-							<p class="black">For students aspiring to study abroad, we envision simplifying the visa application process, providing comprehensive support to ensure a smooth transition to their chosen academic institutions. From assisting with documentation to offering insights on visa requirements, our goal is to alleviate the stress associated with visa applications, enabling students to focus on their educational journey.</p>
-								
-								<p class="black">For travelers eager to explore new destinations, we envision being the gateway to hassle-free adventures. Our services will encompass personalized guidance on visa applications, offering valuable resources and expertise to facilitate travel plans. Whether it's obtaining tourist visas or navigating entry requirements, we strive to empower travelers to embark on unforgettable journeys with ease and confidence.</p>
-								
-									<p class="black">For business professionals seeking international opportunities, we envision streamlining the visa acquisition process to catalyze global ventures. Our tailored solutions will cater to the unique needs of businesses, providing strategic guidance and support in securing necessary visas for expansion, conferences, or collaborations. By minimizing bureaucratic hurdles, we aim to foster a conducive environment for cross-border trade and innovation.</p>
-								
-										<p class="black">At World Wings, we envision a world where borders are not barriers but gateways to endless possibilities. With our commitment to excellence and customer-centric approach, we aspire to redefine the visa experience, making it efficient, transparent, and accessible for all. Together, let's soar to new heights and unlock the boundless opportunities that await across the globe.</strong></p></div>
+							<p class="black">Worldwide Overseas envisions a world where every individual has access to quality education regardless of geographical barriers. As a leading educational consultancy, we strive to empower students in India, Sri Lanka, Australia, and beyond, guiding them towards academic excellence and career success. By fostering global partnerships and leveraging innovative approaches, we aim to expand our footprint, reaching more countries and communities. Our commitment lies in providing personalized guidance, comprehensive services, and unwavering support to students, ensuring they realize their fullest potential and contribute meaningfully to a diverse and interconnected world. Join us on this journey of knowledge, opportunity, and transformation.							</p></div>
 				</div>
 					</div>
 		</div>
@@ -3504,101 +2868,50 @@ img.emoji {
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
-						"World Wings made my dream of studying abroad a reality. Thanks to their guidance and expertise, I smoothly obtained my student visa. Kudos to the team for their unwavering support!" 	</div>
+						"World Wings Education and Migration made my study abroad dreams a reality! Their expert guidance and support ensured a smooth journey from Sri Lanka to my chosen university abroad." 	</div>
 									</div>
 						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Aarav Sharma</span></cite>			</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Priya Silva</span></cite>			</div>
 		</div>
 								</div>
 											<div class="swiper-slide">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
-						"As a frequent traveler, I often struggled with visa applications until I discovered World Wings. Their efficient services and attention to detail ensured that my travel visa process was stress-free. Highly recommended!"</div>
+						"Thanks to World Wings, I received personalized attention throughout the application process, leading to an acceptance letter from my dream university. Highly recommended!"</div>
 									</div>
 						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Diya Patel</span></cite></div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Sanjay Fernando</span></cite></div>
 		</div>
 								</div>
 											<div class="swiper-slide">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
-						"I cannot thank World Wings enough for their exceptional assistance in obtaining my business visa. Their professionalism and dedication truly set them apart. I'll definitely be returning for all my future visa needs!"</div>
+						"World Wings Education and Migration provided exceptional assistance, from visa applications to accommodation arrangements, making my transition to studying abroad hassle-free!"</div>
 									</div>
 						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Arjun Singhania</span></cite></div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Natasha Perera </span></cite></div>
 		</div>
 								</div>
 											<div class="swiper-slide">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
-						"World Wings exceeded my expectations in every aspect. From their prompt responses to their personalized approach, they made the entire visa application process seamless. Thank you for your outstanding service!"</div>
+						"I owe my successful study abroad experience to World Wings Education and Migration. Their dedicated team helped me navigate every step of the way, ensuring a seamless transition." </div>
 									</div>
 						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Neha Gupta</span></cite></div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Dilshan Rajapaksa </span></cite></div>
 		</div>
 								</div>
 											<div class="swiper-slide">
 									<div class="elementor-testimonial">
 							<div class="elementor-testimonial__content">
 					<div class="elementor-testimonial__text">
-						"I was hesitant about applying for a student visa, but World Wings provided me with invaluable guidance and support throughout. Today, I'm pursuing my academic aspirations abroad, all thanks to their expertise!"</div>
+						"Choosing World Wings was one of the best decisions I made. Their professionalism and expertise ensured that I could pursue my education abroad with confidence." </div>
 									</div>
 						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Rahul Mehta</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						"World Wings made my travel plans a breeze by assisting me with my tourist visa. Their thorough knowledge and efficient handling of the process ensured that I could focus on enjoying my trip without any worries. Highly impressed!"</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Priya Shah</span></cite></div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						"Securing a business visa can be daunting, but World Wings made it seem effortless. Their attention to detail and commitment to customer satisfaction are commendable. I'll definitely be recommending their services to others!"</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Vivek Kapoor</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						"I'm incredibly grateful to World Wings for their assistance with my student visa application. Their team went above and beyond to address all my concerns and ensure a smooth process. Thank you for helping me kickstart my academic journey abroad!"</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Ananya Mishra</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						"World Wings made the visa application process stress-free and straightforward. Their expertise and professionalism are unmatched. I wholeheartedly recommend their services to anyone in need of visa assistance!"	</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Rohan Patel</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						"Obtaining a business visa seemed daunting until I reached out to World Wings. Their knowledgeable team guided me through every step of the process, making it effortless. I'm impressed by their dedication and efficiency!"
-					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Kavya Sharma</span></cite>			</div>
+								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Aisha Mohamed </span></cite>			</div>
 		</div>
 								</div>
 									</div>
@@ -3648,8 +2961,61 @@ img.emoji {
 							</div>
 		</section>
 							</div>
+							<footer>
+								<div class="container">
+									<div class="row">
+										  <div class="col" id="company">
+											  <img src="images/logo.png" alt="" class="logo">
+											  <p class="main">
+											From individuals and small local businesses to the world's largest companies,
+												 World Wings Education and Immigration guides you on the journey,
+												 providing expertise on where, when, and why, while we equip you with the how.
+											  </p>
+											  <!-- <div class="social">
+												<a href="#"><i class="fab fa-facebook"></i></a>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+												<a href="#"><i class="fab fa-youtube"></i></a>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+												<a href="#"><i class="fab fa-linkedin"></i></a>
+											  </div> -->
+										  </div>
 							
-							<div class="footer-wrapper"> 
+							
+										  <div class="col" id="services">
+											 <h3>Services</h3>
+											 <div class="links">
+												<a href="#">Student visa</a>
+												<a href="#">Visitor Visa</a>
+												<a href="#">Permanent Residency</a>
+												<a href="#">Educational Consulting</a>
+											 </div>
+										  </div>
+							
+										  <div class="col" id="useful-links">
+											 <h3>Links</h3>
+											 <div class="links">
+												<a href="#">About</a>
+												<a href="#">Services</a>
+												<a href="#">Our Policy</a>
+												<a href="#">Help</a>
+											 </div>
+										  </div>
+							
+										  <div class="col" id="contact">
+											  <h3>Contact</h3>
+											  <div class="contact-details">
+												 <i class="fa fa-location"></i>
+												 <p>FF-42, Procube Avenue, <br> NY, USA</p>
+											  </div>
+											  <div class="contact-details">
+												 <i class="fa fa-phone"></i>
+												 <p>+1-8755856858</p>
+											  </div>
+										  </div>
+									</div>
+								</div>
+							 </footer>
+							<!-- <div class="footer-wrapper"> 
 								
 												<div data-elementor-type="wp-post" data-elementor-id="1024" class="elementor elementor-1024">
 												<div class="footer-way">
@@ -3815,7 +3181,7 @@ img.emoji {
 							</div>
 								</div>
 					</div>
-										</div>
+				</div>
 									</div>
 					</section>
 							<div class="elementor-element elementor-element-ab3ae9b elementor-widget elementor-widget-footer-copyright" data-id="ab3ae9b" data-element_type="widget" data-widget_type="footer-copyright.default">
@@ -3835,7 +3201,7 @@ img.emoji {
 							</div>
 								</div>
 					</div>
-										</div>
+										</div> -->
 					</section>
 										</div>
 											<!-- end of the loop -->

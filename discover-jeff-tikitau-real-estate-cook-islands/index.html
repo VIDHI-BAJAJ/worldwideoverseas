@@ -178,6 +178,651 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	}
 	
 </style>
+<style>	
+	footer{
+		background-color: #000000ff;
+		position: relative;
+		width: 100%;
+		min-height: 50px;
+		padding: 3rem 1rem;
+		margin-top: 50px;
+	}
+	.container {
+	   max-width: 1140px;
+	   margin: 0 auto;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   flex-direction: column;
+	
+	}
+	.row{
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	}
+	
+	.col{
+	   min-width: 250px;
+	   color:#f2f2f2f2;
+	   font-family: poppins;
+	   padding:0 2rem;
+	}
+	.col .logo{
+	   width: 150px;
+	   margin-bottom:25px;
+	}
+	.main p{
+	   font-size: 12px;
+	   text-align: justify;
+	}
+	
+	.col h3{
+	   color:rgb(252, 222, 222);
+	   margin-bottom: 20px;
+	   position: relative;
+	   cursor: pointer;
+	}
+	.col h3::after{
+	   content: '';
+	   height:3px;
+	   width:0px;
+	   background-color: rgb(97, 95, 95);
+	   position: absolute;
+	   bottom: 0;
+	   left:0;
+	   transition: 0.3s ease;
+	
+	}
+	.col h3:hover::after{
+	   width:30px
+	}
+	.col .social a i{
+	   color:rgb(95, 94, 94);
+	   margin-top:2rem;
+	   margin-right: 5px;
+	   transition: 0.3s ease;
+	}
+	.col .social a i:hover{
+	   transform: scale(1.5);
+	   filter:grayscale(25);
+	}
+	.col .links a{
+	   display: block;
+	   text-decoration: none;
+	   color:#f2f2f2;
+	   margin-bottom: 5px;
+	   position: relative;
+	   transition: 0.3s ease;
+	}
+	.col .links a::before{
+	   content:'';
+	   height: 16px;
+	   width:3px;
+	   position: absolute;
+	   top:5px;
+	   left:-10px;
+	   background-color: rgb(219, 213, 213);
+	   transition: 0.5s ease;
+	   opacity: 0;
+	}
+	.col .links a:hover::before{
+	   opacity: 1;
+	}
+	.col .links a:hover{
+	   transform: translateX(-8px);
+	   color:rgb(161, 159, 160);
+	}
+	.col .contact-details{
+	   display: inline-flex;
+	   justify-content: space-between;
+	}
+	.col .contact-details i{
+	   margin-right:15px;
+	}
+	.row .form{
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   padding:2rem 0;
+	}
+	.row .form input{
+	   background-color: #1a1c20ff;
+	   border:0;
+	   outline:none;
+	   padding:14px 20px;
+	   border-radius: 6px;
+	   border-top-right-radius: 0;
+	   border-bottom-right-radius: 0;
+	}
+	
+	@media(max-width:900px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 25px;
+	 }
+	}
+	@media(max-width:768px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 20px;
+	 }
+	}
+	</style>
+<style>
+	footer{
+		background-color: #000000ff;
+		position: relative;
+		width: 100%;
+		min-height: 50px;
+		padding: 3rem 1rem;
+		margin-top: 50px;
+	}
+	.site-footer {
+		position: relative;
+		display: block;
+		background-color: var(--treck-black);
+		z-index: 1;
+	}
+	
+	.site-footer__top {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px solid rgba(var(--treck-white-rgb), 0.1);
+		overflow: hidden;
+		padding: 44px 0px 44px;
+		z-index: 1;
+	}
+	
+	.site-footer__map {
+		position: absolute;
+		top: 0;
+		left: 30px;
+		opacity: .40;
+		z-index: -1;
+	}
+	
+	.site-footer__map img {
+		width: auto;
+	}
+	
+	.site-footer__top-left {
+		position: relative;
+		display: block;
+	}
+	
+	.site-footer__visa-box {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	.site-footer__visa-list {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	.site-footer__visa-list li+li {
+		margin-left: 4px;
+	}
+	
+	.site-footer__visa-img {
+		position: relative;
+		display: block;
+		width: 30px;
+		border-radius: 50%;
+	}
+	
+	div.site-footer__visa-img img {
+		width: 100%;
+		border-radius: 50%;
+	}
+	
+	.site-footer__visa-content {
+		margin-left: 20px;
+	}
+	
+	.site-footer__visa-text {
+		color: #68696c;
+		font-weight: 500;
+	}
+	
+	.site-footer__visa-text a {
+		position: relative;
+		display: inline-block;
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.site-footer__visa-text a:before {
+		content: "";
+		position: absolute;
+		bottom: 4px;
+		left: 0;
+		right: 0;
+		height: 1px;
+		background-color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.site-footer__visa-text a:hover:before {
+		background-color: var(--treck-base);
+	}
+	
+	.site-footer__visa-text a:hover {
+		color: var(--treck-base);
+	}
+	
+	.site-footer__call {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	.site-footer__call-icon {
+		position: relative;
+		display: flex;
+		align-items: center;
+	}
+	
+	.site-footer__call-icon img {
+		width: auto;
+	}
+	
+	.site-footer__call-content {
+		margin-left: 15px;
+	}
+	
+	.site-footer__call-sub-title {
+		font-size: 14px;
+		color: #68696c;
+		line-height: 14px;
+	}
+	
+	.site-footer__call-number {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 16px;
+		margin-top: 9px;
+	}
+	
+	.site-footer__call-number a {
+		color: var(--treck-white);
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.site-footer__call-number a span {
+		font-size: 14px;
+		color: #68696c;
+	}
+	
+	.site-footer__call-number a:hover {
+		color: var(--treck-base);
+	}
+	
+	.site-footer__middle {
+		position: relative;
+		display: block;
+		padding-top: 85px;
+		padding-bottom: 79px;
+	}
+	
+	.footer-widget__title-box {
+		position: relative;
+		display: block;
+		margin-bottom: 24px;
+	}
+	
+	.footer-widget__title {
+		font-size: 18px;
+		color: var(--treck-white);
+		line-height: 28px;
+		font-weight: 600;
+	}
+	
+	.footer-widget__about {
+		position: relative;
+		display: block;
+		margin-right: 10px;
+	}
+	
+	.footer-widget__logo {
+		position: relative;
+		display: block;
+		margin-bottom: 20px;
+	}
+	
+	.footer-widget__about-text {
+		font-size: 15px;
+		color: #eaecf1;
+	}
+	
+	.site-footer__social {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		margin-top: 29px;
+	}
+	
+	.site-footer__social a {
+		position: relative;
+		height: 40px;
+		width: 40px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		text-align: center;
+		color: #000;
+		background-color: transparent;
+		font-size: 15px;
+		border-radius: 50%;
+		border: 1px solid var(--treck-base);
+		overflow: hidden;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+		z-index: 1;
+	}
+	
+	.site-footer__social a:hover {
+		color: var(--treck-white);
+		background-color: var(--treck-white);
+		border: 1px solid var(--treck-white);
+	}
+	
+	.site-footer__social a:after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 100%;
+		background-color: var(--treck-white);
+		-webkit-transition-delay: .1s;
+		transition-delay: .1s;
+		-webkit-transition-timing-function: ease-in-out;
+		transition-timing-function: ease-in-out;
+		-webkit-transition-duration: .4s;
+		transition-duration: .4s;
+		-webkit-transition-property: all;
+		transition-property: all;
+		opacity: 1;
+		-webkit-transform-origin: top;
+		transform-origin: top;
+		-webkit-transform-style: preserve-3d;
+		transform-style: preserve-3d;
+		-webkit-transform: scaleY(0);
+		transform: scaleY(0);
+		z-index: -1;
+	}
+	
+	.site-footer__social a:hover:after {
+		opacity: 1;
+		-webkit-transform: scaleY(1);
+		transform: scaleY(1);
+	}
+	
+	.site-footer__social a+a {
+		margin-left: 10px;
+	}
+	
+	.footer-widget__link {
+		position: relative;
+		display: block;
+		margin-right: -30px;
+	}
+	
+	.footer-widget__link-list {
+		position: relative;
+		display: block;
+	}
+	
+	.footer-widget__link-list li+li {
+		margin-top: 6px;
+	}
+	
+	.footer-widget__link-list li a {
+		position: relative;
+		color: #000;
+		font-size: 15px;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.footer-widget__link-list li a:hover {
+		color: var(--treck-white);
+	}
+	
+	.footer-widget__visa {
+		position: relative;
+		display: block;
+		margin-left: 60px;
+	}
+	
+	.footer-widget__visa-list {
+		position: relative;
+		display: block;
+	}
+	
+	.footer-widget__visa-list li {
+		position: relative;
+		display: block;
+	}
+	
+	.footer-widget__visa-list li+li {
+		margin-top: 6px;
+	}
+	
+	.footer-widget__visa-list li a {
+		position: relative;
+		color: #f4f6fc;
+		font-size: 15px;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.footer-widget__visa-list li a:hover {
+		color: var(--treck-white);
+	}
+	
+	.footer-widget__gallery {
+		position: relative;
+		display: block;
+		margin-left: -9px;
+	}
+	
+	.footer-widget__gallery .footer-widget__title-box {
+		margin-bottom: 33px;
+	}
+	
+	.footer-widget__gallery-list {
+		position: relative;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		margin-right: -5px;
+		margin-left: -5px;
+	}
+	
+	.footer-widget__gallery-list li {
+		position: relative;
+		display: inline-block;
+		padding-left: 5px;
+		padding-right: 5px;
+		margin-bottom: 10px;
+	}
+	
+	.footer-widget__gallery-img {
+		position: relative;
+		display: block;
+		overflow: hidden;
+		width: 70px;
+		z-index: 1;
+	}
+	
+	.footer-widget__gallery-img:before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		content: "";
+		background-color: rgba(var(--treck-black-rgb), 0.3);
+		transition: all 700ms ease;
+		transform: translateY(-100%);
+		z-index: 1;
+	}
+	
+	.footer-widget__gallery-list li:hover .footer-widget__gallery-img:before {
+		transform: translateY(0%);
+	}
+	
+	.footer-widget__gallery-img img {
+		width: 100%;
+		transition-delay: .1s;
+		transition-timing-function: ease-in-out;
+		transition-duration: .7s;
+		transition-property: all;
+	}
+	
+	.footer-widget__gallery-list li:hover .footer-widget__gallery-img img {
+		transform: scale(1.1) rotate(2deg);
+	}
+	
+	.footer-widget__gallery-img a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 17px;
+		color: var(--treck-white);
+		transform: translateY(100px);
+		opacity: 0;
+		transition: all 700ms ease;
+		z-index: 2;
+	}
+	
+	.footer-widget__gallery-list li:hover .footer-widget__gallery-img a {
+		transform: translateY(0px);
+		opacity: 1;
+		transition-delay: 0.3s;
+	}
+	
+	.footer-widget__gallery-list li .footer-widget__gallery-img a:hover {
+		color: var(--treck-base);
+	}
+	
+	.footer-widget__Contact {
+		position: relative;
+		display: block;
+	}
+	
+	.footer-widget__Contact-list {
+		position: relative;
+		display: block;
+		margin-top: -1px;
+	}
+	
+	.footer-widget__Contact-list li {
+		position: relative;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+	}
+	
+	.footer-widget__Contact-list li .icon {
+		font-size: 16px;
+		margin-right: 12px;
+	}
+	
+	.footer-widget__Contact-list li:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	
+	.footer-widget__Contact-list li:nth-child(2) {
+		margin-bottom: 22px;
+	}
+	
+	.footer-widget__Contact-list li .icon span {
+		color: var(--treck-base);
+		font-size: 15px;
+	}
+	
+	.footer-widget__Contact-list li .text p {
+		font-size: 15px;
+		font-weight: 500;
+		color: #000;
+		line-height: 26px;
+	}
+	
+	.footer-widget__Contact-list li .text p a {
+		color: #000;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.footer-widget__Contact-list li .text p a:hover {
+		color: var(--treck-base);
+		transition: all 500ms ease;
+	}
+	
+	.site-footer__bottom {
+		position: relative;
+		display: block;
+		padding: 32px 0 34px;
+		background-color: #000;
+	}
+	
+	.site-footer__bottom-inner {
+		position: relative;
+		display: block;
+		text-align: center;
+	}
+	
+	.site-footer__bottom-text {
+		color: #fff;
+		font-size: 15px;
+		font-weight: 500;
+	}
+	
+	.site-footer__bottom-text a {
+		color: #fff;
+		-webkit-transition: all 500ms ease;
+		transition: all 500ms ease;
+	}
+	
+	.site-footer__bottom-text a:hover {
+		color: var(--treck-white);
+	}
+</style>
 <style>
 	.forced-height {
 		height: 60vh;
@@ -199,7 +844,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px !important;
 	}
 	.elementor-286 .elementor-element.elementor-element-252e1bfc:not(.elementor-motion-effects-element-type-background), .elementor-286 .elementor-element.elementor-element-252e1bfc > .elementor-motion-effects-container > .elementor-motion-effects-layer {
-		background-color: #000;
+		background-color: #fff;
 	}
 	
 	.underline {
@@ -503,27 +1148,31 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.15.0 - 05-07-2023 */
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>			
-	<div class="elementor-element elementor-element-5c12d75 elementor-widget elementor-widget-text-editor" data-id="5c12d75" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-text-editor elementor-clearfix"><p>We stand out as<strong><em> leaders</em> </strong>in providing a high quality <strong>professional</strong> real estate and investment advisory service with proven <b>skills &amp; expertise</b>, strong <b>local knowledge</b>,  and <strong>global marketing reach</strong>.</p></div></div></div><div class="elementor-element elementor-element-934e9e5 elementor-widget elementor-widget-text-editor" data-id="934e9e5" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-text-editor elementor-clearfix"><p>Our <strong><em>focus</em> </strong>is to create the <strong>very best results</strong> for our clients through our <strong>innovative</strong> and <strong>energetic professional approach</strong>.</p></div></div></div>						</div>
+	<div class="elementor-element elementor-element-5c12d75 elementor-widget elementor-widget-text-editor" data-id="5c12d75" data-element_type="widget" data-widget_type="text-editor.default"><div class="elementor-widget-container"><div class="elementor-text-editor elementor-clearfix">
+	<p>Worldwide Overseas is a premier educational consulting firm operating across India, Sri Lanka, and Australia, dedicated to guiding students towards their academic and career aspirations. With a robust presence in these three dynamic regions, we offer comprehensive services to students seeking higher education opportunities abroad.
+		Our team comprises experienced consultants who possess in-depth knowledge of international education systems, admissions processes, and visa requirements. We provide personalized guidance to students, helping them navigate the complex landscape of selecting the right academic institutions, courses, and destinations that align with their goals and interests.
+		</p>	
+	</div></div></div>						</div>
 				</div>
 					</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-26041e9 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="26041e9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-26041e9 elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="26041e9" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6b89faa5" data-id="6b89faa5" data-element_type="column">
 			<div class="elementor-widget-wrap">
 									</div>
 		</div>
 							</div>
-		</section>
+		</section> -->
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-63600100 elementor-reverse-mobile elementor-reverse-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="63600100" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2814c025" data-id="2814c025" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-6f249157 elementor-invisible elementor-widget elementor-widget-heading" data-id="6f249157" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Jeff Tikitau</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">Anuj Vashisht</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-752cf51 elementor-invisible elementor-widget elementor-widget-heading" data-id="752cf51" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
@@ -531,13 +1180,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				</div>
 				<div class="elementor-element elementor-element-34fe4fd3 elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="34fe4fd3" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>Recently returning to Rarotonga in July 2017 with his wife Natalie, after living and working in Nice, France where both Jeff and Natalie successfully sold high-end luxury real estate along the beautiful world-renowned coastline of the French Riviera for a leading British agency.</p>
-
-<p>Born on Rarotonga, Jeff is of Cook Island, Tahitian &amp; German ancestry and is a descendant from the families of the royal dynasties of both Cook Islands and French Polynesia. He speaks Cook Island Maori and is also fluent in both the written and spoken languages of English and French. As well as having a strong background in tourism &amp; hospitality working in New Zealand, Rarotonga and Tahiti, French Polynesia, he is a trainer and a motivator with over 20 years’ experience in Hotel/ Resort and Human Resources Management roles.</p>
-
-<p>He has danced in the Polynesian cultural festivals and loves to share his knowledge of his rich Polynesian culture.</p>
-
-<p>A passionate, cheerful, outgoing, confident individual, a strong communicator who thrives on professionalism. Conducts himself with a code of high ethics and moral values, with a genuine interest in people he meets. It is with no wonder, Jeff has been referred to as a “sophisticated local”.</p>						</div>
+							<p>
+								Meet our esteemed Managing Director, Anuj Vashisht, a seasoned professional with 24 years of rich experience spanning customer service, banking, finance, and consultancy. For the past 8 years, Anuj has been the driving force behind two renowned firms in Australia: "Quicken Loans," a trusted mortgage broking firm, and "Quicken Solutions," a leading consultancy firm. Under his adept leadership, Quicken Loans has become synonymous with reliability in the mortgage industry, while Quicken Solutions continues to provide innovative and strategic solutions to clients across various sectors. 	</p>						</div>
 				</div>
 					</div>
 		</div>
@@ -545,7 +1189,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-1885a203 elementor-invisible elementor-widget elementor-widget-image" data-id="1885a203" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="422" height="420" src="../wp-content/uploads/2023/05/JeffTikitau-profile.png" class="attachment-full size-full wp-image-318" alt="" loading="lazy" srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/JeffTikitau-profile.png 422w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/JeffTikitau-profile-300x300.png 300w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/JeffTikitau-profile-150x150.png 150w" sizes="(max-width: 422px) 100vw, 422px" />															</div>
+				<img decoding="async" width="422" height="420" src="../Images/anujvashisht.JPG" class="attachment-full size-full wp-image-318" alt="" loading="lazy"
+				 srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/anujvashisht.JPG 422w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/anujvashisht.JPG 150w" sizes="(max-width: 422px) 100vw, 422px" />			
+																</div>
 				</div>
 					</div>
 		</div>
@@ -553,27 +1199,28 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</section>
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-b13c719 elementor-reverse-mobile elementor-reverse-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="b13c719" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-80c71eb" data-id="80c71eb" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-b62b150 elementor-invisible elementor-widget elementor-widget-heading" data-id="b62b150" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Natalie Tikitau</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-4ba9fcf elementor-invisible elementor-widget elementor-widget-heading" data-id="4ba9fcf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">General Manager</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-04af2ff elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="04af2ff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Natalie is originally from New Zealand, and is of New Zealand/Samoan/French ancestry. Together with her husband Jeff, they have lived in New Zealand, Cook Islands, Tahiti and France.</p><p>Licensed as a French real estate agent, Natalie is a<span style="font-size: clamp(1rem, 2.5vw, 1.3rem); color: var( --e-global-color-text ); letter-spacing: var( --e-global-typography-text-letter-spacing );"> dedicated and diligent professional with a bubbly &amp; personable demeanour. Natalie is passionate about real estate &amp; property management, having grown up in a family of real estate agents &amp; property managers, and has unwavering commitment to exceeding client’s expectations.</span></p><p>Natalie has over 15 years’ experience in tourism &amp; hospitality throughout the Pacific and has managed luxury resorts in Cook Islands.  She has held top positions as Assistant Rooms Division Manager and later the Marketing Manager of a large luxury Resort in Tahiti, French Polynesia.  Natalie has also worked in the legal industry and has former experience as a licensed travel consultant.</p><p><span style="font-size: clamp(1rem, 2.5vw, 1.3rem); color: var( --e-global-color-text ); letter-spacing: var( --e-global-typography-text-letter-spacing );">Together with her husband Jeff, they both are a formidable team, with their innovative ideas, dynamism, and professionalism.</span></p>						</div>
-				</div>
-					</div>
-		</div>
 				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c411671" data-id="c411671" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-1c584db elementor-invisible elementor-widget elementor-widget-image" data-id="1c584db" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
 															<img decoding="async" width="422" height="420" src="../wp-content/uploads/2023/05/Nat-Final-1-crop-1.png" class="attachment-full size-full wp-image-317" alt="" loading="lazy" srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Nat-Final-1-crop-1.png 422w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Nat-Final-1-crop-1-300x300.png 300w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Nat-Final-1-crop-1-150x150.png 150w" sizes="(max-width: 422px) 100vw, 422px" />															</div>
+				</div>
+					</div>
+		</div>
+		<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-80c71eb" data-id="80c71eb" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-b62b150 elementor-invisible elementor-widget elementor-widget-heading" data-id="b62b150" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Meenakshi Vashisht</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4ba9fcf elementor-invisible elementor-widget elementor-widget-heading" data-id="4ba9fcf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h3 class="elementor-heading-title elementor-size-default"> our Director (Australia)</h3>		</div>
+				</div>
+				<div class="elementor-element elementor-element-04af2ff elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="04af2ff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Meet Meenakshi Vashisht, the Director of Worldwide Overseas, an educational consultancy based in Australia. With a background in law and a Bachelor of Education degree, Meenakshi brings over 20 years of invaluable experience in the field of education. As a qualified education consultant, she is dedicated to guiding students towards their academic goals, offering expert advice and support every step of the way. Meenakshi's passion for education and wealth of knowledge make her an invaluable asset to both students and their families, ensuring they receive the best opportunities for success.
+							</p>						</div>
 				</div>
 					</div>
 		</div>
@@ -585,15 +1232,16 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-c2a2a27 elementor-invisible elementor-widget elementor-widget-heading" data-id="c2a2a27" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Bruce Rogers</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">S.K Vashisht</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-24d3af2 elementor-invisible elementor-widget elementor-widget-heading" data-id="24d3af2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">ceo of J&NT HOLDINGS LTD</h3>		</div>
+			<h3 class="elementor-heading-title elementor-size-default"> our Director (India)</h3>		</div>
 				</div>
 				<div class="elementor-element elementor-element-a178ba8 elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="a178ba8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p>Having recently returned home to Rarotonga with his Cook Islander wife, Bruce has a solid background in general management, commercial construction, quantity surveying, project management, <span style="font-size: clamp(1rem, 2.5vw, 1.3rem); color: var( --e-global-color-text ); letter-spacing: var( --e-global-typography-text-letter-spacing );">business administration &amp; strategic leadership, and architectural drafting. </span></p><p><span style="color: var( --e-global-color-text ); font-size: clamp(1rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );">Having operated his own consultancy business in Samoa for the country&#8217;s largest projects at the time, Bruce brings a wealth of experience to the Cook Islands and JT brand.</span></p><p><span style="color: var( --e-global-color-text ); font-size: clamp(1rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"> Bruce is a doer who possesses the rare skill of implementing strategy as well as developing strategy. </span><span style="font-size: clamp(1rem, 2.5vw, 1.3rem); color: var( --e-global-color-text ); letter-spacing: var( --e-global-typography-text-letter-spacing );">As a “systems thinker” he is able to meet challenges with long term sustainable change, understanding interdependencies, how to best leverage them to align with organisational goals utilising approaches inspiring: collaboration, team work and integration.</span></p><p> </p>						</div>
+						<p>Meet S.K Vashisht, the Director (India) of Worldwide Overseas, an educational consultancy. With over 35 years of experience across various locations in India, he honed his skills in a renowned government bank before transitioning to administration and education. His extensive expertise, acquired over 5+ years in these domains, enriches our consultancy's offerings, ensuring comprehensive guidance and support for students pursuing global education opportunities.
+						</p>						</div>
 				</div>
 					</div>
 		</div>
@@ -607,6 +1255,35 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</div>
 							</div>
 		</section>
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-b13c719 elementor-reverse-mobile elementor-reverse-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="b13c719" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+			<div class="elementor-container elementor-column-gap-default">
+	<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c411671" data-id="c411671" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-element elementor-element-1c584db elementor-invisible elementor-widget elementor-widget-image" data-id="1c584db" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+	<div class="elementor-widget-container">
+												<img decoding="async" width="422" height="420" src="../wp-content/uploads/2023/05/Nat-Final-1-crop-1.png" class="attachment-full size-full wp-image-317" alt="" loading="lazy" srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Nat-Final-1-crop-1.png 422w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Nat-Final-1-crop-1-300x300.png 300w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Nat-Final-1-crop-1-150x150.png 150w" sizes="(max-width: 422px) 100vw, 422px" />															</div>
+	</div>
+		</div>
+</div>
+<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-80c71eb" data-id="80c71eb" data-element_type="column">
+<div class="elementor-widget-wrap elementor-element-populated">
+					<div class="elementor-element elementor-element-b62b150 elementor-invisible elementor-widget elementor-widget-heading" data-id="b62b150" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+<h2 class="elementor-heading-title elementor-size-default">Mr. Chathuranga Jayaweera</h2>		</div>
+	</div>
+	<div class="elementor-element elementor-element-4ba9fcf elementor-invisible elementor-widget elementor-widget-heading" data-id="4ba9fcf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+	<div class="elementor-widget-container">
+<h3 class="elementor-heading-title elementor-size-default">our Director (Sri Lanka)</h3>		</div>
+	</div>
+	<div class="elementor-element elementor-element-04af2ff elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="04af2ff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
+	<div class="elementor-widget-container">
+				<p>Meet Mr. Chathuranga Jayaweera, the esteemed director of Worldwide Overseas Colombo in Sri Lanka. With a robust career spanning over 15 years in Education, Telecommunications, and Marketing, Chathuranga is a seasoned professional known for his goal-oriented approach. Armed with an MBA from an international university, he has held pivotal roles in esteemed organizations, showcasing his prowess as a problem solver and passionate team player. Chathuranga's leadership and communication skills are exemplary, driving success at every turn.
+				</p>		</div>
+	</div>
+		</div>
+</div>
+				</div>
+</section>
 				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-bc8b2f9 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="bc8b2f9" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1043f65" data-id="1043f65" data-element_type="column">
@@ -671,7 +1348,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</div>
 							</div>
 		</section> -->
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-3bed8a6d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3bed8a6d" data-element_type="section">
+				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-3bed8a6d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3bed8a6d" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-66f7277" data-id="66f7277" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -797,7 +1474,7 @@ Natalie’s professionalism, diligence, and great service as my agent has been s
 					</div>
 		</div>
 							</div>
-		</section>
+		</section> -->
 				<section class="elementor-section elementor-top-section elementor-element elementor-element-252e1bfc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="252e1bfc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51141755" data-id="51141755" data-element_type="column">
@@ -808,7 +1485,7 @@ Natalie’s professionalism, diligence, and great service as my agent has been s
 				</div>
 				<div class="elementor-element elementor-element-f6f08ed elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="f6f08ed" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p class="white">Our <strong><em>focus</em> </strong>is to create the <strong>very best results</strong> for our clients through our <strong>innovative</strong> and <strong>energetic professional approach</strong>.</p>						</div>
+							<p class="black">Our <strong><em>focus</em> </strong>is to create the <strong>very best results</strong> for our clients through our <strong>innovative</strong> and <strong>energetic professional approach</strong>.</p>						</div>
 				</div>
 				<div class="elementor-element elementor-element-1fadf269 elementor-align-center elementor-widget elementor-widget-button" data-id="1fadf269" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -828,7 +1505,61 @@ Natalie’s professionalism, diligence, and great service as my agent has been s
 							</div>
 		</section>
 							</div>
-				<div data-elementor-type="footer" data-elementor-id="91" class="elementor elementor-91 elementor-location-footer" data-elementor-post-type="elementor_library">
+							<footer>
+								<div class="container">
+									<div class="row">
+										  <div class="col" id="company">
+											  <img src="../Images/logo.png" alt="" class="logo">
+											  <p class="main">
+											From individuals and small local businesses to the world's largest companies,
+												 World Wings Education and Immigration guides you on the journey,
+												 providing expertise on where, when, and why, while we equip you with the how.
+											  </p>
+											  <!-- <div class="social">
+												<a href="#"><i class="fab fa-facebook"></i></a>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+												<a href="#"><i class="fab fa-youtube"></i></a>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+												<a href="#"><i class="fab fa-linkedin"></i></a>
+											  </div> -->
+										  </div>
+							
+							
+										  <div class="col" id="services">
+											 <h3>Services</h3>
+											 <div class="links">
+												<a href="#">Student visa</a>
+												<a href="#">Visitor Visa</a>
+												<a href="#">Permanent Residency</a>
+												<a href="#">Educational Consulting</a>
+											 </div>
+										  </div>
+							
+										  <div class="col" id="useful-links">
+											 <h3>Links</h3>
+											 <div class="links">
+												<a href="#">About</a>
+												<a href="#">Services</a>
+												<a href="#">Our Policy</a>
+												<a href="#">Help</a>
+											 </div>
+										  </div>
+							
+										  <div class="col" id="contact">
+											  <h3>Contact</h3>
+											  <div class="contact-details">
+												 <i class="fa fa-location"></i>
+												 <p>FF-42, Procube Avenue, <br> NY, USA</p>
+											  </div>
+											  <div class="contact-details">
+												 <i class="fa fa-phone"></i>
+												 <p>+1-8755856858</p>
+											  </div>
+										  </div>
+									</div>
+								</div>
+							 </footer>
+				<!-- <div data-elementor-type="footer" data-elementor-id="91" class="elementor elementor-91 elementor-location-footer" data-elementor-post-type="elementor_library">
 								<section class="elementor-section elementor-top-section elementor-element elementor-element-1804f784 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1804f784" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-169592b6" data-id="169592b6" data-element_type="column">
@@ -841,7 +1572,7 @@ Natalie’s professionalism, diligence, and great service as my agent has been s
 						}
 					</style>
 																<a href="#">
-							<img width="2560" height="1241" src="../Images//white logo.png" class="attachment-full size-full wp-image-1102" alt="" loading="lazy"  sizes="(max-width: 2560px) 100vw, 2560px" />								</a>
+							<img width="2560" height="1241" src="../Images/logo.png" class="attachment-full size-full wp-image-1102" alt="" loading="lazy"  sizes="(max-width: 2560px) 100vw, 2560px" />								</a>
 															</div>
 				</div>
 				<div class="elementor-element elementor-element-c5a6a82 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="c5a6a82" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
@@ -977,7 +1708,7 @@ Natalie’s professionalism, diligence, and great service as my agent has been s
 		</div>
 							</div>
 		</section>
-						</div>
+						</div> -->
 		
 <link rel='stylesheet' id='e-animations-css' href='../wp-content/plugins/elementor/assets/lib/animations/animations.min1756.css?ver=3.15.0-cloud4' media='all' />
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='../wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
