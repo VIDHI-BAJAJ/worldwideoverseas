@@ -1,6 +1,5 @@
 (function ($) {
     "use strict";
-  
     var WidgetDefaultHandler = function ($scope) {
       if ($scope.find(".odometer").length) {
         var odo = $(".odometer");
