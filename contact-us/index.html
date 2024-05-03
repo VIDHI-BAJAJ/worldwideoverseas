@@ -180,6 +180,147 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	}
 	
 </style>
+<style>	
+	footer{
+		background-color: #000000ff;
+		position: relative;
+		width: 100%;
+		min-height: 50px;
+		padding: 3rem 1rem;
+		margin-top: 50px;
+	}
+	.container {
+	   max-width: 1140px;
+	   margin: 0 auto;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   flex-direction: column;
+	
+	}
+	.row{
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	}
+	
+	.col{
+	   min-width: 250px;
+	   color:#f2f2f2f2;
+	   font-family: poppins;
+	   padding:0 2rem;
+	}
+	.col .logo{
+	   width: 150px;
+	   margin-bottom:25px;
+	}
+	.main p{
+	   font-size: 12px;
+	   text-align: justify;
+	}
+	
+	.col h3{
+	   color:rgb(252, 222, 222);
+	   margin-bottom: 20px;
+	   position: relative;
+	   cursor: pointer;
+	}
+	.col h3::after{
+	   content: '';
+	   height:3px;
+	   width:0px;
+	   background-color: rgb(97, 95, 95);
+	   position: absolute;
+	   bottom: 0;
+	   left:0;
+	   transition: 0.3s ease;
+	
+	}
+	.col h3:hover::after{
+	   width:30px
+	}
+	.col .social a i{
+	   color:rgb(95, 94, 94);
+	   margin-top:2rem;
+	   margin-right: 5px;
+	   transition: 0.3s ease;
+	}
+	.col .social a i:hover{
+	   transform: scale(1.5);
+	   filter:grayscale(25);
+	}
+	.col .links a{
+	   display: block;
+	   text-decoration: none;
+	   color:#f2f2f2;
+	   margin-bottom: 5px;
+	   position: relative;
+	   transition: 0.3s ease;
+	}
+	.col .links a::before{
+	   content:'';
+	   height: 16px;
+	   width:3px;
+	   position: absolute;
+	   top:5px;
+	   left:-10px;
+	   background-color: rgb(219, 213, 213);
+	   transition: 0.5s ease;
+	   opacity: 0;
+	}
+	.col .links a:hover::before{
+	   opacity: 1;
+	}
+	.col .links a:hover{
+	   transform: translateX(-8px);
+	   color:rgb(161, 159, 160);
+	}
+	.col .contact-details{
+	   display: inline-flex;
+	   justify-content: space-between;
+	}
+	.col .contact-details i{
+	   margin-right:15px;
+	}
+	.row .form{
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   padding:2rem 0;
+	}
+	.row .form input{
+	   background-color: #1a1c20ff;
+	   border:0;
+	   outline:none;
+	   padding:14px 20px;
+	   border-radius: 6px;
+	   border-top-right-radius: 0;
+	   border-bottom-right-radius: 0;
+	}
+	
+	@media(max-width:900px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 25px;
+	 }
+	}
+	@media(max-width:768px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 20px;
+	 }
+	}
+	</style>
 <style>
 	.forced-height {
 		height: 60vh;
@@ -432,10 +573,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		<nav class="elementor-nav-menu--main elementor-nav-menu__container elementor-nav-menu--layout-horizontal e--pointer-underline e--animation-fade">
 				<ul id="menu-1-4abdbb18" class="elementor-nav-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-329"><a href="../index.html" class="elementor-item">Home</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
-<a href="../discover-jeff-tikitau-real-estate-cook-islands/index.html" class="elementor-item elementor-item-anchor">Aboutus</a>
+<a href="../aboutus/index.html" class="elementor-item elementor-item-anchor">Aboutus</a>
 </li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341">
-	<a href="../contact-us/index.html" class="elementor-item elementor-item-anchor">Services</a>
+	<a href="../services/index.html" class="elementor-item elementor-item-anchor">Services</a>
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-334 current_page_item menu-item-346"><a href="index.html" aria-current="page" class="elementor-item elementor-item-active">Contact</a></li>
 </ul>			</nav>
@@ -446,10 +587,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<ul id="menu-2-4abdbb18" class="elementor-nav-menu">
 	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-329"><a href="../index.html" class="elementor-item" tabindex="-1">Home</a></li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-405">
-	<a href="../discover-jeff-tikitau-real-estate-cook-islands/index.html" class="elementor-item elementor-item-anchor" tabindex="-1">AboutUs</a>
+	<a href="../aboutus/index.html" class="elementor-item elementor-item-anchor" tabindex="-1">AboutUs</a>
 </li>
 <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-3341">
-	<a href="#" class="elementor-item elementor-item-anchor" tabindex="-1">Services</a>
+	<a href="../services/index.html" class="elementor-item elementor-item-anchor" tabindex="-1">Services</a>
 
 </li>
 <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-334 current_page_item menu-item-346">
@@ -480,14 +621,13 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.15.0 - 05-07-2023 */
 .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>			
-	<p>Professional Realtors with national experience, local knowledge &amp; expert advice.</p>
-	<p>Whether you are an investor who wants to buy and take advantage of Cook Islands’ rising tourism and holiday rentals market, or a buyer seeking a more relaxed lifestyle in a safe &amp; secure environment, BEAM Real Estate is your answer.  </p>						</div>
+				</div>
 				</div>
 					</div>
 		</div>
 							</div>
 		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-1b8e0f5a elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="1b8e0f5a" data-element_type="section">
+				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-1b8e0f5a elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="1b8e0f5a" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-15b797e5" data-id="15b797e5" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
@@ -506,7 +646,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 					</div>
 		</div>
 							</div>
-		</section>
+		</section> -->
 				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-6263c7fe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6263c7fe" data-element_type="section">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-26636a66" data-id="26636a66" data-element_type="column">
@@ -623,7 +763,7 @@ text-align:right;transition:width .1s linear}
 
 							<span class="elementor-icon-list-icon">
 		<svg aria-hidden="true" class="e-font-icon-svg e-far-envelope-open" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M494.586 164.516c-4.697-3.883-111.723-89.95-135.251-108.657C337.231 38.191 299.437 0 256 0c-43.205 0-80.636 37.717-103.335 55.859-24.463 19.45-131.07 105.195-135.15 108.549A48.004 48.004 0 0 0 0 201.485V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.509a48 48 0 0 0-17.414-36.993zM464 458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V204.347c0-1.813.816-3.526 2.226-4.665 15.87-12.814 108.793-87.554 132.364-106.293C200.755 78.88 232.398 48 256 48c23.693 0 55.857 31.369 73.41 45.389 23.573 18.741 116.503 93.493 132.366 106.316a5.99 5.99 0 0 1 2.224 4.663V458zm-31.991-187.704c4.249 5.159 3.465 12.795-1.745 16.981-28.975 23.283-59.274 47.597-70.929 56.863C336.636 362.283 299.205 400 256 400c-43.452 0-81.287-38.237-103.335-55.86-11.279-8.967-41.744-33.413-70.927-56.865-5.21-4.187-5.993-11.822-1.745-16.981l15.258-18.528c4.178-5.073 11.657-5.843 16.779-1.726 28.618 23.001 58.566 47.035 70.56 56.571C200.143 320.631 232.307 352 256 352c23.602 0 55.246-30.88 73.41-45.389 11.994-9.535 41.944-33.57 70.563-56.568 5.122-4.116 12.601-3.346 16.778 1.727l15.258 18.526z"></path></svg>						</span>
-					<span class="elementor-icon-list-text">breamsolutions.official@gmail.com</span>
+					<span class="elementor-icon-list-text">worldwideoverseassl@gmail.com</span>
 						</a>
 				</li>
 			<li class="elementor-icon-list-item">
@@ -631,7 +771,7 @@ text-align:right;transition:width .1s linear}
 
 							<span class="elementor-icon-list-icon">
 		<svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>						</span>
-					<span class="elementor-icon-list-text">+91 8792639014</span>
+					<span class="elementor-icon-list-text">+61 449 658 660, +61 468 458 660</span>
 						</a>
 				</li>
 			<li class="elementor-icon-list-item">
@@ -639,8 +779,7 @@ text-align:right;transition:width .1s linear}
 
 							<span class="elementor-icon-list-icon">
 		<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-pin" viewBox="0 0 288 512" xmlns="http://www.w3.org/2000/svg"><path d="M112 316.94v156.69l22.02 33.02c4.75 7.12 15.22 7.12 19.97 0L176 473.63V316.94c-10.39 1.92-21.06 3.06-32 3.06s-21.61-1.14-32-3.06zM144 0C64.47 0 0 64.47 0 144s64.47 144 144 144 144-64.47 144-144S223.53 0 144 0zm0 76c-37.5 0-68 30.5-68 68 0 6.62-5.38 12-12 12s-12-5.38-12-12c0-50.73 41.28-92 92-92 6.62 0 12 5.38 12 12s-5.38 12-12 12z"></path></svg>						</span>
-					<span class="elementor-icon-list-text">909, Garden Layout, Sector 2, HSR Layout
-						Bengaluru - 560102</span>
+					<span class="elementor-icon-list-text">6A/938 South Road , Edwardstown,  SA 5039 Australia</span>
 						</a>
 				</li>
 	</ul>
@@ -714,180 +853,60 @@ Phone Number							</label>
 </div>
 </div>
 </section>	
-<div data-elementor-type="footer" data-elementor-id="91" class="elementor elementor-91 elementor-location-footer" data-elementor-post-type="elementor_library">
-	<section class="elementor-section elementor-top-section elementor-element elementor-element-1804f784 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1804f784" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-169592b6" data-id="169592b6" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-	<!-- <div class="elementor-element elementor-element-6bea4d1a elementor-widget elementor-widget-image" data-id="6bea4d1a" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<style>
-.elementor-91 .elementor-element.elementor-element-6bea4d1a img {
-width: 150px;
-}
-</style>
-<a href="#">
-<img width="2560" height="1241" src="../Images/white logo.png" class="attachment-full size-full wp-image-1102" alt="" loading="lazy" sizes="(max-width: 2560px) 100vw, 2560px" />								</a>
-								</div>
-</div> -->
+<footer>
+	<div class="container">
+		<div class="row">
+			  <div class="col" id="company">
+				  <img src="../Images/logo.png" alt="" class="logo">
+				  <p class="main">
+				From individuals and small local businesses to the world's largest companies,
+					 World Wings Education and Immigration guides you on the journey,
+					 providing expertise on where, when, and why, while we equip you with the how.
+				  </p>
+				  <!-- <div class="social">
+					<a href="#"><i class="fab fa-facebook"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+					<a href="#"><i class="fab fa-linkedin"></i></a>
+				  </div> -->
+			  </div>
 
 
-<div class="elementor-element elementor-element-406234f9 elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="406234f9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-<div class="elementor-widget-container">
-<link rel="stylesheet" href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">	
-<div class="elementor-icon-box-wrapper">
-<div class="elementor-icon-box-icon">
-<span class="elementor-icon elementor-animation-" >
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>				</span>
-</div>
-<div class="elementor-icon-box-content">
-<div class="elementor-icon-box-title">
-<span  >
-Bengaluru</span>
-</div>
-			<p class="elementor-icon-box-description">
-<span style="color: #ffffff">909, Garden Layout, Sector 2, HSR Layout
-	Bengaluru - 560102</span></p>
-	</div>
-</div>
-</div>
-</div>		
-<div class="elementor-element elementor-element-c5a6a82 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="c5a6a82" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<span style="color:#ffffff">Your trusted real estate partner in beautiful Bengaluru , offering dream properties and opportunities.</span>						</div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6e541acc elementor-hidden-mobile elementor-hidden-tablet" data-id="6e541acc" data-element_type="column">
-<div class="elementor-widget-wrap">
+			  <div class="col" id="services">
+				 <h3>Services</h3>
+				 <div class="links">
+					<a href="#">Student visa</a>
+					<a href="#">Visitor Visa</a>
+					<a href="#">Permanent Residency</a>
+					<a href="#">Educational Consulting</a>
+				 </div>
+			  </div>
+
+			  <div class="col" id="useful-links">
+				 <h3>Links</h3>
+				 <div class="links">
+					<a href="#">About</a>
+					<a href="#">Services</a>
+					<a href="#">Our Policy</a>
+					<a href="#">Help</a>
+				 </div>
+			  </div>
+
+			  <div class="col" id="contact">
+				  <h3>Contact</h3>
+				  <div class="contact-details">
+					 <i class="fa fa-location"></i>
+					 <p>FF-42, Procube Avenue, <br> NY, USA</p>
+				  </div>
+				  <div class="contact-details">
+					 <i class="fa fa-phone"></i>
+					 <p>+1-8755856858</p>
+				  </div>
+			  </div>
 		</div>
-</div>
-<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7ad94d58" data-id="7ad94d58" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-	<!-- <div class="elementor-element elementor-element-406234f9 elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="406234f9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-<div class="elementor-widget-container">
-<link rel="stylesheet" href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">	
-<div class="elementor-icon-box-wrapper">
-<div class="elementor-icon-box-icon">
-<span class="elementor-icon elementor-animation-" >
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>				</span>
-</div>
-<div class="elementor-icon-box-content">
-<div class="elementor-icon-box-title">
-<span  >
-Bengaluru</span>
-</div>
-		<p class="elementor-icon-box-description">
-<span style="color: #ffffff">909, Garden Layout, Sector 2, HSR Layout
-Bengaluru - 560102</span></p>
-</div>
-</div>
-</div>
-</div> -->
-<div class="elementor-element elementor-element-25685617 elementor-position-left elementor-vertical-align-middle elementor-widget-mobile__width-initial elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="25685617" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-box-wrapper">
-<div class="elementor-icon-box-icon">
-<span class="elementor-icon elementor-animation-" >
-<svg aria-hidden="true" class="e-font-icon-svg e-far-envelope-open" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M494.586 164.516c-4.697-3.883-111.723-89.95-135.251-108.657C337.231 38.191 299.437 0 256 0c-43.205 0-80.636 37.717-103.335 55.859-24.463 19.45-131.07 105.195-135.15 108.549A48.004 48.004 0 0 0 0 201.485V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.509a48 48 0 0 0-17.414-36.993zM464 458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V204.347c0-1.813.816-3.526 2.226-4.665 15.87-12.814 108.793-87.554 132.364-106.293C200.755 78.88 232.398 48 256 48c23.693 0 55.857 31.369 73.41 45.389 23.573 18.741 116.503 93.493 132.366 106.316a5.99 5.99 0 0 1 2.224 4.663V458zm-31.991-187.704c4.249 5.159 3.465 12.795-1.745 16.981-28.975 23.283-59.274 47.597-70.929 56.863C336.636 362.283 299.205 400 256 400c-43.452 0-81.287-38.237-103.335-55.86-11.279-8.967-41.744-33.413-70.927-56.865-5.21-4.187-5.993-11.822-1.745-16.981l15.258-18.528c4.178-5.073 11.657-5.843 16.779-1.726 28.618 23.001 58.566 47.035 70.56 56.571C200.143 320.631 232.307 352 256 352c23.602 0 55.246-30.88 73.41-45.389 11.994-9.535 41.944-33.57 70.563-56.568 5.122-4.116 12.601-3.346 16.778 1.727l15.258 18.526z"></path></svg>				</span>
-</div>
-<div class="elementor-icon-box-content">
-<div class="elementor-icon-box-title">
-<span  >
-Send us an email </span>
-</div>
-		<p class="elementor-icon-box-description">
-<span style="color: #ffffff">
-<span style="color: #ffffff">
-	<a style="color: #ffffff" href="cdn-cgi/l/email-protection.html#1162707d7462517b74777765787a786570646374707d7462657065743f727e7c">breamsolutions.official@gmail.com</a></span>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-421d03f2 elementor-position-left elementor-vertical-align-middle elementor-widget-mobile__width-initial elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="421d03f2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-<div class="elementor-widget-container">
-<div class="elementor-icon-box-wrapper">
-<div class="elementor-icon-box-icon">
-<span class="elementor-icon elementor-animation-" >
-<svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>				</span>
-</div>
-<div class="elementor-icon-box-content">
-<div class="elementor-icon-box-title">
-<span  >
-Talk to us					</span>
-</div>
-		<p class="elementor-icon-box-description">
-<span style="color: #ffffff">+91 8792639014</span>					</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-22bd825a" data-id="22bd825a" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-	<div class="elementor-element elementor-element-7ffe22a elementor-invisible elementor-widget elementor-widget-text-editor" data-id="7ffe22a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<span style="color: #ffffff;">FOLLOW US</span>						</div>
-</div>
-<div class="elementor-element elementor-element-25308b1 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-invisible elementor-widget elementor-widget-social-icons" data-id="25308b1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="social-icons.default">
-<div class="elementor-widget-container">
-<div class="elementor-social-icons-wrapper elementor-grid">
-<span class="elementor-grid-item">
-<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9f712ab" href="https://www.instagram.com/hsr_layout_rentals?igsh=cDFkYWZ1NDJvcGly&utm_source=qr" target="_blank">
-<span class="elementor-screen-only">Instagram</span>
-<svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-</a>	
-</span>
-
-<span class="elementor-grid-item">
-<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-7c6b0b8" href="https://www.linkedin.com/company/bream-solutions/" target="_blank">
-<span class="elementor-screen-only">Linkedin</span>
-<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-1aa01e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1aa01e1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c248cd1" data-id="c248cd1" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-	<div class="elementor-element elementor-element-511b537 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="511b537" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-<span style="color: #ffffff;"><strong>Disclaimer:</strong> It is our intention to provide accurate and up-to-date information on our website which has been obtained from various sources, however all information is subject to independent review and verification.</span>						</div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section class="elementor-section elementor-top-section elementor-element elementor-element-37bbfe17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37bbfe17" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-59e12661" data-id="59e12661" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-	<div class="elementor-element elementor-element-3fe3f47 elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider" data-id="3fe3f47" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="divider.default">
-<div class="elementor-widget-container">
-<style>/*! elementor - v3.15.0 - 05-07-2023 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
-<span class="elementor-divider-separator">
-</span>
-</div>
-</div>
-</div>
-<div class="elementor-element elementor-element-37b77a32 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="37b77a32" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-Copyright BEAM Real Estate Solution. All Rights Reserved.						</div>
-</div>
-
-</div>
-</div>
-</div>
-</section>
-</div>
+	</div>
+ </footer>
 <link rel='stylesheet' id='e-animations-css' href='../wp-content/plugins/elementor/assets/lib/animations/animations.min1756.css?ver=3.15.0-cloud4' media='all' />
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
 <script src='../wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
