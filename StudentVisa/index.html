@@ -67,6 +67,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='elementor-pro-css' href='../wp-content/plugins/elementor-pro/assets/css/frontend-lite.min1756.css?ver=3.15.0-cloud4' media='all' />
 <link rel='stylesheet' id='elementor-global-css' href='../wp-content/uploads/elementor/css/globalb5bb.css?ver=1688864088' media='all' />
 <link rel='stylesheet' id='elementor-post-3174-css' href='../wp-content/uploads/elementor/css/post-31740db6.css?ver=1688864247' media='all' />
+<link rel="stylesheet" id='elementor-post-3258-css' href='../wp-content/uploads/elementor/css/post-32580eg5.css?ver=1688864247'media='all'/>
 <link rel='stylesheet' id='elementor-post-926-css' href='../wp-content/uploads/elementor/css/post-9267eb8.css?ver=1688864089' media='all' />
 <link rel='stylesheet' id='elementor-post-91-css' href='../wp-content/uploads/elementor/css/post-917eb8.css?ver=1688864089' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Italiana%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CDM+Sans%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.2.4' media='all' />
@@ -262,7 +263,147 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		color: #000000 !important;
 	}
 </style>
-
+<style>	
+	footer{
+		background-color: #000000ff;
+		position: relative;
+		width: 100%;
+		min-height: 50px;
+		padding: 3rem 1rem;
+		margin-top: 50px;
+	}
+	.container {
+	   max-width: 1140px;
+	   margin: 0 auto;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   flex-direction: column;
+	
+	}
+	.row{
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	}
+	
+	.col{
+	   min-width: 250px;
+	   color:#f2f2f2f2;
+	   font-family: poppins;
+	   padding:0 2rem;
+	}
+	.col .logo{
+	   width: 150px;
+	   margin-bottom:25px;
+	}
+	.main p{
+	   font-size: 12px;
+	   text-align: justify;
+	}
+	
+	.col h3{
+	   color:rgb(252, 222, 222);
+	   margin-bottom: 20px;
+	   position: relative;
+	   cursor: pointer;
+	}
+	.col h3::after{
+	   content: '';
+	   height:3px;
+	   width:0px;
+	   background-color: rgb(97, 95, 95);
+	   position: absolute;
+	   bottom: 0;
+	   left:0;
+	   transition: 0.3s ease;
+	
+	}
+	.col h3:hover::after{
+	   width:30px
+	}
+	.col .social a i{
+	   color:rgb(95, 94, 94);
+	   margin-top:2rem;
+	   margin-right: 5px;
+	   transition: 0.3s ease;
+	}
+	.col .social a i:hover{
+	   transform: scale(1.5);
+	   filter:grayscale(25);
+	}
+	.col .links a{
+	   display: block;
+	   text-decoration: none;
+	   color:#f2f2f2;
+	   margin-bottom: 5px;
+	   position: relative;
+	   transition: 0.3s ease;
+	}
+	.col .links a::before{
+	   content:'';
+	   height: 16px;
+	   width:3px;
+	   position: absolute;
+	   top:5px;
+	   left:-10px;
+	   background-color: rgb(219, 213, 213);
+	   transition: 0.5s ease;
+	   opacity: 0;
+	}
+	.col .links a:hover::before{
+	   opacity: 1;
+	}
+	.col .links a:hover{
+	   transform: translateX(-8px);
+	   color:rgb(161, 159, 160);
+	}
+	.col .contact-details{
+	   display: inline-flex;
+	   justify-content: space-between;
+	}
+	.col .contact-details i{
+	   margin-right:15px;
+	}
+	.row .form{
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   padding:2rem 0;
+	}
+	.row .form input{
+	   background-color: #1a1c20ff;
+	   border:0;
+	   outline:none;
+	   padding:14px 20px;
+	   border-radius: 6px;
+	   border-top-right-radius: 0;
+	   border-bottom-right-radius: 0;
+	}
+	
+	@media(max-width:900px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 25px;
+	 }
+	}
+	@media(max-width:768px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 20px;
+	 }
+	}
+	</style>
 <style>
 	.elementor-button-text {
 		font-family: futura-pt, sans-serif !important;
@@ -464,34 +605,10 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 		</nav>
 						</div>
 				<div data-elementor-type="wp-post" data-elementor-id="3174" class="elementor elementor-3174" data-elementor-post-type="page">
-									<section class="elementor-section elementor-top-section elementor-element elementor-element-718fc8b9 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="718fc8b9" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+									
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-4aecfdfa elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="4aecfdfb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2eb52032" data-id="2eb52032" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-61e6e74e elementor-invisible elementor-widget elementor-widget-heading" data-id="61e6e74e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInLeft&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.15.0 - 05-07-2023 */
-.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h1 class="elementor-heading-title elementor-size-default">Buy with us</h1>		</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1463d7d" data-id="1463d7d" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-a424b75 elementor-widget elementor-widget-text-editor" data-id="a424b75" data-element_type="widget" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.15.0 - 05-07-2023 */
-.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>			
-	<p><strong>"Why BREAM Real Estate Stands as Your Premier Choice in the Real Estate Industry."</strong></p>
-<p>Whether you're an investor seeking a property or a buyer longing for a peaceful lifestyle in a secure environment, BREAM Real Estate is your perfect solution.</p>	
-</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-4aecfdfb elementor-section-full_width elementor-section-height-min-height elementor-section-height-default elementor-section-items-middle" data-id="4aecfdfb" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30d0d929" data-id="30d0d929" data-element_type="column">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-30d0d925" data-id="30d0d925" data-element_type="column">
 			<div class="elementor-widget-wrap">
 									</div>
 		</div>
@@ -504,7 +621,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-5512704e elementor-invisible elementor-widget elementor-widget-heading" data-id="5512704e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">"Trusted real estate professionals in Bangalore."</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">Student Visa</h2>		</div>
 				</div>
 					</div>
 		</div>
@@ -512,9 +629,9 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-25fbe977 elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="25fbe977" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );">With our </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing ); font-weight: bold;">
-								With our deep understanding of the local real estate market and extensive expertise in Bengaluru, India, combined with international realty experience as licensed real estate agents, BREAM Real Estate stands out as a leader in delivering high-quality professional realty services with expert advice and best practice methods</span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"> </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing ); font-weight: bold;"> </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"></span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"> </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing ); font-weight: bold;">international realty experience </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );">as licensed real estate agents in France, we stand out as leaders in providing</span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"> </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing ); font-weight: bold;"> </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"></span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );"> </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing ); font-weight: bold;"></span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );">and </span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing ); font-weight: bold;"></span><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );">. </span></p><p><span style="color: var( --e-global-color-text ); font-size: clamp(1.2rem, 2.5vw, 1.3rem); letter-spacing: var( --e-global-typography-text-letter-spacing );">Here are a few reasons why we are the trusted real estate experts in Bengaluru. </span></p>						</div>
-				</div>
+				<p>A student visa, or study visa, grants individuals the opportunity to pursue academic studies in a foreign country. Typically issued to those accepted by accredited educational institutions, the application process involves demonstrating acceptance, adequate financial resources, and sometimes medical clearance. Student visas may entail conditions such as limitations on work or required course loads. It's crucial for students to adhere to visa regulations to maintain legal status. Post-study, some countries offer pathways to work visas or residency, depending on immigration policies and individual qualifications.</p>		
+			<p>At Worldwide Overseas, we pride ourselves on offering top-notch Study Visa services tailored just for you. Here's what sets us apart</p>	
+			</div>
 				<div class="elementor-element elementor-element-795e626 elementor-invisible elementor-widget elementor-widget-accordion" data-id="795e626" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="accordion.default">
 				<div class="elementor-widget-container">
 			<style>/*! elementor - v3.15.0 - 05-07-2023 */
@@ -525,13 +642,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">Expert advice on the foreign investment process</a>
+												<a class="elementor-accordion-title" tabindex="0">Expert guidance</a>
 					</div>
-					<div id="elementor-tab-content-1271" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1271"><p>Because our sister company Jeff Tikitau Elite Management specializes in the facilitation of business development and projects, we have a dedicated team working closely with the Foreign Investments Division of the local Business Trade and Investment Board (BTIB), Ministry of Justice, Ministry of Foreign Affairs and Immigration (MFAI), Ministry of Health &#8211; Te Marae Ora, and the various other Government departments.</p>
-
-<p>If you are a foreign buyer, we offer a professional one-stop-shop facilitating service to file all of the necessary paperwork and documentation required with the appropriate agencies and ensure a seamless and stress-free transition.</p>
-
-<p>Visit <a href="https://jefftikitauelitemanagement.com/" target="_blank" style="text-decoration: underline; text-decoration-color: #2965CF;">Jeff Tikitau Elite Management</a> to see our full range of services to new investors.</p></div>
+					<div id="elementor-tab-content-1271" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1271">
+						
+<p>Expert guidance is invaluable when navigating the complexities of visa applications. With seasoned professionals at your side, you receive tailored advice and assistance at every step of the process, ensuring thorough preparation of documentation, adherence to requirements, and confident presentation of your case. From understanding intricate visa formalities to strategizing for embassy interviews, expert guidance offers peace of mind and increases the likelihood of success. Whether it's clarifying regulations, addressing concerns, or providing personalized solutions, relying on experienced guidance minimizes uncertainties and maximizes your chances of securing your visa efficiently and effectively.</p>
+<!-- <p>Visit <a href="https://jefftikitauelitemanagement.com/" target="_blank" style="text-decoration: underline; text-decoration-color: #2965CF;">Jeff Tikitau Elite Management</a> to see our full range of services to new investors.</p></div> -->
 				</div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-1272" class="elementor-tab-title" data-tab="2" role="button" aria-controls="elementor-tab-content-1272" aria-expanded="false">
@@ -539,57 +655,60 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">Locally-owned Cook Islands company</a>
+												<a class="elementor-accordion-title" tabindex="0">Assistance with Embassy-Specific Requirements</a>
 					</div>
-					<div id="elementor-tab-content-1272" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1272"><p>Because we are a local Cook Islands company, we are extremely well-connected to the local Cook Islands community.</p><p>Jeff is also a landowner and has a family heritage that runs deep and extends to many families living here. This can make all the difference when it comes to dealings with the local land &amp; property owners, whether in English or in Cook Islands Maori.</p><p>We can also put you in touch with reputable contacts such as local solicitors, valuers, builders, etc to assist you with your due diligence. Jeff is multi-lingual and is in the best position to share with you his first-hand knowledge of his native land and assist with putting you in touch with his vast network of solid contacts in the Cook Islands.</p></div>
-				</div>
+					<div id="elementor-tab-content-1272" class="elementor-tab-content elementor-clearfix" data-tab="2" role="region" aria-labelledby="elementor-tab-title-1272">
+						
+					<p>
+
+						Navigating embassy-specific requirements and procedures can be daunting, but with expert assistance, your journey becomes smoother. Our team provides tailored guidance to meet the unique demands of each embassy, ensuring meticulous preparation and adherence to specific regulations. From document preparation to interview strategies, we offer comprehensive support, minimizing uncertainties and maximizing your chances of a successful visa application. Trust us to navigate the intricacies of embassy procedures, making your visa journey hassle-free and ensuring a confident and seamless experience.</p></div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-1273" class="elementor-tab-title" data-tab="3" role="button" aria-controls="elementor-tab-content-1273" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">proven skills & expertise in real estate</a>
+												<a class="elementor-accordion-title" tabindex="0">Effortless Embassy Visa Appointments</a>
 					</div>
 					<div id="elementor-tab-content-1273" class="elementor-tab-content elementor-clearfix" data-tab="3" role="region" aria-labelledby="elementor-tab-title-1273">
-						<p>With our extensive experience in international real estate abroad, BREAM Real Estate has a track record of successfully assisting clients from diverse backgrounds in finding their ideal investment or second home.</p>
-					<p>We are fluent in English and local languages, enabling us to guide you through every step of the buying process. Share your requirements with us, and we'll work diligently to match you with a property that meets your unique criteria, whether it's for relocation, retirement, a holiday home, or a second residence.</p>
+					<p>
 
-						<p>At BREAM Real Estate, we're committed to helping you navigate the real estate market in Bengaluru with ease and confidence, ensuring you find the perfect property to fulfill your dreams.</p></div>
-				</div>
+						Streamline the process of booking embassy visa appointments with our hassle-free service, designed to save you valuable time and alleviate stress. Our dedicated team manages the entire booking process, ensuring prompt scheduling and adherence to embassy requirements. With our efficient assistance, you can bypass the complexities of appointment scheduling, allowing you to focus on preparing for your visa application. Trust us to handle the logistics, providing a seamless experience that minimizes stress and maximizes convenience. Experience the ease of embassy visa appointment booking with our expert support, empowering you to navigate the visa application process with confidence and efficiency.</p>
+					</div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-1274" class="elementor-tab-title" data-tab="4" role="button" aria-controls="elementor-tab-content-1274" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0">BENGALURU-BASED REAL ESTATE AGENCY SPECIALIZING IN BREAM PROPERTIES</a>
+												<a class="elementor-accordion-title" tabindex="0">Comprehensive Form Assistance</a>
 					</div>
 					<div id="elementor-tab-content-1274" class="elementor-tab-content elementor-clearfix" data-tab="4" role="region" aria-labelledby="elementor-tab-title-1274">
-						<p>Being based in Bengaluru positions us perfectly to personally accompany you on property viewings, ensuring you make the most informed decisions. We prioritize scheduling viewing appointments to optimize your time effectively.</p>
-
-							<p>Additionally, we provide comprehensive insights into nearby amenities, including schools, stores, landmarks, and the local history of the area and district. With our firsthand experience of relocating across the Pacific and from France, we understand the intricacies involved in the relocation process.</p>
-							
-							<p>At BREAM Real Estate, we're well-equipped to offer valuable information on various aspects such as schooling options for children, healthcare facilities, local community groups, shipping services, pet care, and more. Trust us to provide you with the best care and support throughout your property search journey in Bengaluru.</p></div>
-				</div>
+						<p>Receive thorough assistance with filling out all necessary forms accurately, ensuring every detail is meticulously attended to. Our expert team guides you through the entire form completion process, addressing any questions or concerns along the way. With our support, you can trust that your application forms will be completed correctly, meeting all requirements and increasing the likelihood of a successful visa application.</p></div>
 							<div class="elementor-accordion-item">
 					<div id="elementor-tab-title-1275" class="elementor-tab-title" data-tab="5" role="button" aria-controls="elementor-tab-content-1275" aria-expanded="false">
 													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
 															<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 								<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
 														</span>
-												<a class="elementor-accordion-title" tabindex="0"> High level of professionalism & code of ethics</a>
+												<a class="elementor-accordion-title" tabindex="0">Expert Interview Guidance</a>
 					</div>
 					<div id="elementor-tab-content-1275" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-1275">
-						<p>Drawing from our past professional real estate experience in Bengaluru we uphold a standard of excellence and adhere to a high code of ethics. Our approach prioritizes professionalism and integrity, as evidenced by the testimonials from our satisfied clients.</p>
-
-							<p>At BREAM Real Estate, our foremost priority is to deeply understand our clients' needs and desires. We recognize that each client is unique, and we differentiate ourselves by taking the time to actively listen and tailor our services accordingly. We understand that purchasing a property can be a daunting process, which is why we are committed to providing comprehensive support throughout.</p>
-							
-						<p>Partnering with reputable professionals, we ensure that all aspects of the legal and technical due diligence process are meticulously addressed. This collaborative effort guarantees that our clients can proceed with confidence and peace of mind.</p>
-							
-						<p>Central to our success is our commitment to communication, trust, and transparency. These core values underpin every interaction and decision, driving us to fulfill our clients' dreams and aspirations effectively and ethically. At BREAM Real Estate, we are dedicated to making your real estate journey a seamless and rewarding experience.</p></div>
-				</div>
+					<p>Benefit from valuable tips and tricks for acing your visa interview, minimizing any hiccups and maximizing your chances of success. Our experienced advisors provide tailored guidance to help you prepare effectively, covering key topics, practicing common interview questions, and offering strategies to convey your intentions convincingly. With our expert assistance, you can approach your visa interview with confidence and poise, enhancing your prospects of approval.</p>	
+					</div>
 								</div>
+								<div class="elementor-accordion-item">
+									<div id="elementor-tab-title-1275" class="elementor-tab-title" data-tab="5" role="button" aria-controls="elementor-tab-content-1275" aria-expanded="false">
+																	<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+																			<span class="elementor-accordion-icon-closed"><svg class="e-font-icon-svg e-fas-plus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+												<span class="elementor-accordion-icon-opened"><svg class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+																		</span>
+																<a class="elementor-accordion-title" tabindex="0">Thorough Application Pre-Checking</a>
+									</div>
+									<div id="elementor-tab-content-1275" class="elementor-tab-content elementor-clearfix" data-tab="5" role="region" aria-labelledby="elementor-tab-title-1275">
+									<p>Ensure your application file is in top shape with precise pre-checking before submission. Our meticulous review process verifies that all required documents are included, information is accurate and consistent, and any potential issues are addressed proactively. By entrusting us to pre-check your application, you can rest assured that it meets all necessary criteria, minimizing the risk of delays or complications and increasing your chances of a successful visa outcome.</p>
+									</div>
+												</div>
 				</div>
 				</div>
 					</div>
@@ -602,11 +721,11 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 			<div class="elementor-widget-wrap elementor-element-populated">
 								<div class="elementor-element elementor-element-5d28dba1 elementor-invisible elementor-widget elementor-widget-heading" data-id="5d28dba1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Looking to buy, sell or rent?</h2>		</div>
+			<h2 class="elementor-heading-title elementor-size-default">Looking  for visa and educational services.</h2>		</div>
 				</div>
 				<div class="elementor-element elementor-element-4d6808c5 elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="4d6808c5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-							<p class="black">Our <strong><em>focus</em> </strong>is to create the <strong>very best results</strong> for our clients through our <strong>innovative</strong> and <strong>energetic professional approach</strong>.</p>						</div>
+					<p class="black">We aim to deliver unparalleled outcomes for our clients by employing a dynamic and inventive professional strategy.</p>			
 				</div>
 				<div class="elementor-element elementor-element-163f569c elementor-align-center elementor-widget elementor-widget-button" data-id="163f569c" data-element_type="widget" data-widget_type="button.default">
 				<div class="elementor-widget-container">
@@ -626,181 +745,61 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 							</div>
 		</section>
 							</div>
-							<div data-elementor-type="footer" data-elementor-id="91" class="elementor elementor-91 elementor-location-footer" data-elementor-post-type="elementor_library">
-								<section class="elementor-section elementor-top-section elementor-element elementor-element-1804f784 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1804f784" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-169592b6" data-id="169592b6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<!-- <div class="elementor-element elementor-element-6bea4d1a elementor-widget elementor-widget-image" data-id="6bea4d1a" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-					<style>
-						.elementor-91 .elementor-element.elementor-element-6bea4d1a img {
-							width: 150px;
-						}
-					</style>
-					<a href="#">
-							<img width="2560" height="1241" src="../Images/white logo.png" class="attachment-full size-full wp-image-1102" alt="" loading="lazy" sizes="(max-width: 2560px) 100vw, 2560px" />								</a>
-															</div>
-				</div> -->
-				
-		
-			    <div class="elementor-element elementor-element-406234f9 elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="406234f9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-					<div class="elementor-widget-container">
-				<link rel="stylesheet" href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">	
-					<div class="elementor-icon-box-wrapper">
-							<div class="elementor-icon-box-icon">
-					<span class="elementor-icon elementor-animation-" >
-					<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>				</span>
-				</div>
-							<div class="elementor-icon-box-content">
-					<div class="elementor-icon-box-title">
-						<span  >
-							Bengaluru</span>
-					</div>
-										<p class="elementor-icon-box-description">
-							<span style="color: #ffffff">909, Garden Layout, Sector 2, HSR Layout
-								Bengaluru - 560102</span></p>
-								</div>
-			</div>
-					</div>
-					</div>		
-				<div class="elementor-element elementor-element-c5a6a82 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="c5a6a82" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<span style="color:#ffffff">Your trusted real estate partner in beautiful Bengaluru , offering dream properties and opportunities.</span>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-6e541acc elementor-hidden-mobile elementor-hidden-tablet" data-id="6e541acc" data-element_type="column">
-			<div class="elementor-widget-wrap">
-									</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-7ad94d58" data-id="7ad94d58" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<!-- <div class="elementor-element elementor-element-406234f9 elementor-position-left elementor-vertical-align-middle elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="406234f9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-			<link rel="stylesheet" href="wp-content/plugins/elementor/assets/css/widget-icon-box.min.css">	
-				<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-				<span class="elementor-icon elementor-animation-" >
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>				</span>
-			</div>
-						<div class="elementor-icon-box-content">
-				<div class="elementor-icon-box-title">
-					<span  >
-						Bengaluru</span>
-				</div>
-									<p class="elementor-icon-box-description">
-						<span style="color: #ffffff">909, Garden Layout, Sector 2, HSR Layout
-							Bengaluru - 560102</span></p>
-							</div>
-		</div>
-				</div>
-				</div> -->
-				<div class="elementor-element elementor-element-25685617 elementor-position-left elementor-vertical-align-middle elementor-widget-mobile__width-initial elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="25685617" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-				<span class="elementor-icon elementor-animation-" >
-				<svg aria-hidden="true" class="e-font-icon-svg e-far-envelope-open" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M494.586 164.516c-4.697-3.883-111.723-89.95-135.251-108.657C337.231 38.191 299.437 0 256 0c-43.205 0-80.636 37.717-103.335 55.859-24.463 19.45-131.07 105.195-135.15 108.549A48.004 48.004 0 0 0 0 201.485V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V201.509a48 48 0 0 0-17.414-36.993zM464 458a6 6 0 0 1-6 6H54a6 6 0 0 1-6-6V204.347c0-1.813.816-3.526 2.226-4.665 15.87-12.814 108.793-87.554 132.364-106.293C200.755 78.88 232.398 48 256 48c23.693 0 55.857 31.369 73.41 45.389 23.573 18.741 116.503 93.493 132.366 106.316a5.99 5.99 0 0 1 2.224 4.663V458zm-31.991-187.704c4.249 5.159 3.465 12.795-1.745 16.981-28.975 23.283-59.274 47.597-70.929 56.863C336.636 362.283 299.205 400 256 400c-43.452 0-81.287-38.237-103.335-55.86-11.279-8.967-41.744-33.413-70.927-56.865-5.21-4.187-5.993-11.822-1.745-16.981l15.258-18.528c4.178-5.073 11.657-5.843 16.779-1.726 28.618 23.001 58.566 47.035 70.56 56.571C200.143 320.631 232.307 352 256 352c23.602 0 55.246-30.88 73.41-45.389 11.994-9.535 41.944-33.57 70.563-56.568 5.122-4.116 12.601-3.346 16.778 1.727l15.258 18.526z"></path></svg>				</span>
-			</div>
-						<div class="elementor-icon-box-content">
-				<div class="elementor-icon-box-title">
-					<span  >
-						Send us an email </span>
-				</div>
-									<p class="elementor-icon-box-description">
-						<span style="color: #ffffff">
-							<span style="color: #ffffff">
-								<a style="color: #ffffff" href="cdn-cgi/l/email-protection.html#1162707d7462517b74777765787a786570646374707d7462657065743f727e7c">breamsolutions.official@gmail.com</a></span>
-						</div>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-421d03f2 elementor-position-left elementor-vertical-align-middle elementor-widget-mobile__width-initial elementor-mobile-position-left elementor-view-default elementor-invisible elementor-widget elementor-widget-icon-box" data-id="421d03f2" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-icon-box-wrapper">
-						<div class="elementor-icon-box-icon">
-				<span class="elementor-icon elementor-animation-" >
-				<svg aria-hidden="true" class="e-font-icon-svg e-fas-phone-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>				</span>
-			</div>
-						<div class="elementor-icon-box-content">
-				<div class="elementor-icon-box-title">
-					<span  >
-						Talk to us					</span>
-				</div>
-									<p class="elementor-icon-box-description">
-						<span style="color: #ffffff">+91 8792639014</span>					</p>
-							</div>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-22bd825a" data-id="22bd825a" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-7ffe22a elementor-invisible elementor-widget elementor-widget-text-editor" data-id="7ffe22a" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<span style="color: #ffffff;">FOLLOW US</span>						</div>
-				</div>
-				<div class="elementor-element elementor-element-25308b1 e-grid-align-left elementor-shape-rounded elementor-grid-0 elementor-invisible elementor-widget elementor-widget-social-icons" data-id="25308b1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="social-icons.default">
-				<div class="elementor-widget-container">
-					<div class="elementor-social-icons-wrapper elementor-grid">
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-9f712ab" href="https://www.instagram.com/hsr_layout_rentals?igsh=cDFkYWZ1NDJvcGly&utm_source=qr" target="_blank">
-						<span class="elementor-screen-only">Instagram</span>
-						<svg width="24px" height="24px" viewBox="0 0 24 24" role="img" xmlns="http://www.w3.org/2000/svg"><title>Instagram icon</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
-					</a>	
-				</span>
+							<footer>
+								<div class="container">
+									<div class="row">
+										  <div class="col" id="company">
+											  <img src="images/logo.png" alt="" class="logo">
+											  <p class="main">
+											From individuals and small local businesses to the world's largest companies,
+												 WorldWide Education and Immigration guides you on the journey,
+												 providing expertise on where, when, and why, while we equip you with the how.
+											  </p>
+											  <!-- <div class="social">
+												<a href="#"><i class="fab fa-facebook"></i></a>
+												<a href="#"><i class="fab fa-instagram"></i></a>
+												<a href="#"><i class="fab fa-youtube"></i></a>
+												<a href="#"><i class="fab fa-twitter"></i></a>
+												<a href="#"><i class="fab fa-linkedin"></i></a>
+											  </div> -->
+										  </div>
 							
-							<span class="elementor-grid-item">
-					<a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-repeater-item-7c6b0b8" href="https://www.linkedin.com/company/bream-solutions/" target="_blank">
-						<span class="elementor-screen-only">Linkedin</span>
-						<svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="M20.47,2H3.53A1.45,1.45,0,0,0,2.06,3.43V20.57A1.45,1.45,0,0,0,3.53,22H20.47a1.45,1.45,0,0,0,1.47-1.43V3.43A1.45,1.45,0,0,0,20.47,2ZM8.09,18.74h-3v-9h3ZM6.59,8.48h0a1.56,1.56,0,1,1,0-3.12,1.57,1.57,0,1,1,0,3.12ZM18.91,18.74h-3V13.91c0-1.21-.43-2-1.52-2A1.65,1.65,0,0,0,12.85,13a2,2,0,0,0-.1.73v5h-3s0-8.18,0-9h3V11A3,3,0,0,1,15.46,9.5c2,0,3.45,1.29,3.45,4.06Z"/></svg>
-						</a>
-				</span>
-					</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-1aa01e1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1aa01e1" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-c248cd1" data-id="c248cd1" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-511b537 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="511b537" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<span style="color: #ffffff;"><strong>Disclaimer:</strong> It is our intention to provide accurate and up-to-date information on our website which has been obtained from various sources, however all information is subject to independent review and verification.</span>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section>
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-37bbfe17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="37bbfe17" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-59e12661" data-id="59e12661" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-3fe3f47 elementor-widget-divider--view-line elementor-invisible elementor-widget elementor-widget-divider" data-id="3fe3f47" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="divider.default">
-				<div class="elementor-widget-container">
-			<style>/*! elementor - v3.15.0 - 05-07-2023 */
-.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-bottom:0;flex-grow:1;border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-top:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
-			<span class="elementor-divider-separator">
-						</span>
-		</div>
-				</div>
-				</div>
-				<div class="elementor-element elementor-element-37b77a32 elementor-widget__width-initial elementor-widget-mobile__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="37b77a32" data-element_type="widget" data-settings="{&quot;_animation_mobile&quot;:&quot;fadeIn&quot;,&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							Copyright BEAM Real Estate Solution. All Rights Reserved.						</div>
-				</div>
-			
-					</div>
-		</div>
-							</div>
-		</section>
-						</div>
-		
+							
+										  <div class="col" id="services">
+											 <h3>Services</h3>
+											 <div class="links">
+												<a href="#">Student visa</a>
+												<a href="#">Visitor Visa</a>
+												<a href="#">Permanent Residency</a>
+												<a href="#">Educational Consulting</a>
+											 </div>
+										  </div>
+							
+										  <div class="col" id="useful-links">
+											 <h3>Links</h3>
+											 <div class="links">
+												<a href="#">About</a>
+												<a href="#">Services</a>
+												<a href="#">Our Policy</a>
+												<a href="#">Help</a>
+											 </div>
+										  </div>
+							
+										  <div class="col" id="contact">
+											<h3>Contact</h3>
+											<div class="contact-details">
+											   <i class="fa fa-location"></i>
+											   <p> 6A/938 South Road , Edwardstown,  SA 5039 Australia,  
+											  </p>
+											</div>
+											<div class="contact-details">
+											   <i class="fa fa-phone"></i>
+											   <p>+61 449 658 660, +61 468 458 660</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							 </footer>
 <link rel='stylesheet' id='e-animations-css' href='../wp-content/plugins/elementor/assets/lib/animations/animations.min1756.css?ver=3.15.0-cloud4' media='all' />
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src='../wp-content/themes/hello-elementor/assets/js/hello-frontend.min8a54.js?ver=1.0.0' id='hello-theme-frontend-js'></script>
 <script src='../wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1' id='smartmenus-js'></script>
