@@ -1580,7 +1580,15 @@ footer{
 	.main-slider-two__shape-1 img {
 		width: auto !important;
 	}
-	
+	@media(max-width:400px){
+		.main-slider-two__shape-1 {
+			position: absolute;
+			top: 32px;
+			left: 200px;
+			z-index: 1;
+			width: 150px;
+		}
+	}
 	.main-slider-two__title {
 		position: relative;
 		font-size: 80px;
