@@ -216,9 +216,10 @@ img.emoji {
 	}
 	
 </style>
+
 <style>	
 footer{
-	background-color: #000000ff;
+	background-color: #0693e3;
 	position: relative;
 	width: 100%;
 	min-height: 50px;
@@ -241,7 +242,7 @@ footer{
 
 .col{
    min-width: 250px;
-   color:#f2f2f2f2;
+   color:#fff;
    font-family: poppins;
    padding:0 2rem;
 }
@@ -249,11 +250,6 @@ footer{
    width: 150px;
    margin-bottom:25px;
 }
-.main p{
-   font-size: 12px;
-   text-align: justify;
-}
-
 .col h3{
    color:rgb(252, 222, 222);
    margin-bottom: 20px;
@@ -264,7 +260,7 @@ footer{
    content: '';
    height:3px;
    width:0px;
-   background-color: rgb(97, 95, 95);
+   background-color:#000;
    position: absolute;
    bottom: 0;
    left:0;
@@ -275,9 +271,9 @@ footer{
    width:30px
 }
 .col .social a i{
-   color:rgb(95, 94, 94);
+   color:#000;
    margin-top:2rem;
-   margin-right: 5px;
+   margin-right: 2px;
    transition: 0.3s ease;
 }
 .col .social a i:hover{
@@ -287,7 +283,7 @@ footer{
 .col .links a{
    display: block;
    text-decoration: none;
-   color:#f2f2f2;
+   color:#ffff;
    margin-bottom: 5px;
    position: relative;
    transition: 0.3s ease;
@@ -299,7 +295,7 @@ footer{
    position: absolute;
    top:5px;
    left:-10px;
-   background-color: rgb(219, 213, 213);
+   background-color: #000;
    transition: 0.5s ease;
    opacity: 0;
 }
@@ -308,29 +304,7 @@ footer{
 }
 .col .links a:hover{
    transform: translateX(-8px);
-   color:rgb(161, 159, 160);
-}
-.col .contact-details{
-   display: inline-flex;
-   justify-content: space-between;
-}
-.col .contact-details i{
-   margin-right:15px;
-}
-.row .form{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding:2rem 0;
-}
-.row .form input{
-   background-color: #1a1c20ff;
-   border:0;
-   outline:none;
-   padding:14px 20px;
-   border-radius: 6px;
-   border-top-right-radius: 0;
-   border-bottom-right-radius: 0;
+   color:#000;
 }
 
 @media(max-width:900px)
@@ -449,502 +423,6 @@ footer{
 	}
 	.black {
 		color: #000000 !important;
-	}
-</style>
-<style>
-	.site-footer {
-		position: relative;
-		display: block;
-		background-color: var(--treck-black);
-		z-index: 1;
-	}
-	
-	.site-footer__top {
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		border-bottom: 1px solid rgba(var(--treck-white-rgb), 0.1);
-		overflow: hidden;
-		padding: 44px 0px 44px;
-		z-index: 1;
-	}
-	
-	.site-footer__map {
-		position: absolute;
-		top: 0;
-		left: 30px;
-		opacity: .40;
-		z-index: -1;
-	}
-	
-	.site-footer__map img {
-		width: auto;
-	}
-	
-	.site-footer__top-left {
-		position: relative;
-		display: block;
-	}
-	
-	.site-footer__visa-box {
-		position: relative;
-		display: flex;
-		align-items: center;
-	}
-	
-	.site-footer__visa-list {
-		position: relative;
-		display: flex;
-		align-items: center;
-	}
-	
-	.site-footer__visa-list li+li {
-		margin-left: 4px;
-	}
-	
-	.site-footer__visa-img {
-		position: relative;
-		display: block;
-		width: 30px;
-		border-radius: 50%;
-	}
-	
-	div.site-footer__visa-img img {
-		width: 100%;
-		border-radius: 50%;
-	}
-	
-	.site-footer__visa-content {
-		margin-left: 20px;
-	}
-	
-	.site-footer__visa-text {
-		color: #68696c;
-		font-weight: 500;
-	}
-	
-	.site-footer__visa-text a {
-		position: relative;
-		display: inline-block;
-		color: var(--treck-white);
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.site-footer__visa-text a:before {
-		content: "";
-		position: absolute;
-		bottom: 4px;
-		left: 0;
-		right: 0;
-		height: 1px;
-		background-color: var(--treck-white);
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.site-footer__visa-text a:hover:before {
-		background-color: var(--treck-base);
-	}
-	
-	.site-footer__visa-text a:hover {
-		color: var(--treck-base);
-	}
-	
-	.site-footer__call {
-		position: relative;
-		display: flex;
-		align-items: center;
-	}
-	
-	.site-footer__call-icon {
-		position: relative;
-		display: flex;
-		align-items: center;
-	}
-	
-	.site-footer__call-icon img {
-		width: auto;
-	}
-	
-	.site-footer__call-content {
-		margin-left: 15px;
-	}
-	
-	.site-footer__call-sub-title {
-		font-size: 14px;
-		color: #68696c;
-		line-height: 14px;
-	}
-	
-	.site-footer__call-number {
-		font-size: 16px;
-		font-weight: 600;
-		line-height: 16px;
-		margin-top: 9px;
-	}
-	
-	.site-footer__call-number a {
-		color: var(--treck-white);
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.site-footer__call-number a span {
-		font-size: 14px;
-		color: #68696c;
-	}
-	
-	.site-footer__call-number a:hover {
-		color: var(--treck-base);
-	}
-	
-	.site-footer__middle {
-		position: relative;
-		display: block;
-		padding-top: 85px;
-		padding-bottom: 79px;
-	}
-	
-	.footer-widget__title-box {
-		position: relative;
-		display: block;
-		margin-bottom: 24px;
-	}
-	
-	.footer-widget__title {
-		font-size: 18px;
-		color: var(--treck-white);
-		line-height: 28px;
-		font-weight: 600;
-	}
-	
-	.footer-widget__about {
-		position: relative;
-		display: block;
-		margin-right: 10px;
-	}
-	
-	.footer-widget__logo {
-		position: relative;
-		display: block;
-		margin-bottom: 20px;
-	}
-	
-	.footer-widget__about-text {
-		font-size: 15px;
-		color: #eaecf1;
-	}
-	
-	.site-footer__social {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		margin-top: 29px;
-	}
-	
-	.site-footer__social a {
-		position: relative;
-		height: 40px;
-		width: 40px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
-		-webkit-box-align: center;
-		-ms-flex-align: center;
-		align-items: center;
-		-webkit-box-pack: center;
-		-ms-flex-pack: center;
-		justify-content: center;
-		text-align: center;
-		color: #000;
-		background-color: transparent;
-		font-size: 15px;
-		border-radius: 50%;
-		border: 1px solid var(--treck-base);
-		overflow: hidden;
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-		z-index: 1;
-	}
-	
-	.site-footer__social a:hover {
-		color: var(--treck-white);
-		background-color: var(--treck-white);
-		border: 1px solid var(--treck-white);
-	}
-	
-	.site-footer__social a:after {
-		position: absolute;
-		content: "";
-		top: 0;
-		left: 0;
-		right: 0;
-		height: 100%;
-		background-color: var(--treck-white);
-		-webkit-transition-delay: .1s;
-		transition-delay: .1s;
-		-webkit-transition-timing-function: ease-in-out;
-		transition-timing-function: ease-in-out;
-		-webkit-transition-duration: .4s;
-		transition-duration: .4s;
-		-webkit-transition-property: all;
-		transition-property: all;
-		opacity: 1;
-		-webkit-transform-origin: top;
-		transform-origin: top;
-		-webkit-transform-style: preserve-3d;
-		transform-style: preserve-3d;
-		-webkit-transform: scaleY(0);
-		transform: scaleY(0);
-		z-index: -1;
-	}
-	
-	.site-footer__social a:hover:after {
-		opacity: 1;
-		-webkit-transform: scaleY(1);
-		transform: scaleY(1);
-	}
-	
-	.site-footer__social a+a {
-		margin-left: 10px;
-	}
-	
-	.footer-widget__link {
-		position: relative;
-		display: block;
-		margin-right: -30px;
-	}
-	
-	.footer-widget__link-list {
-		position: relative;
-		display: block;
-	}
-	
-	.footer-widget__link-list li+li {
-		margin-top: 6px;
-	}
-	
-	.footer-widget__link-list li a {
-		position: relative;
-		color: #000;
-		font-size: 15px;
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.footer-widget__link-list li a:hover {
-		color: var(--treck-white);
-	}
-	
-	.footer-widget__visa {
-		position: relative;
-		display: block;
-		margin-left: 60px;
-	}
-	
-	.footer-widget__visa-list {
-		position: relative;
-		display: block;
-	}
-	
-	.footer-widget__visa-list li {
-		position: relative;
-		display: block;
-	}
-	
-	.footer-widget__visa-list li+li {
-		margin-top: 6px;
-	}
-	
-	.footer-widget__visa-list li a {
-		position: relative;
-		color: #f4f6fc;
-		font-size: 15px;
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.footer-widget__visa-list li a:hover {
-		color: var(--treck-white);
-	}
-	
-	.footer-widget__gallery {
-		position: relative;
-		display: block;
-		margin-left: -9px;
-	}
-	
-	.footer-widget__gallery .footer-widget__title-box {
-		margin-bottom: 33px;
-	}
-	
-	.footer-widget__gallery-list {
-		position: relative;
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-right: -5px;
-		margin-left: -5px;
-	}
-	
-	.footer-widget__gallery-list li {
-		position: relative;
-		display: inline-block;
-		padding-left: 5px;
-		padding-right: 5px;
-		margin-bottom: 10px;
-	}
-	
-	.footer-widget__gallery-img {
-		position: relative;
-		display: block;
-		overflow: hidden;
-		width: 70px;
-		z-index: 1;
-	}
-	
-	.footer-widget__gallery-img:before {
-		position: absolute;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		content: "";
-		background-color: rgba(var(--treck-black-rgb), 0.3);
-		transition: all 700ms ease;
-		transform: translateY(-100%);
-		z-index: 1;
-	}
-	
-	.footer-widget__gallery-list li:hover .footer-widget__gallery-img:before {
-		transform: translateY(0%);
-	}
-	
-	.footer-widget__gallery-img img {
-		width: 100%;
-		transition-delay: .1s;
-		transition-timing-function: ease-in-out;
-		transition-duration: .7s;
-		transition-property: all;
-	}
-	
-	.footer-widget__gallery-list li:hover .footer-widget__gallery-img img {
-		transform: scale(1.1) rotate(2deg);
-	}
-	
-	.footer-widget__gallery-img a {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 17px;
-		color: var(--treck-white);
-		transform: translateY(100px);
-		opacity: 0;
-		transition: all 700ms ease;
-		z-index: 2;
-	}
-	
-	.footer-widget__gallery-list li:hover .footer-widget__gallery-img a {
-		transform: translateY(0px);
-		opacity: 1;
-		transition-delay: 0.3s;
-	}
-	
-	.footer-widget__gallery-list li .footer-widget__gallery-img a:hover {
-		color: var(--treck-base);
-	}
-	
-	.footer-widget__Contact {
-		position: relative;
-		display: block;
-	}
-	
-	.footer-widget__Contact-list {
-		position: relative;
-		display: block;
-		margin-top: -1px;
-	}
-	
-	.footer-widget__Contact-list li {
-		position: relative;
-		display: flex;
-		align-items: center;
-		text-decoration: none;
-	}
-	
-	.footer-widget__Contact-list li .icon {
-		font-size: 16px;
-		margin-right: 12px;
-	}
-	
-	.footer-widget__Contact-list li:nth-child(1) {
-		margin-bottom: 20px;
-	}
-	
-	.footer-widget__Contact-list li:nth-child(2) {
-		margin-bottom: 22px;
-	}
-	
-	.footer-widget__Contact-list li .icon span {
-		color: var(--treck-base);
-		font-size: 15px;
-	}
-	
-	.footer-widget__Contact-list li .text p {
-		font-size: 15px;
-		font-weight: 500;
-		color: #000;
-		line-height: 26px;
-	}
-	
-	.footer-widget__Contact-list li .text p a {
-		color: #000;
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.footer-widget__Contact-list li .text p a:hover {
-		color: var(--treck-base);
-		transition: all 500ms ease;
-	}
-	
-	.site-footer__bottom {
-		position: relative;
-		display: block;
-		padding: 32px 0 34px;
-		background-color: #000;
-	}
-	
-	.site-footer__bottom-inner {
-		position: relative;
-		display: block;
-		text-align: center;
-	}
-	
-	.site-footer__bottom-text {
-		color: #fff;
-		font-size: 15px;
-		font-weight: 500;
-	}
-	
-	.site-footer__bottom-text a {
-		color: #fff;
-		-webkit-transition: all 500ms ease;
-		transition: all 500ms ease;
-	}
-	
-	.site-footer__bottom-text a:hover {
-		color: var(--treck-white);
 	}
 </style>
 <style>
@@ -2723,7 +2201,7 @@ footer{
 			<div class="services-two__img-box">
 				<div class="services-two__icon icon-svg-large">
 					<span aria-hidden="true" class=" icon-consulting">
-						<img src="./Images/icons8-educatio.png"/>
+						<img src="./Images/icons8-application-50.png"/>
 					</span>											</div>
 				<div class="services-two__img">
 					<img decoding="async" src="./Images/educationalconsulting.jpeg" alt="alt" title="services-2-2" style="max-height: 150px; max-width: 400px;">											</div>
@@ -2738,7 +2216,7 @@ footer{
 						one priority strive to deliver.</p>											</div>
 				<div class="services-two__hover-icon icon-svg-large">
 					<span aria-hidden="true" class=" icon-consulting">
-						<img src="./Images/icons8-educatio.png"/>
+						<img src="./Images/icons8-application-50.png" style="max-height: 200px; max-width: 400px;"/>
 					</span>											</div>
 			</div>
 		</div>
@@ -2914,7 +2392,7 @@ footer{
 			<div class="services-two__img-box">
 				<div class="services-two__icon icon-svg-large">
 					<span aria-hidden="true" class=" icon-consulting">
-						<img src="./Images/icons8-document-50.png"/>
+						<img src="./Images/icons8-application-50.png"/>
 					</span>											</div>
 				<div class="services-two__img">
 					<img decoding="async" src="./Images/educationalconsulting.jpeg" alt="alt" title="services-2-2" style="max-height: 170px; max-width: 400px;">											</div>
@@ -2929,7 +2407,7 @@ footer{
 						</p>											</div>
 				<div class="services-two__hover-icon icon-svg-large">
 					<span aria-hidden="true" class=" icon-consulting">
-						<img src="./Images/icons8-document-50.png"/>
+						<img src="./Images/icons8-application-50.png"/>
 					</span>											</div>
 			</div>
 		</div>
@@ -3065,15 +2543,17 @@ footer{
 								<div class="container">
 									<div class="row">
 										  <div class="col" id="company">
-											  <img src="./Images/logo.png" alt="" class="logo">
+											  <img src="../Images/logo.png" alt="" class="logo">
 											  <p class="main">
 											From individuals and small local businesses to the world's largest companies,
 												 WorldWide Education and Immigration guides you on the journey,
 												 providing expertise on where, when, and why, while we equip you with the how.
 											  </p>
-							</div>
+											
+										  </div>
+							
 										  <div class="col" id="services">
-											 <h3>Services</h3>
+											 <h3 class="white">Services</h3>
 											 <div class="links">
 												<a href="#">Student visa</a>
 												<a href="#">Visitor Visa</a>
@@ -3082,8 +2562,9 @@ footer{
 												<a href="#">Application Processing</a>
 											 </div>
 										  </div>
+							
 										  <div class="col" id="useful-links">
-											 <h3>Links</h3>
+											 <h3 class="white">Links</h3>
 											 <div class="links">
 												<a href="#">About</a>
 												<a href="#">Services</a>
@@ -3091,212 +2572,9 @@ footer{
 												<a href="#">Help</a>
 											 </div>
 										  </div>
-
-										  <!-- <div class="col" id="contact">
-											<h3>Contact</h3>
-											<div class="contact-details">
-											   <i class="fa fa-location"></i>
-											   <p> 6A/938 South Road , Edwardstown,  SA 5039 Australia,  
-											  </p>
-											</div>
-											<div class="contact-details">
-											   <i class="fa fa-phone"></i>
-											   <p>+61 449 658 660, +61 468 458 660</p>
-											</div>
-										</div> -->
 									</div>
 								</div>
 							 </footer>
-							<!-- <div class="footer-wrapper"> 
-								
-												<div data-elementor-type="wp-post" data-elementor-id="1024" class="elementor elementor-1024">
-												<div class="footer-way">
-													<section class="elementor-section elementor-top-section elementor-element elementor-element-177f5f7 elementor-section-full_width site-footer elementor-section-height-default elementor-section-height-default" data-id="177f5f7" data-element_type="section">
-									<div class="elementor-container elementor-column-gap-no">
-								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-fe9db20" data-id="fe9db20" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-											<section class="elementor-section elementor-inner-section elementor-element elementor-element-6252aad elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6252aad" data-element_type="section">
-									<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-100 elementor-inner-column elementor-element elementor-element-465e7bf" data-id="465e7bf" data-element_type="column">
-						<div class="elementor-widget-wrap">
-												</div>
-					</div>
-										</div>
-					</section>
-							<section class="elementor-section elementor-inner-section elementor-element elementor-element-f5fb834 site-footer__middle elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="f5fb834" data-element_type="section">
-									<div class="elementor-container elementor-column-gap-default">
-								<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-93fd636" data-id="93fd636" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-b80b9d9 elementor-widget__width-initial elementor-widget elementor-widget-footer-about" data-id="b80b9d9" data-element_type="widget" data-widget_type="footer-about.default">
-							<div class="elementor-widget-container">
-							<div class="footer-widget__column footer-widget__about">
-					<div class="footer-widget__logo logo-retina">
-						<a href="http://worldwingsedu.com/">
-							<img decoding="async" src="./Images/logo.png" width="134" height="34" alt="WORLD WINGS">
-						</a>
-					</div>
-					<p class="footer-widget__about-text">WORLD WINGS EDUCATION AND IMMIGRATION
-			YOU TELL US WHERE, WHEN AND WHY. WE'LL TELL YOU HOW. FROM INDIVIDUALS AND SMALL LOCAL BUSINESSES TO THE WORLD'S LARGEST COMPANIES.</p>        <div class="site-footer__social">
-									
-								</div>
-				</div>
-					</div>
-							</div>
-								</div>
-					</div>
-							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-c5cfed2" data-id="c5cfed2" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-c05ebf2 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu" data-id="c05ebf2" data-element_type="widget" data-widget_type="footer-nav-menu.default">
-							<div class="elementor-widget-container">
-							<div class="footer-widget__column footer-widget__link">
-					<div class="footer-widget__title-box">
-						<h3 class="footer-widget__title">Explore</h3>        </div>
-								<div class="menu-one-page-home-two-container"><ul id="menu-one-page-home-two" class="footer-widget__link-list list-unstyled ml-0"><li id="menu-item-1145" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1145"><a href="#home">Home</a></li>
-			<li id="menu-item-1146" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1146"><a href="#about">About</a></li>
-			<li id="menu-item-1147" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1147"><a href="#countries">Countries</a></li>
-			<li id="menu-item-1148" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1148"><a href="#coacing">Coacing</a></li>
-			<li id="menu-item-1149" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1149"><a href="#visa">Visa</a></li>
-			<li id="menu-item-1150" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1150"><a href="#blog">Blog</a></li>
-			<li id="menu-item-1151" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1151"><a href="#contact">Contact</a></li>
-			</ul></div>            </div>
-					</div>
-							</div>
-								</div>
-					</div>
-							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-959b512" data-id="959b512" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-a3db553 elementor-widget__width-initial elementor-widget elementor-widget-footer-nav-menu" data-id="a3db553" data-element_type="widget" data-widget_type="footer-nav-menu.default">
-							<div class="elementor-widget-container">
-							<div class="footer-widget__column footer-widget__link">
-					<div class="footer-widget__title-box">
-						<h3 class="footer-widget__title">Visa</h3>        </div>
-								<div class="menu-visa-container"><ul id="menu-visa" class="footer-widget__link-list list-unstyled ml-0"><li id="menu-item-1054" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1054"><a href="http://worldwingsedu.com/visa-details/">Work Visa</a></li>
-			<li id="menu-item-1055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1055"><a href="http://worldwingsedu.com/visa-details/">Students Visa</a></li>
-			<li id="menu-item-1056" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1056"><a href="http://worldwingsedu.com/visa-details/">Business Visa</a></li>
-			<li id="menu-item-1057" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1057"><a href="http://worldwingsedu.com/visa-details/">Family Visa</a></li>
-			<li id="menu-item-1058" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1058"><a href="http://worldwingsedu.com/visa-details/">Travel Visa</a></li>
-			</ul></div>            </div>
-					</div>
-							</div>
-								</div>
-					</div>
-							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-f127835" data-id="f127835" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-a2562de elementor-widget__width-initial elementor-widget elementor-widget-treck-footer-gallery" data-id="a2562de" data-element_type="widget" data-widget_type="treck-footer-gallery.default">
-							<div class="elementor-widget-container">
-							<div class="footer-widget__column footer-widget__gallery">
-					<div class="footer-widget__title-box">
-						<h3 class="footer-widget__title">Gallery</h3>        </div>
-					<ul class="footer-widget__gallery-list list-unstyled clearfix ml-0">
-										<li>
-								<div class="footer-widget__gallery-img">
-									<img decoding="async" src="./Images/footer-widget-gallery-img-1.jpg" alt="alt" title="footer-widget-gallery-img-1" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-1.jpg">
-										<span class="icon-plus"></span>
-									</a>
-								</div>
-							</li>
-										<li>
-								<div class="footer-widget__gallery-img">
-									<img decoding="async" src="./Images/footer-widget-gallery-img-2.jpg" alt="alt" title="footer-widget-gallery-img-2" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-2.jpg">
-										<span class="icon-plus"></span>
-									</a>
-								</div>
-							</li>
-										<li>
-								<div class="footer-widget__gallery-img">
-									<img decoding="async" src="./Images/footer-widget-gallery-img-3.jpg" alt="alt" title="footer-widget-gallery-img-3" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-3.jpg">
-										<span class="icon-plus"></span>
-									</a>
-								</div>
-							</li>
-										<li>
-								<div class="footer-widget__gallery-img">
-									<img decoding="async" src="./Images/footer-widget-gallery-img-4.jpg" alt="alt" title="footer-widget-gallery-img-4" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-4.jpg">
-										<span class="icon-plus"></span>
-									</a>
-								</div>
-							</li>
-										<li>
-								<div class="footer-widget__gallery-img">
-									<img decoding="async" src="./Images/footer-widget-gallery-img-5.jpg" alt="alt" title="footer-widget-gallery-img-5" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-5.jpg">
-										<span class="icon-plus"></span>
-									</a>
-								</div>
-							</li>
-										<li>
-								<div class="footer-widget__gallery-img">
-									<img decoding="async" src="./Images/footer-widget-gallery-img-6.jpg" alt="alt" title="footer-widget-gallery-img-6" >                        <a href="http://bracketweb.com/treckwp/wp-content/uploads/2023/04/footer-widget-gallery-img-6.jpg">
-										<span class="icon-plus"></span>
-									</a>
-								</div>
-							</li>
-								</ul>
-				</div>
-					</div>
-							</div>
-								</div>
-					</div>
-							<div class="elementor-column elementor-col-20 elementor-inner-column elementor-element elementor-element-fbcf027" data-id="fbcf027" data-element_type="column">
-						<div class="elementor-widget-wrap elementor-element-populated">
-											<div class="elementor-element elementor-element-fff9046 elementor-widget__width-initial elementor-widget elementor-widget-footer-contact" data-id="fff9046" data-element_type="widget" data-widget_type="footer-contact.default">
-							<div class="elementor-widget-container">
-							<div class="footer-widget__column footer-widget__Contact">
-			
-					<div class="footer-widget__title-box">
-						<h3 class="footer-widget__title">Contact</h3></div>
-			
-					<ul class="footer-widget__Contact-list list-unstyled ml-0">
-										<li>
-								<div class="icon icon-svg">
-									<svg aria-hidden="true" class="e-font-icon-svg e-fas-envelope" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path></svg>                    </div>
-								<div class="text">
-									<p><a href="mailto:needhelp@worldwingsedu.com">needhelp@worldwingsedu.com</a></p>
-								</div>
-							</li>
-										<li>
-								<div class="icon icon-svg">
-									<svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker-alt" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z"></path></svg>                    </div>
-								<div class="text">
-									<p>30 Commercial Road <br> Fratton, Australia</p>
-								</div>
-							</li>
-										<li>
-								<div class="icon icon-svg">
-									<svg aria-hidden="true" class="e-font-icon-svg e-fas-clock" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256,8C119,8,8,119,8,256S119,504,256,504,504,393,504,256,393,8,256,8Zm92.49,313h0l-20,25a16,16,0,0,1-22.49,2.5h0l-67-49.72a40,40,0,0,1-15-31.23V112a16,16,0,0,1,16-16h32a16,16,0,0,1,16,16V256l58,42.5A16,16,0,0,1,348.49,321Z"></path></svg>                    </div>
-								<div class="text">
-									<p>Mon – Sat: 8:00 am to 6:00 pm <br> Sunday: Closed</p>
-								</div>
-							</li>
-								</ul>
-				</div>
-					</div>
-							</div>
-								</div>
-					</div>
-				</div>
-									</div>
-					</section>
-							<div class="elementor-element elementor-element-ab3ae9b elementor-widget elementor-widget-footer-copyright" data-id="ab3ae9b" data-element_type="widget" data-widget_type="footer-copyright.default">
-							<div class="elementor-widget-container">
-							<div class="site-footer__bottom">
-					<div class="container">
-						<div class="row">
-							<div class="col-xl-12">
-								<div class="site-footer__bottom-inner">
-									<p class="site-footer__bottom-text"> © All Copyright 2024 by <a href="#">World Wings Education </a></p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-					</div>
-							</div>
-								</div>
-					</div>
-										</div> -->
-					</section>
-										</div>
-											<!-- end of the loop -->
 	
 <link rel='stylesheet' id='elementor-post-1024-css' href='http://worldwingsedu.com/wp-content/uploads/elementor/css/post-1024.css?ver=1704375344' media='all' />
 <link rel='stylesheet' id='e-animations-css' href='wp-content/plugins/elementor/assets/lib/animations/animations.min1756.css?ver=3.15.0-cloud4' media='all' />
