@@ -218,118 +218,146 @@ img.emoji {
 </style>
 
 <style>	
-footer{
-	background-color: #0693e3;
-	position: relative;
-	width: 100%;
-	min-height: 50px;
-	padding: 3rem 1rem;
-	margin-top: 50px;
-}
-.container {
-   max-width: 1140px;
-   margin: 0 auto;
-   display: flex;
-   justify-content: center;
-   flex-direction: column;
-
-}
-.row{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.col{
-   min-width: 250px;
-   color:#fff;
-   font-family: poppins;
-   padding:0 2rem;
-}
-.col .logo{
-   width: 150px;
-   margin-bottom:25px;
-}
-.col h3{
-   color:rgb(252, 222, 222);
-   margin-bottom: 20px;
-   position: relative;
-   cursor: pointer;
-}
-.col h3::after{
-   content: '';
-   height:3px;
-   width:0px;
-   background-color:#000;
-   position: absolute;
-   bottom: 0;
-   left:0;
-   transition: 0.3s ease;
-
-}
-.col h3:hover::after{
-   width:30px
-}
-.col .social a i{
-   color:#000;
-   margin-top:2rem;
-   margin-right: 2px;
-   transition: 0.3s ease;
-}
-.col .social a i:hover{
-   transform: scale(1.5);
-   filter:grayscale(25);
-}
-.col .links a{
-   display: block;
-   text-decoration: none;
-   color:#ffff;
-   margin-bottom: 5px;
-   position: relative;
-   transition: 0.3s ease;
-}
-.col .links a::before{
-   content:'';
-   height: 16px;
-   width:3px;
-   position: absolute;
-   top:5px;
-   left:-10px;
-   background-color: #000;
-   transition: 0.5s ease;
-   opacity: 0;
-}
-.col .links a:hover::before{
-   opacity: 1;
-}
-.col .links a:hover{
-   transform: translateX(-8px);
-   color:#000;
-}
-
-@media(max-width:900px)
-{
- .row{
-   flex-direction: column;
- }
- .col{
-   width: 100%;
-   text-align: left;
-   margin-bottom: 25px;
- }
-}
-@media(max-width:768px)
-{
- .row{
-   flex-direction: column;
- }
- .col{
-   width: 100%;
-   text-align: left;
-   margin-bottom: 20px;
- }
-}
-</style>
+	footer{
+		background-color: #000000ff;
+		position: relative;
+		width: 100%;
+		min-height: 50px;
+		padding: 3rem 1rem;
+		margin-top: 50px;
+	}
+	.container {
+	   max-width: 1140px;
+	   margin: 0 auto;
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   flex-direction: column;
+	
+	}
+	.row{
+	   display: flex;
+	   justify-content: space-between;
+	   align-items: center;
+	}
+	
+	.col{
+	   min-width: 250px;
+	   color:#f2f2f2f2;
+	   font-family: poppins;
+	   padding:0 2rem;
+	}
+	.col .logo{
+	   width: 150px;
+	   margin-bottom:25px;
+	}
+	.main p{
+	   font-size: 12px;
+	   text-align: justify;
+	}
+	
+	.col h3{
+	   color:rgb(252, 222, 222);
+	   margin-bottom: 20px;
+	   position: relative;
+	   cursor: pointer;
+	}
+	.col h3::after{
+	   content: '';
+	   height:3px;
+	   width:0px;
+	   background-color: rgb(97, 95, 95);
+	   position: absolute;
+	   bottom: 0;
+	   left:0;
+	   transition: 0.3s ease;
+	
+	}
+	.col h3:hover::after{
+	   width:30px
+	}
+	.col .social a i{
+	   color:rgb(95, 94, 94);
+	   margin-top:2rem;
+	   margin-right: 5px;
+	   transition: 0.3s ease;
+	}
+	.col .social a i:hover{
+	   transform: scale(1.5);
+	   filter:grayscale(25);
+	}
+	.col .links a{
+	   display: block;
+	   text-decoration: none;
+	   color:#f2f2f2;
+	   margin-bottom: 5px;
+	   position: relative;
+	   transition: 0.3s ease;
+	}
+	.col .links a::before{
+	   content:'';
+	   height: 16px;
+	   width:3px;
+	   position: absolute;
+	   top:5px;
+	   left:-10px;
+	   background-color: rgb(219, 213, 213);
+	   transition: 0.5s ease;
+	   opacity: 0;
+	}
+	.col .links a:hover::before{
+	   opacity: 1;
+	}
+	.col .links a:hover{
+	   transform: translateX(-8px);
+	   color:rgb(161, 159, 160);
+	}
+	.col .contact-details{
+	   display: inline-flex;
+	   justify-content: space-between;
+	}
+	.col .contact-details i{
+	   margin-right:15px;
+	}
+	.row .form{
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   padding:2rem 0;
+	}
+	.row .form input{
+	   background-color: #1a1c20ff;
+	   border:0;
+	   outline:none;
+	   padding:14px 20px;
+	   border-radius: 6px;
+	   border-top-right-radius: 0;
+	   border-bottom-right-radius: 0;
+	}
+	
+	@media(max-width:900px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 25px;
+	 }
+	}
+	@media(max-width:768px)
+	{
+	 .row{
+	   flex-direction: column;
+	 }
+	 .col{
+	   width: 100%;
+	   text-align: left;
+	   margin-bottom: 20px;
+	 }
+	}
+	</style>
 <style>
 	.element.elementor-element-14772e4f:not(.elementor-motion-effects-element-type-background), .elementor-75 .elementor-element.elementor-element-14772e4f>.elementor-motion-effects-container>.elementor-motion-effects-layer {
 		background-image: url('./Images/banner1.png');
