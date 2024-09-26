@@ -6,7 +6,7 @@
 .elementor-3174 .elementor-element.elementor-element-61e6e74e > .elementor-widget-container{margin:0px 0px 0px 0px;padding:0% 0% 0% 0%;}
 .elementor-3174 .elementor-element.elementor-element-1463d7d{width:65%;}
 .elementor-3174 .elementor-element.elementor-element-4aecfdfa > 
-.elementor-container{min-height:80vh;}
+.elementor-container{min-height:100vh;}
 .elementor-widget-wrap>.elementor-element {
     width: 100%;
 }
@@ -18,7 +18,7 @@
 .elementor-3174 .elementor-element.elementor-element-4d6808c5{width:100%;max-width:100%;}}
 @media (max-width: 767px) {
     .elementor-3174 .elementor-element.elementor-element-4aecfdfa > .elementor-container {
-        min-height: 30vh;
+        min-height: 60vh;
     }
         .elementor-3174 .elementor-element.elementor-element-ee2868b {
             padding: 40px 20px 40px 20px;
