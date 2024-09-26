@@ -1782,6 +1782,9 @@ footer{
 	  outline: none;
 	}
 	
+	.menu{
+		display: none;
+	}
 	
 	@media (max-width: 768px) {
 	  .navbar,
@@ -1831,6 +1834,19 @@ footer{
 	  .navbar .cap {
 		max-width: 960px;
 	  }
+	}
+
+	@media (min-width: 1027px) {
+		.navbar-nav {
+			margin-left: 330px;
+		
+		}
+	}
+	
+	@media (min-width: 953px) {
+		.navbar-nav {
+			margin-left: 230px;
+		}
 	}
 	
 	@media (min-width: 1200px) {
@@ -2025,7 +2041,7 @@ footer{
 <nav class="navbar">
 			<div class="cap">
 			  <div class="navbar-header">
-				<i class="fa-solid fa-bars" data-toggle="open-navbar1"></i>
+				<i class="fa-solid fa-bars menu" data-toggle="open-navbar1"></i>
 				<a href="./index.html">
 				  <img src="./Images/logo.png" class="logoimg" />
 				</a>
