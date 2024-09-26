@@ -1741,9 +1741,11 @@ footer{
 }
 </style>
 <style>
-
-		.cap {
-	  width: 170px;
+	.cap {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
 	}
 	.logoimg {
 	  height: 70px;
@@ -1764,10 +1766,7 @@ footer{
 	  z-index: 1000;
 	  background-color: #fff;
 	}
-	
-	body {
-	  padding-top: 70px;
-	}
+
 	
 	.navbar-header {
 	  display: flex;
@@ -1781,11 +1780,7 @@ footer{
 	  display: none; 
 	  outline: none;
 	}
-	
-	.menu{
-		display: none;
-	}
-	
+
 	@media (max-width: 768px) {
 	  .navbar,
 	  .navbar > .cap {
@@ -1828,8 +1823,6 @@ footer{
 		flex-grow: 1;
 	  }
 	}
-	
-	
 	@media (min-width: 992px) {
 	  .navbar .cap {
 		max-width: 960px;
@@ -1882,6 +1875,7 @@ footer{
 		@media (max-width: 768px) {
 		  .navbar-toggler {
 			display: block;
+			margin-right: 25px;
 		  }
 		}
 		
@@ -1936,6 +1930,7 @@ footer{
 			border-top: 1px solid #eee;
 			margin-top: 1rem;
 			height: 100%;
+			margin-left: 1px;
 		  }
 		}
 		
@@ -2038,13 +2033,14 @@ footer{
 <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
 	<div data-elementor-type="header" data-elementor-id="926" class="elementor elementor-926 elementor-location-header" data-elementor-post-type="elementor_library">
-<nav class="navbar">
+		<nav class="navbar">
 			<div class="cap">
-			  <div class="navbar-header">
-				<i class="fa-solid fa-bars menu" data-toggle="open-navbar1"></i>
-				<a href="./index.html">
-				  <img src="./Images/logo.png" class="logoimg" />
-				</a>
+				<div class="navbar-header">
+					<i class="fa-solid fa-bars navbar-toggler" data-toggle="open-navbar1"></i>
+					<a href="./index.html">
+						<img src="./Images/logo.png" class="logoimg" />
+					</a>
+				</div>
 			  <div class="navbar-menu" id="open-navbar1">
 				<ul class="navbar-nav">
 				  <li class="active"><a href="./index.html">Home</a></li>
@@ -2813,66 +2809,158 @@ var woosq_vars = {"ajax_url":"http:\/\/worldwingsedu.com\/wp-admin\/admin-ajax.p
 var woosw_vars = {"ajax_url":"http:\/\/worldwingsedu.com\/wp-admin\/admin-ajax.php","nonce":"296dc5e1e3","menu_action":"open_page","perfect_scrollbar":"yes","wishlist_url":"","button_action":"list","message_position":"right-top","button_action_added":"popup","empty_confirm":"This action cannot be undone. Are you sure?","delete_confirm":"This action cannot be undone. Are you sure?","copied_text":"Copied the wishlist link:","menu_text":"Wishlist","button_text":"Add to wishlist","button_text_added":"Browse wishlist","button_normal_icon":"woosw-icon-5","button_added_icon":"woosw-icon-8","button_loading_icon":"woosw-icon-4"};
 </script>
 <script src="http://worldwingsedu.com/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.18.3" id="elementor-frontend-js"></script>
-<script>
+<!-- <script>
+	let dropdowns = document.querySelectorAll('.navbar .dropdown-toggler')
+	let dropdownIsOpen = false
+	
+	// Handle dropdown menues
+	if (dropdowns.length) {
+	  dropdowns.forEach((dropdown) => {
+		dropdown.addEventListener('click', (event) => {
+		  let target = document.querySelector(`#${event.target.dataset.dropdown}`)
+	
+		  if (target) {
+			if (target.classList.contains('show')) {
+			  target.classList.remove('show')
+			  dropdownIsOpen = false
+			} else {
+			  target.classList.add('show')
+			  dropdownIsOpen = true
+			}
+		  }
+		})
+	  })
+	}
+	
+	// Handle closing dropdowns if a user clicked the body
+	window.addEventListener('mouseup', (event) => {
+	  if (dropdownIsOpen) {
+		dropdowns.forEach((dropdownButton) => {
+		  let dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`)
+		  let targetIsDropdown = dropdown == event.target
+	
+		  if (dropdownButton == event.target) {
+			return
+		  }
+	
+		  if ((!targetIsDropdown) && (!dropdown.contains(event.target))) {
+			dropdown.classList.remove('show')
+		  }
+		})
+	  }
+	})
+	
+	// Open links in mobiles
+	function handleSmallScreens() {
+	  document.querySelector('.navbar-toggler')
+		.addEventListener('click', () => {
+		  let navbarMenu = document.querySelector('.navbar-menu')
+	
+		  if (!navbarMenu.classList.contains('active')) {
+			navbarMenu.classList.add('active')
+		  } else {
+			navbarMenu.classList.remove('active')
+		  }
+		})
+	}
+	
+	handleSmallScreens()
 	document.addEventListener('DOMContentLoaded', function() {
-		// Handle dropdown menus
-		const dropdowns = document.querySelectorAll('.navbar .dropdown-toggler');
-		let dropdownIsOpen = false;
+		const togglers = document.querySelectorAll('.dropdown-toggler');
 	
-		dropdowns.forEach((dropdown) => {
-			dropdown.addEventListener('click', function(event) {
+		togglers.forEach(toggler => {
+			toggler.addEventListener('click', function(event) {
 				event.preventDefault();
+				
 				const dropdownId = this.getAttribute('data-dropdown');
-				const target = document.getElementById(dropdownId);
-	
-				if (target) {
-					if (target.classList.contains('show')) {
-						target.classList.remove('show');
-						dropdownIsOpen = false;
-					} else {
-						// Close any open dropdowns
-						document.querySelectorAll('.dropdown.show').forEach(openDropdown => {
-							openDropdown.classList.remove('show');
-						});
-						target.classList.add('show');
-						dropdownIsOpen = true;
-					}
+				const dropdownMenu = document.getElementById(dropdownId);
+				
+				// Toggle the visibility of the dropdown menu
+				if (dropdownMenu.style.display === 'block') {
+					dropdownMenu.style.display = 'none';
+				} else {
+					dropdownMenu.style.display = 'block';
 				}
 			});
 		});
 	
-		// Handle closing dropdowns if a user clicks outside the dropdown
-		window.addEventListener('mouseup', function(event) {
-			if (dropdownIsOpen) {
-				dropdowns.forEach((dropdownButton) => {
-					const dropdown = document.querySelector(`#${dropdownButton.dataset.dropdown}`);
-					const targetIsDropdown = dropdown === event.target || dropdown.contains(event.target);
-	
-					if (!targetIsDropdown) {
-						dropdown.classList.remove('show');
-					}
+		// Close dropdown if clicked outside
+		document.addEventListener('click', function(event) {
+			const isClickInside = event.target.closest('.dropdown-toggler');
+			
+			if (!isClickInside) {
+				document.querySelectorAll('.dropdown-menu').forEach(menu => {
+					menu.style.display = 'none';
 				});
-				dropdownIsOpen = false;
 			}
 		});
-	
-		// Open/close the navbar menu on mobile (bar toggle)
-		const navbarToggler = document.querySelector('.navbar-toggler');
-		const navbarMenu = document.querySelector('.navbar-menu');
-	
-		if (navbarToggler && navbarMenu) {
-			navbarToggler.addEventListener('click', function() {
-				if (navbarMenu.classList.contains('active')) {
-					navbarMenu.classList.remove('active');
-				} else {
-					navbarMenu.classList.add('active');
-				}
-			});
-		}
 	});
 	
+	</script> -->
+<script>
+	document.addEventListener('DOMContentLoaded', function () {
+		let dropdownIsOpen = false;
+	  
+		// Handle dropdown toggling
+		const dropdowns = document.querySelectorAll('.navbar .dropdown-toggler');
+	  
+		dropdowns.forEach(dropdown => {
+		  dropdown.addEventListener('click', function (event) {
+			event.preventDefault();
+			
+			const dropdownId = this.getAttribute('data-dropdown');
+			const dropdownMenu = document.getElementById(dropdownId);
+	  
+			// Close any open dropdowns except the one clicked
+			document.querySelectorAll('.dropdown').forEach(menu => {
+			  if (menu !== dropdownMenu) {
+				menu.classList.remove('show');
+			  }
+			});
+	  
+			// Toggle the clicked dropdown
+			if (dropdownMenu.classList.contains('show')) {
+			  dropdownMenu.classList.remove('show');
+			  dropdownIsOpen = false;
+			} else {
+			  dropdownMenu.classList.add('show');
+			  dropdownIsOpen = true;
+			}
+		  });
+		});
+	  
+		// Close dropdowns when clicking outside
+		document.addEventListener('click', function (event) {
+		  const isClickInsideDropdown = event.target.closest('.navbar .dropdown-toggler') || event.target.closest('.dropdown');
+		  
+		  if (!isClickInsideDropdown) {
+			document.querySelectorAll('.dropdown.show').forEach(dropdownMenu => {
+			  dropdownMenu.classList.remove('show');
+			});
+			dropdownIsOpen = false;
+		  }
+		});
+	  
+		// Handle navbar toggling for small screens
+		function handleSmallScreens() {
+		  const navbarToggler = document.querySelector('.navbar-toggler');
+		  const navbarMenu = document.querySelector('.navbar-menu');
+	  
+		  if (navbarToggler && navbarMenu) {
+			navbarToggler.addEventListener('click', function () {
+			  if (!navbarMenu.classList.contains('active')) {
+				navbarMenu.classList.add('active');
+			  } else {
+				navbarMenu.classList.remove('active');
+			  }
+			});
+		  }
+		}
+	  
+		handleSmallScreens();
+	  });
+	  
 </script>
-
 <script>(function(){var js = "window['__CF$cv$params']={r:'864b7319bfb17eb5',t:'MTcxMDQ5NDY1Ny41ODgwMDA='};_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='cdn-cgi/challenge-platform/h/b/scripts/jsd/ace796eb5511/main.js',document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"864b7319bfb17eb5","b":1,"version":"2024.2.4","token":"df67842450844fa185a3a8a88950c8ba"}' crossorigin="anonymous"></script>
 </body>
 

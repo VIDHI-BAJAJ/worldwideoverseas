@@ -984,114 +984,54 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 	}
 </style>
 <style>
-
 	.cap {
-  width: 170px;
-}
-.logoimg {
-  height: 70px;
-  width: 170px;
-}
-.navbar,
-.navbar > .cap {
-  width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+	.logoimg {
+	  height: 70px;
+	  width: 170px;
+	}
+	.navbar,
+	.navbar > .cap {
+	  width: 100%;
 
-  align-items: center;
-  justify-content: space-between;
-}
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-  background-color: #fff;
-}
+	  align-items: center;
+	  justify-content: space-between;
+	}
+	.navbar {
+	  position: fixed;
+	  top: 0;
+	  left: 0;
+	  width: 100%;
+	  z-index: 1000;
+	  background-color: #fff;
+	}
 
-body {
-  padding-top: 70px;
-}
-
-.navbar-header {
-  display: flex;
-  align-items: center;
-}
-
-
-.navbar-toggler {
-  cursor: pointer;
-  border: none;
-  display: none; 
-  outline: none;
-}
-.menu{
-	display: none;
-}
-
-@media (max-width: 768px) {
-  .navbar,
-  .navbar > .cap {
-	display: block;
-  }
-  .navbar-toggler {
-	display: block; 
-  }
-  .navbar-header {
-	width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	flex-direction: row-reverse;
-  }
-  .navbar-menu {
-	display: none;
-	text-align: center;
-  }
-  .navbar-menu.active {
-	display: flex !important;
-  }
-  .navbar-nav {
-	width: 100%;
-	display: block;
-	border-top: 1px solid #eee;
-	margin-top: 1rem;
-  }
-  .navbar-nav > li > a {
-	border-bottom: 1px solid #eceef3;
-  }
-}
-
-
-@media (min-width: 769px) {
-  .navbar-menu {
-	display: flex;
-	align-items: center;
-	flex-basis: auto;
-	flex-grow: 1;
-  }
-}
-
-
-@media (min-width: 992px) {
-  .navbar .cap {
-	max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .navbar .cap{
-	max-width: 1480px;
-  }
-  .logoimg {
-	margin-left: 25px;
-  }
-}	
+	
 	.navbar-header {
 	  display: flex;
 	  align-items: center;
 	}
 	
+
+	.navbar-toggler {
+	  cursor: pointer;
+	  border: none;
+	  display: none; 
+	  outline: none;
+	}
+
 	@media (max-width: 768px) {
+	  .navbar,
+	  .navbar > .cap {
+		display: block;
+	  }
+	  .navbar-toggler {
+		display: block; 
+	  }
 	  .navbar-header {
 		width: 100%;
 		display: flex;
@@ -1099,161 +1039,230 @@ body {
 		justify-content: space-between;
 		flex-direction: row-reverse;
 	  }
-	}
-	
-	.navbar-toggler {
-	  cursor: pointer;
-	  border: none;
-	  display: none;
-	  outline: none;
-	}
-	
-	@media (max-width: 768px) {
-	  .navbar-toggler {
-		display: block;
-	  }
-	}
-	
-	.navbar-toggler span {
-	  height: 2px;
-	  width: 22px;
-	  background-color: #d1d5db;
-	  display: block;
-	}
-	
-	.navbar-toggler span:not(:last-child) {
-	  margin-bottom: 0.2rem;
-	}
-	
-	.navbar-header > a {
-	  font-weight: 500;
-	  color: #3c4250;
-	}
-	
-	.navbar-menu {
-	  display: flex;
-	  align-items: center;
-	  flex-basis: auto;
-	  flex-grow: 1;
-	}
-	
-	@media (max-width: 768px) {
 	  .navbar-menu {
 		display: none;
 		text-align: center;
-  
 	  }
-	}
-	
-	.navbar-menu.active {
-	  display: flex !important;
-	}
-	.navbar-nav {
-	  flex-direction: row;
-	  display: flex;
-	  padding-left: 0;
-	  margin-bottom: 0;
-	  list-style: none;
-	  height: 100%;
-	  margin-left: 600px;
-  }
-	
-	@media (max-width: 768px) {
+	  .navbar-menu.active {
+		display: flex !important;
+	  }
 	  .navbar-nav {
 		width: 100%;
 		display: block;
 		border-top: 1px solid #eee;
 		margin-top: 1rem;
-		height: 100%;
 	  }
-	}
-	
-	.navbar-nav > li > a {
-	  color: #3c4250;
-	  text-decoration: none;
-	  display: inline-block;
-	  padding: 0.5rem 1rem;
-	}
-	
-	.navbar-nav > li > a:hover {
-	  color: #66f;
-	}
-	
-	@media (max-width: 768px) {
 	  .navbar-nav > li > a {
 		border-bottom: 1px solid #eceef3;
 	  }
 	}
 	
-	.navbar-nav > li.active > a {
-	  color: #66f;
-	}
 	
-	.navbar-dropdown .dropdown {
-	  list-style: none;
-	  position: absolute;
-	  top: 150%;
-	  left: 0;
-	  background-color: #fff;
-	  padding-top: 0.5rem;
-	  padding-bottom: 0.5rem;
-	  min-width: 160px;
-	  width: auto;
-	  white-space: nowrap;
-	  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-	  z-index: 99999;
-	  border-radius: 0.75rem;
-	  display: none;
-	}
-	.navbar-dropdown .dropdown:hover{
-	  color:#66f ;
-	}
-	
-	@media (max-width: 768px) {
-	  .navbar-dropdown .dropdown {
-		position: relative;
-		box-shadow: none;
+	@media (min-width: 769px) {
+	  .navbar-menu {
+		display: flex;
+		align-items: center;
+		flex-basis: auto;
+		flex-grow: 1;
 	  }
 	}
-	
-	.navbar-dropdown .dropdown li a {
-	  color: #3c4250;
-	  padding: 0.25rem 1rem;
-	  display: block;
-	}
-	
-	.navbar-dropdown .dropdown.show {
-	  display: block !important;
-	}
-	
-	.navbar-nav .dropdown > .separator {
-	  height: 1px;
-	  width: 100%;
-	  margin-top: 9px;
-	  margin-bottom: 9px;
-	  background-color: #eceef3;
-	}
-	
-	.navbar-dropdown {
-	  position: relative;
-	}
-	
-	.navbar .navbar-header > a span {
-	  color: #66f;
-	}
-	
-	.navbar .navbar-header h4 {
-	  font-weight: 500;
-	  font-size: 1.25rem;
-	}
-	
-	@media (max-width: 768px) {
-	  .navbar .navbar-header h4 {
-		font-size: 1.05rem;
+	@media (min-width: 992px) {
+	  .navbar .cap {
+		max-width: 960px;
 	  }
 	}
+
+	@media (min-width: 1027px) {
+		.navbar-nav {
+			margin-left: 330px;
+		
+		}
+	}
 	
-</style>
+	@media (min-width: 953px) {
+		.navbar-nav {
+			margin-left: 230px;
+		}
+	}
+	
+	@media (min-width: 1200px) {
+	  .navbar .cap{
+		max-width: 1480px;
+	  }
+	  .logoimg {
+		margin-left: 25px;
+	  }
+	}	
+		.navbar-header {
+		  display: flex;
+		  align-items: center;
+		}
+		
+		@media (max-width: 768px) {
+		  .navbar-header {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-direction: row-reverse;
+		  }
+		}
+		
+		.navbar-toggler {
+		  cursor: pointer;
+		  border: none;
+		  display: none;
+		  outline: none;
+		}
+		
+		@media (max-width: 768px) {
+		  .navbar-toggler {
+			display: block;
+			margin-right: 25px;
+		  }
+		}
+		
+		.navbar-toggler span {
+		  height: 2px;
+		  width: 22px;
+		  background-color: #d1d5db;
+		  display: block;
+		}
+		
+		.navbar-toggler span:not(:last-child) {
+		  margin-bottom: 0.2rem;
+		}
+		
+		.navbar-header > a {
+		  font-weight: 500;
+		  color: #3c4250;
+		}
+		
+		.navbar-menu {
+		  display: flex;
+		  align-items: center;
+		  flex-basis: auto;
+		  flex-grow: 1;
+		}
+		
+		@media (max-width: 768px) {
+		  .navbar-menu {
+			display: none;
+			text-align: center;
+	  
+		  }
+		}
+		
+		.navbar-menu.active {
+		  display: flex !important;
+		}
+		.navbar-nav {
+		  flex-direction: row;
+		  display: flex;
+		  padding-left: 0;
+		  margin-bottom: 0;
+		  list-style: none;
+		  height: 100%;
+		  margin-left: 600px;
+	  }
+		
+		@media (max-width: 768px) {
+		  .navbar-nav {
+			width: 100%;
+			display: block;
+			border-top: 1px solid #eee;
+			margin-top: 1rem;
+			height: 100%;
+			margin-left: 1px;
+		  }
+		}
+		
+		.navbar-nav > li > a {
+		  color: #3c4250;
+		  text-decoration: none;
+		  display: inline-block;
+		  padding: 0.5rem 1rem;
+		}
+		
+		.navbar-nav > li > a:hover {
+		  color: #66f;
+		}
+		
+		@media (max-width: 768px) {
+		  .navbar-nav > li > a {
+			border-bottom: 1px solid #eceef3;
+		  }
+		}
+		
+		.navbar-nav > li.active > a {
+		  color: #66f;
+		}
+		
+		.navbar-dropdown .dropdown {
+		  list-style: none;
+		  position: absolute;
+		  top: 150%;
+		  left: 0;
+		  background-color: #fff;
+		  padding-top: 0.5rem;
+		  padding-bottom: 0.5rem;
+		  min-width: 160px;
+		  width: auto;
+		  white-space: nowrap;
+		  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+		  z-index: 99999;
+		  border-radius: 0.75rem;
+		  display: none;
+		}
+		.navbar-dropdown .dropdown:hover{
+		  color:#66f ;
+		}
+		
+		@media (max-width: 768px) {
+		  .navbar-dropdown .dropdown {
+			position: relative;
+			box-shadow: none;
+		  }
+		}
+		
+		.navbar-dropdown .dropdown li a {
+		  color: #3c4250;
+		  padding: 0.25rem 1rem;
+		  display: block;
+		}
+		
+		.navbar-dropdown .dropdown.show {
+		  display: block !important;
+		}
+		
+		.navbar-nav .dropdown > .separator {
+		  height: 1px;
+		  width: 100%;
+		  margin-top: 9px;
+		  margin-bottom: 9px;
+		  background-color: #eceef3;
+		}
+		
+		.navbar-dropdown {
+		  position: relative;
+		}
+		
+		.navbar .navbar-header > a span {
+		  color: #66f;
+		}
+		
+		.navbar .navbar-header h4 {
+		  font-weight: 500;
+		  font-size: 1.25rem;
+		}
+		
+		@media (max-width: 768px) {
+		  .navbar .navbar-header h4 {
+			font-size: 1.05rem;
+		  }
+		}
+		
+	</style>
 
 <link rel="icon" href="../Images/logo.png" sizes="32x32" />
 <link rel="icon" href="../Images/logo.png" sizes="192x192" />
@@ -1325,10 +1334,11 @@ body {
 		<nav class="navbar">
 			<div class="cap">
 			  <div class="navbar-header">
-				<i class="fa-solid fa-bars menu" data-toggle="open-navbar1"></i>
+				<i class="fa-solid fa-bars navbar-toggler" data-toggle="open-navbar1"></i>
 				<a href="../index.html">
 				  <img src="../Images/logo.png" class="logoimg" />
 				</a>
+				</div>
 			  <div class="navbar-menu" id="open-navbar1">
 				<ul class="navbar-nav">
 				  <li class="active"><a href="../index.html">Home</a></li>
@@ -1540,228 +1550,8 @@ sizes="(max-width: 422px) 100vw, 422px" />															</div>
 </div>
 		</div>
 </section>
-<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-b13c719 elementor-reverse-mobile elementor-reverse-tablet elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="b13c719" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
-	<div class="elementor-container elementor-column-gap-default">
-<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-c411671" data-id="c411671" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-			<div class="elementor-element elementor-element-1c584db elementor-invisible elementor-widget elementor-widget-image" data-id="1c584db" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
-<div class="elementor-widget-container">
-<img decoding="async" width="422" height="420" src="../Images/usha.png" class="attachment-full size-full wp-image-317" alt="" loading="lazy"
-sizes="(max-width: 422px) 100vw, 422px" />															</div>
-</div>
-</div>
-</div>
-<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-80c71eb" data-id="80c71eb" data-element_type="column">
-<div class="elementor-widget-wrap elementor-element-populated">
-			<div class="elementor-element elementor-element-b62b150 elementor-invisible elementor-widget elementor-widget-heading" data-id="b62b150" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h2 class="elementor-heading-title elementor-size-default">Miss. Usha Dharmalingam</h2>		</div>
-</div>
-<div class="elementor-element elementor-element-4ba9fcf elementor-invisible elementor-widget elementor-widget-heading" data-id="4ba9fcf" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-<div class="elementor-widget-container">
-<h3 class="elementor-heading-title elementor-size-default">our Student Counsellor(Sri Lanka)</h3>		</div>
-</div>
-<div class="elementor-element elementor-element-04af2ff elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="04af2ff" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
-<div class="elementor-widget-container">
-		<p> Meet Miss. Usha Dharmalingam, our dedicated Student Counsellor at Worldwide Overseas Colombo. With a background in education and foreign visa processing, Usha brings a wealth of experience to her role. Proficient in Tamil, Sinhala, and English, she effortlessly connects with students from diverse backgrounds. Currently pursuing higher studies in HR, Usha excels as a team player and adeptly manages her time. With her expertise and compassion, she guides students towards fulfilling their academic and professional aspirations.
-		</p>	</div>
-</div>
-</div>
-</div>
-		</div>
-</section> -->
-				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-bc8b2f9 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="bc8b2f9" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-1043f65" data-id="1043f65" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-6ef6b36 elementor-invisible elementor-widget elementor-widget-image" data-id="6ef6b36" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="416" height="400" src="../wp-content/uploads/2023/05/Varnia-Brigette-Karora_.png" class="attachment-full size-full wp-image-319" alt="" loading="lazy" srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Varnia-Brigette-Karora_.png 416w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Varnia-Brigette-Karora_-300x288.png 300w" sizes="(max-width: 416px) 100vw, 416px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-3a6e632 elementor-invisible elementor-widget elementor-widget-heading" data-id="3a6e632" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Varnia-Brigette Karora</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-dfd1f1e elementor-invisible elementor-widget elementor-widget-heading" data-id="dfd1f1e" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">sales associate</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-bcca48b elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="bcca48b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Varnia-Brigette is likely to be your first point of contact at Jeff Tikitau Real Estate as Sales Associate to Jeff Tikitau.</p>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6519260" data-id="6519260" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-c5baf27 elementor-invisible elementor-widget elementor-widget-image" data-id="c5baf27" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="416" height="400" src="../wp-content/uploads/2023/05/Kimberley-Tau.png" class="attachment-full size-full wp-image-320" alt="" loading="lazy" srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Kimberley-Tau.png 416w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Kimberley-Tau-300x288.png 300w" sizes="(max-width: 416px) 100vw, 416px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-bd43bd4 elementor-invisible elementor-widget elementor-widget-heading" data-id="bd43bd4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Kimberley Selam Tau</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-ad79448 elementor-invisible elementor-widget elementor-widget-heading" data-id="ad79448" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">PROPERTY MANAGER</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-9000a99 elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="9000a99" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Kimberley Selam Tau heads our Property Management division and manages our growing property portfolio.  </p>						</div>
-				</div>
-					</div>
-		</div>
-				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-d43a2a6" data-id="d43a2a6" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-fb8b650 elementor-invisible elementor-widget elementor-widget-image" data-id="fb8b650" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
-				<div class="elementor-widget-container">
-															<img decoding="async" width="416" height="400" src="../wp-content/uploads/2023/05/Mata-Tuatai_.png" class="attachment-full size-full wp-image-321" alt="" loading="lazy" srcset="https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Mata-Tuatai_.png 416w, https://jefftikitaurealestate.com/wp-content/uploads/2023/05/Mata-Tuatai_-300x288.png 300w" sizes="(max-width: 416px) 100vw, 416px" />															</div>
-				</div>
-				<div class="elementor-element elementor-element-a59a9ad elementor-invisible elementor-widget elementor-widget-heading" data-id="a59a9ad" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">Mata <br>Tuatai</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-23a62c1 elementor-invisible elementor-widget elementor-widget-heading" data-id="23a62c1" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">FINANCE ADMINistrator</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-7d64b4b elementor-widget-tablet__width-inherit elementor-invisible elementor-widget elementor-widget-text-editor" data-id="7d64b4b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="text-editor.default">
-				<div class="elementor-widget-container">
-							<p>Mata works closely with the Directors and CEO as Finance Administrator.</p>						</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section> -->
-				<!-- <section class="elementor-section elementor-top-section elementor-element elementor-element-3bed8a6d elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3bed8a6d" data-element_type="section">
-						<div class="elementor-container elementor-column-gap-default">
-					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-66f7277" data-id="66f7277" data-element_type="column">
-			<div class="elementor-widget-wrap elementor-element-populated">
-								<div class="elementor-element elementor-element-581ab800 elementor-invisible elementor-widget elementor-widget-heading" data-id="581ab800" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h3 class="elementor-heading-title elementor-size-default">hear our</h3>		</div>
-				</div>
-				<div class="elementor-element elementor-element-4d09f4e8 elementor-invisible elementor-widget elementor-widget-heading" data-id="4d09f4e8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
-				<div class="elementor-widget-container">
-			<h2 class="elementor-heading-title elementor-size-default">customer testimonials</h2>		</div>
-				</div>
-				<div class="elementor-element elementor-element-5b195bda elementor-testimonial--skin-default elementor-testimonial--layout-image_inline elementor-testimonial--align-center elementor-arrows-yes elementor-pagination-type-bullets elementor-widget elementor-widget-testimonial-carousel" data-id="5b195bda" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;3&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="testimonial-carousel.default">
-				<div class="elementor-widget-container">
-			<link rel="stylesheet" href="../wp-content/plugins/elementor-pro/assets/css/widget-carousel.min.css">		<div class="elementor-swiper">
-			<div class="elementor-main-swiper swiper">
-				<div class="swiper-wrapper">
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Thank you so much to Natalie, Jeff and the team for helping us sell our business. These guys are professional, friendly, and extremely thorough. Nothing was too much trouble, and they were always there to offer advice and guide us through the sale process. They are a top-class team and delivered results under the most difficult of circumstances – a global pandemic! That is a true testament to this team of professionals. We would not hesitate to recommend JTREL. Meitaki for everything.					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Geraldine Marson</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						I don't know where to start with our praise for this team of high achievers. We bought a business through them whilst living in Australia and we could not have gotten the process across the line without JT and his team. They went so far above and beyond in organising contracts, immigration, lawyers etc, organised our rental accommodation for us and again made it happen even before we left Australia.  Jeff, Nat and the rest of the team were there every day for us and nothing was a problem for them. we cannot recommend the JT Team highly enough.  					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Sniff Of Adventure</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						I recently purchased a property through Jeff Tikitau Real Estate. Natalie was incredibly professional to deal with and kept me fully updated on progress.  I had contact with most members of the JT Team, and now feel like part of the JT family.  I would highly recommend Jeff Tikitau Real Estate.					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Mel Comber</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						The team at Jeff Tikitau Real Estate Cook Islands provide a high level of excellence, professionalism and quality communication that continues to exceed my property management expectations. I highly recommend their services for anyone and everyone sourcing the need to reside or invest in the Cook Islands.					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Kimitaunga</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Brian and I have been working with Jeff, Natalie, and the real estate team for over two years, using both their rental management and real estate listing services. We can highly recommend them as their rental management division was spot on in keeping our biggest asset well managed and maintained. Jeff and Natalie have brought back excitement and fresh energy to real estate in the Cook Islands. They have the staff to guide you through a process that can bring your tropical dreams to life, it's easier than you think to own property, a business, and live in the Cook Islands. What are you waiting for?					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Jon Beymer & Brian Paxton</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Thank you so much to Jeff & Natalie for selling my business. I would highly recommend them to anyone considering selling in the Cook Islands. They are both very professional, great communicators & lovely to deal with. Jeff is very well connected locally and my property received a lot of interest internationally which shows that there is a good network world wide too. Natalie was very efficient keeping me up to date over emails and answering all my questions. And I know they worked so hard in a tough situation to sell my business.					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Daisy Barclay-Economos</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						We were very pleased and most impressed with the highly professional approach taken by Jeff and Natalie Tikitau in acting as our agents. The promotion of our property was well planned and the consultation process at each step met our expectations. The end result was exactly as we had hoped.					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Kurt & Tiana Meyer</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Thanks to Nathalie & Jeff for helping us in the sale of our business. Professional international standards, good international exposure and fairly priced !  They were very professional, assisted us greatly and were transparent throughout the whole process !
 
-Merci à Nathalie et Jeff pour leur aide dans la vente de notre fond de commerce ! Ils ont été professionnels, nous on bien aidé et ont été honnêtes jusqu’au bout du processus de vente !					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Guillaume & Karine Kapfer</span></cite>			</div>
-		</div>
-								</div>
-											<div class="swiper-slide">
-									<div class="elementor-testimonial">
-							<div class="elementor-testimonial__content">
-					<div class="elementor-testimonial__text">
-						Jeff and Natalie Tikitau  Real Estate came highly recommended.  From day one, my experience with them has been first class all the way.  Their expertise, high standards, professionalism, and reliability combined with their French and Pacific island charm are a big plus for the Cook Islands.  They are the best in their field!  
-Natalie’s professionalism, diligence, and great service as my agent has been superb!   She is such a pleasure to work with!  I highly recommend Jeff and Natalie Tikitau for all your property management and real estate needs.  
-					</div>
-									</div>
-						<div class="elementor-testimonial__footer">
-								<cite class="elementor-testimonial__cite"><span class="elementor-testimonial__name">Lady Carla Davis</span></cite>			</div>
-		</div>
-								</div>
-									</div>
-															<div class="swiper-pagination"></div>
-																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>							<span class="elementor-screen-only">Previous</span>
-						</div>
-						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
-							<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>							<span class="elementor-screen-only">Next</span>
-						</div>
-												</div>
-		</div>
-				</div>
-				</div>
-					</div>
-		</div>
-							</div>
-		</section> -->
-				<section class="elementor-section elementor-top-section elementor-element elementor-element-252e1bfc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="252e1bfc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<section class="elementor-section elementor-top-section elementor-element elementor-element-252e1bfc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="252e1bfc" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
 						<div class="elementor-container elementor-column-gap-default">
 					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-51141755" data-id="51141755" data-element_type="column">
 			<div class="elementor-widget-wrap elementor-element-populated">
